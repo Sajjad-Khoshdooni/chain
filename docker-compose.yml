@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  chain:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: chain:latest
+    container_name: chain
+    restart: unless-stopped
+    environment:
+      - RUST_LOG=info
+    networks:
+      - chain-network
+    # Uncomment to persist data
+    # volumes:
+    #   - ./data:/home/chain/data
+
+networks:
+  chain-network:
+    driver: bridge
+
+# Optional: Add multiple nodes for distributed testing
+# Uncomment below to run multiple blockchain nodes
+#  chain-node2:
+#    image: chain:latest
+#    container_name: chain-node2
+#    restart: unless-stopped
+#    environment:
+#      - RUST_LOG=info
+#    networks:
+#      - chain-network
+#
+#  chain-node3:
+#    image: chain:latest
+#    container_name: chain-node3
+#    restart: unless-stopped
+#    environment:
+#      - RUST_LOG=info
+#    networks:
+#      - chain-network
+

@@ -1,0 +1,12 @@
+target/
+.git/
+.gitignore
+.idea/
+.DS_Store
+*.pdf
+*.txt
+examples/
+*.md
+docker-compose.yml
+.dockerignore
+
