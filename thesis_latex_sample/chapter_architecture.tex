@@ -3,20 +3,20 @@
 %\thispagestyle{empty} 
 
 \section{مقدمه}
-در این فصل به تشریح معماری سیستم بلاکچین پیشنهادی می‌پردازیم. معماری پیشنهادی، راه‌حلی نوآورانه برای حل مشکل مقیاس‌پذیری بلاکچین است که از ساختار زنجیره اصلی \lr{(Master Chain)} و زنجیره‌های جانبی \lr{(Side Chains)} استفاده می‌کند. این معماری با حفظ امنیت و غیرمتمرکز بودن، قادر به پردازش موازی تراکنش‌ها و افزایش قابل توجه توان عملیاتی شبکه است.
+در این فصل به تشریح معماری سیستم بلاکچین پیشنهادی می‌پردازیم. معماری پیشنهادی، راه‌حلی نوآورانه برای حل مشکل مقیاس‌پذیری بلاکچین است که از ساختار زنجیره اصلی {(}\lr{Master Chain}{)} و زنجیره‌های جانبی {(}\lr{Side Chains}{)} استفاده می‌کند. این معماری با حفظ امنیت و غیرمتمرکز بودن، قادر به پردازش موازی تراکنش‌ها و افزایش قابل توجه توان عملیاتی شبکه است.
 
-هدف اصلی این معماری، افزایش تعداد تراکنش‌های پردازش شده در واحد زمان \lr{(TPS)} نسبت به بلاکچین بیتکوین است، در حالی که ویژگی‌های اصلی بلاکچین مانند امنیت، شفافیت و غیرمتمرکز بودن حفظ شود.
+هدف اصلی این معماری، افزایش تعداد تراکنش‌های پردازش شده در واحد زمان {(}\lr{TPS}{)} نسبت به بلاکچین بیتکوین است، در حالی که ویژگی‌های اصلی بلاکچین مانند امنیت، شفافیت و غیرمتمرکز بودن حفظ شود.
 
 \section{معماری کلی سیستم}
 
 معماری پیشنهادی شامل دو لایه اصلی است:
 
-\subsection{زنجیره اصلی \lr{(Master Chain)}}
+\subsection{زنجیره اصلی {(}\lr{Master Chain}{)}}
 
 زنجیره اصلی، ستون فقرات شبکه است که وظایف زیر را بر عهده دارد:
 
 \begin{itemize}
-    \item \textbf{الگوریتم اجماع}: از الگوریتم اثبات کار (Proof of Work) مشابه بیتکوین استفاده می‌کند
+    \item \textbf{الگوریتم اجماع}: از الگوریتم اثبات کار {(}\lr{Proof of Work}{)} مشابه بیتکوین استفاده می‌کند
     \item \textbf{زمان تولید بلوک}: هر 10 دقیقه یک بلوک جدید تولید می‌شود
     \item \textbf{محتوای بلوک}: ارجاعات به بلوک‌های زنجیره‌های جانبی را ذخیره می‌کند
     \item \textbf{امنیت}: با استفاده از الگوریتم SHA-256، امنیت بالایی برای شبکه فراهم می‌کند
@@ -42,7 +42,7 @@ MasterBlock = \{index, timestamp, references, previous\_hash, hash, nonce, diffi
     \item $difficulty$: سطح دشواری استخراج
 \end{itemize}
 
-\subsection{زنجیره‌های جانبی (Side Chains)}
+\subsection{زنجیره‌های جانبی {(}\lr{Side Chains}{)}}
 
 زنجیره‌های جانبی، واحدهای پردازش موازی هستند که تراکنش‌ها را به صورت مستقل پردازش می‌کنند:
 
@@ -73,7 +73,7 @@ SideChainBlock = \{index, side\_chain\_id, timestamp, transactions, previous\_ha
 
 \subsection{الگوریتم تخصیص تراکنش}
 
-برای تخصیص تراکنش‌ها به زنجیره‌های جانبی، از یک الگوریتم قطعی و توزیع شده استفاده می‌شود که بر اساس UTXO (Unspent Transaction Output) عمل می‌کند. پیاده‌سازی واقعی در Rust به صورت زیر است:
+برای تخصیص تراکنش‌ها به زنجیره‌های جانبی، از یک الگوریتم قطعی و توزیع شده استفاده می‌شود که بر اساس UTXO {(}\lr{Unspent Transaction Output}{)} عمل می‌کند. پیاده‌سازی واقعی در Rust به صورت زیر است:
 
 \begin{latin}
 \begin{equation}
@@ -101,23 +101,23 @@ side\_chain\_id = numeric\_hash(UTXO) \bmod N
 
 پیاده‌سازی Rust شامل چهار ماژول پیشرفته برای افزایش قابلیت‌های سیستم است:
 
-\subsubsection{ماژول رمزنگاری (Crypto Module)}
+\subsubsection{ماژول رمزنگاری {(}\lr{Crypto Module}{)}}
 \begin{itemize}
     \item \textbf{کیف پول (Wallet)}: تولید کلیدهای خصوصی و عمومی با استفاده از SHA-256
     \item \textbf{امضای دیجیتال (Signature)}: امضا و تایید تراکنش‌ها با استفاده از ECDSA
     \item \textbf{مدیریت آدرس}: تولید آدرس‌های یکتا از کلیدهای عمومی
 \end{itemize}
 
-\subsubsection{ماژول اجماع (Consensus Module)}
+\subsubsection{ماژول اجماع {(}\lr{Consensus Module}{)}}
 \begin{itemize}
-    \item \textbf{حل فورک (Fork Resolution)}: انتخاب زنجیره با بیشترین کار انجام شده
-    \item \textbf{قطعیت \lr{(Finality)}}: تعیین قطعیت بلوک‌ها پس از 6 تایید (مشابه Bitcoin)
+    \item \textbf{حل فورک {(}\lr{Fork Resolution}{)}}: انتخاب زنجیره با بیشترین کار انجام شده
+    \item \textbf{قطعیت {(}\lr{Finality}{)}}: تعیین قطعیت بلوک‌ها پس از 6 تایید (مشابه Bitcoin)
     \item \textbf{BFT}: پشتیبانی از تحمل خطای بیزانسی با فرمول $f < n/3$
 \end{itemize}
 
 \subsubsection{ماژول اعتبارسنجی (Validation Module)}
 \begin{itemize}
-    \item \textbf{مجموعه UTXO (UTXO Set)}: ردیابی تمام UTXO های خرج نشده
+    \item \textbf{مجموعه UTXO {(}\lr{UTXO Set}{)}}: ردیابی تمام UTXO های خرج نشده
     \item \textbf{جلوگیری از دوبار خرج کردن}: تشخیص و جلوگیری از double-spending
     \item \textbf{اعتبارسنجی تراکنش}: بررسی صحت مبلغ، امضا و کارمزد
 \end{itemize}
@@ -125,7 +125,7 @@ side\_chain\_id = numeric\_hash(UTXO) \bmod N
 \subsubsection{ماژول تراکنش بین زنجیره‌ای (Cross-Chain Module)}
 \begin{itemize}
     \item \textbf{پل بین زنجیره‌ای (Cross-Chain Bridge)}: انتقال امن دارایی بین زنجیره‌های جانبی
-    \item \textbf{قفل اتمیک (Atomic Swap)}: تضمین همه یا هیچ در انتقالات
+    \item \textbf{قفل اتمیک {(}\lr{Atomic Swap}{)}}: تضمین همه یا هیچ در انتقالات
     \item \textbf{4 مرحله انتقال}: Initiated $\rightarrow$ Locked $\rightarrow$ Verified $\rightarrow$ Completed
 \end{itemize}
 
