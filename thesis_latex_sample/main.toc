@@ -27,13 +27,13 @@
 \contentsline {section}{\numberline {2-5}زنجیره‌های جانبی}{10}{section.2.5}%
 \contentsline {subsection}{\numberline {2-5-1}مفهوم زنجیره جانبی}{10}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2-5-2}نمونه‌های عملی}{10}{subsection.2.5.2}%
-\contentsline {subsubsection}{\numberline {2-5-2-1}RSK (Rootstock)}{10}{subsubsection.2.5.2.1}%
+\contentsline {subsubsection}{\numberline {2-5-2-1}RSK \lr {(Rootstock)}}{10}{subsubsection.2.5.2.1}%
 \contentsline {subsubsection}{\numberline {2-5-2-2}Liquid Network}{10}{subsubsection.2.5.2.2}%
 \contentsline {subsection}{\numberline {2-5-3}مزایا و معایب}{10}{subsection.2.5.3}%
 \contentsline {subsubsection}{\numberline {2-5-3-1}مزایا}{10}{subsubsection.2.5.3.1}%
 \contentsline {subsubsection}{\numberline {2-5-3-2}معایب}{11}{subsubsection.2.5.3.2}%
 \contentsline {section}{\numberline {2-6}الگوریتم‌های اجماع جایگزین}{11}{section.2.6}%
-\contentsline {subsection}{\numberline {2-6-1}اثبات سهام {(}\lr {Proof of Stake}{)}}{11}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2-6-1}اثبات سهام \lr {(Proof of Stake)}}{11}{subsection.2.6.1}%
 \contentsline {subsubsection}{\numberline {2-6-1-1}مزایا}{11}{subsubsection.2.6.1.1}%
 \contentsline {subsubsection}{\numberline {2-6-1-2}معایب}{11}{subsubsection.2.6.1.2}%
 \contentsline {subsection}{\numberline {2-6-2}الگوریتم‌های هیبریدی}{12}{subsection.2.6.2}%
@@ -47,13 +47,13 @@
 \contentsline {chapter}{\numberline {3}معماری سیستم بلاکچین پیشنهادی}{15}{chapter.3}%
 \contentsline {section}{\numberline {3-1}مقدمه}{15}{section.3.1}%
 \contentsline {section}{\numberline {3-2}معماری کلی سیستم}{15}{section.3.2}%
-\contentsline {subsection}{\numberline {3-2-1}زنجیره اصلی {(}\lr {Master Chain}{)}}{15}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3-2-2}زنجیره‌های جانبی {(}\lr {Side Chains}{)}}{17}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3-2-1}زنجیره اصلی \lr {(Master Chain)}}{15}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3-2-2}زنجیره‌های جانبی \lr {(Side Chains)}}{17}{subsection.3.2.2}%
 \contentsline {section}{\numberline {3-3}الگوریتم‌های کلیدی}{17}{section.3.3}%
 \contentsline {subsection}{\numberline {3-3-1}الگوریتم تخصیص تراکنش}{17}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3-3-2}ماژول‌های پیشرفته در پیاده‌سازی}{18}{subsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3-3-2-1}ماژول رمزنگاری {(}\lr {Crypto Module}{)}}{19}{subsubsection.3.3.2.1}%
-\contentsline {subsubsection}{\numberline {3-3-2-2}ماژول اجماع {(}\lr {Consensus Module}{)}}{19}{subsubsection.3.3.2.2}%
+\contentsline {subsubsection}{\numberline {3-3-2-1}ماژول رمزنگاری \lr {(Crypto Module)}}{19}{subsubsection.3.3.2.1}%
+\contentsline {subsubsection}{\numberline {3-3-2-2}ماژول اجماع \lr {(Consensus Module)}}{19}{subsubsection.3.3.2.2}%
 \contentsline {subsubsection}{\numberline {3-3-2-3}ماژول اعتبارسنجی (Validation Module)}{19}{subsubsection.3.3.2.3}%
 \contentsline {subsubsection}{\numberline {3-3-2-4}ماژول تراکنش بین زنجیره‌ای (Cross-Chain Module)}{19}{subsubsection.3.3.2.4}%
 \contentsline {section}{\numberline {3-4}فرآیند پردازش تراکنش}{20}{section.3.4}%

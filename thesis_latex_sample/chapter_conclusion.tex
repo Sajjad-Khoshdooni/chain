@@ -4,26 +4,26 @@
 
 \section{خلاصه تحقیق}
 
-در این پایان‌نامه، معماری نوآورانه‌ای برای حل مشکل مقیاس‌پذیری بلاکچین ارائه شد. معماری پیشنهادی بر اساس ساختار زنجیره اصلی {(}\lr{Master Chain}{)} و زنجیره‌های جانبی {(}\lr{Side Chains}{)} است که امکان پردازش موازی تراکنش‌ها را فراهم می‌کند.
+در این پایان‌نامه، معماری نوآورانه‌ای برای حل مشکل مقیاس‌پذیری بلاکچین ارائه شد. معماری پیشنهادی بر اساس ساختار زنجیره اصلی \lr{(Master Chain)} و زنجیره‌های جانبی \lr{(Side Chains)} است که امکان پردازش موازی تراکنش‌ها را فراهم می‌کند.
 
 \subsection{اهداف محقق شده}
 
 \begin{enumerate}
-    \item \textbf{افزایش TPS قابل توجه}: با پیاده‌سازی Rust، به ظرفیت محاسباتی \textbf{44,824 TPS} دست یافتیم که معادل \textbf{6,403 برابر} بیتکوین است. میانگین عملکرد در پیکربندی‌های مختلف \textbf{16,433 TPS} {(}\lr{2,347x بهتر از Bitcoin}{)} بوده است.
+    \item \textbf{افزایش TPS قابل توجه}: با پیاده‌سازی Rust، به ظرفیت محاسباتی \textbf{44,824 TPS} دست یافتیم که معادل \textbf{6,403 برابر} بیتکوین است. میانگین عملکرد در پیکربندی‌های مختلف \textbf{16,433 TPS} \lr{(2,347x بهتر از Bitcoin)} بوده است.
     
     \item \textbf{پیاده‌سازی کامل}: سیستم به صورت کامل با زبان Rust پیاده‌سازی شده شامل:
     \begin{itemize}
         \item Master Chain با الگوریتم PoW
         \item Side Chains با پردازش موازی
-        \item ماژول Crypto {(}\lr{کیف پول، امضای دیجیتال}{)}
-        \item ماژول Consensus {(}\lr{حل فورک، BFT، قطعیت}{)}
-        \item ماژول Validation {(}\lr{UTXO Set، جلوگیری از double-spending}{)}
-        \item ماژول Cross-Chain {(}\lr{انتقال بین زنجیره‌ای، Atomic Swap}{)}
+        \item ماژول Crypto \lr{(کیف پول، امضای دیجیتال)}
+        \item ماژول Consensus \lr{(حل فورک، BFT، قطعیت)}
+        \item ماژول Validation \lr{(UTXO Set، جلوگیری از double-spending)}
+        \item ماژول Cross-Chain \lr{(انتقال بین زنجیره‌ای، Atomic Swap)}
     \end{itemize}
     
     \item \textbf{مقیاس‌پذیری اثبات شده}: سیستم با 1، 2، 3، 5، و 10 زنجیره جانبی آزمایش و عملکرد آن در تمام حالات بررسی شده است.
     
-    \item \textbf{حفظ امنیت}: با استفاده از الگوریتم PoW {(}\lr{SHA-256}{)} در زنجیره اصلی و تخصیص قطعی UTXO به زنجیره‌های جانبی، امنیت شبکه حفظ شده است.
+    \item \textbf{حفظ امنیت}: با استفاده از الگوریتم PoW \lr{(SHA-256)} در زنجیره اصلی و تخصیص قطعی UTXO به زنجیره‌های جانبی، امنیت شبکه حفظ شده است.
     
     \item \textbf{کاهش تاخیر}: با تولید بلوک هر 1 دقیقه در زنجیره‌های جانبی (در مقایسه با 10 دقیقه بیتکوین)، تاخیر تایید اولیه 10 برابر کاهش یافته است.
     
@@ -58,14 +58,14 @@
     
     \item \textbf{پردازش موازی واقعی}: زنجیره‌های جانبی به صورت مستقل و موازی تراکنش‌ها را پردازش می‌کنند.
     
-    \item \textbf{الگوریتم تخصیص قطعی}: استفاده از SHA-256 hash برای تخصیص UTXO به زنجیره‌ها:
+    \item \textbf{الگوریتم تخصیص قطعی}: استفاده از \lr{SHA-256} hash برای تخصیص UTXO به زنجیره‌ها:
     \begin{latin}
     \texttt{side\_chain\_id = numeric\_hash(utxo) \% N}
     \end{latin}
     
-    \item \textbf{UTXO Model}: استفاده از مدل UTXO {(}\lr{مشابه Bitcoin}{)} برای جلوگیری از double-spending.
+    \item \textbf{UTXO Model}: استفاده از مدل UTXO \lr{(مشابه Bitcoin)} برای جلوگیری از double-spending.
     
-    \item \textbf{Atomic Swaps}: پشتیبانی از انتقال امن دارایی بین زنجیره‌های مختلف با استفاده از Hash Time-Locked Contracts {(}\lr{HTLC}{)}.
+    \item \textbf{Atomic Swaps}: پشتیبانی از انتقال امن دارایی بین زنجیره‌های مختلف با استفاده از Hash Time-Locked Contracts \lr{(HTLC)}.
 \end{itemize}
 
 \subsection{مزایای اقتصادی}
@@ -317,15 +317,15 @@
 \textbf{دستاوردهای کلیدی:}
 
 \begin{enumerate}
-    \item \textbf{پیاده‌سازی کامل با Rust}: سیستم به طور کامل با زبان Rust {(}\lr{edition 2021}{)} پیاده‌سازی شده شامل 7 ماژول اصلی {(}\lr{master\_chain، side\_chain، chain\_system، crypto، consensus، validation، cross\_chain}{)}
+    \item \textbf{پیاده‌سازی کامل با Rust}: سیستم به طور کامل با زبان Rust \lr{(edition 2021)} پیاده‌سازی شده شامل 7 ماژول اصلی \lr{(master\_chain، side\_chain، chain\_system، crypto، consensus، validation، cross\_chain)}
     
-    \item \textbf{عملکرد استثنایی}: ظرفیت محاسباتی 44,824 TPS {(}\lr{6,403x سریع‌تر از Bitcoin}{)} و میانگین عملکرد 16,433 TPS {(}\lr{2,347x سریع‌تر}{)} در پیکربندی‌های مختلف
+    \item \textbf{عملکرد استثنایی}: ظرفیت محاسباتی 44,824 TPS \lr{(6,403x سریع‌تر از Bitcoin)} و میانگین عملکرد 16,433 TPS \lr{(2,347x سریع‌تر)} در پیکربندی‌های مختلف
     
-    \item \textbf{اعتبارسنجی عملی}: بنچمارک‌های واقعی با 9 اجرا برای هر پیکربندی {(}\lr{3 rounds × 3 iterations}{)} و محاسبه انحراف معیار
+    \item \textbf{اعتبارسنجی عملی}: بنچمارک‌های واقعی با 9 اجرا برای هر پیکربندی \lr{(3 rounds × 3 iterations)} و محاسبه انحراف معیار
     
     \item \textbf{معماری مقیاص‌پذیر}: پشتیبانی از 1 تا 10+ زنجیره جانبی با قابلیت افزایش به 100 زنجیره
     
-    \item \textbf{امنیت محافظت شده}: استفاده از PoW {(}\lr{SHA-256}{)}، UTXO model، digital signatures، و BFT consensus
+    \item \textbf{امنیت محافظت شده}: استفاده از PoW \lr{(SHA-256)}، UTXO model، digital signatures، و BFT consensus
     
     \item \textbf{ویژگی‌های پیشرفته}: Cross-chain transfers، Atomic Swaps، Fork Resolution، و Double-Spend Prevention
 \end{enumerate}

@@ -5,16 +5,16 @@
 \section{مقدمه}
 در این فصل به تشریح مفاهیم پیشرفته‌تر معماری سیستم بلاکچین پیشنهادی می‌پردازیم. این مفاهیم شامل رمزنگاری، اجماع، اعتبارسنجی تراکنش‌ها و ارتباطات بین زنجیره‌ای است که برای تکمیل معماری پایه ضروری هستند.
 
-\section{رمزنگاری (Cryptography)}
+\section{رمزنگاری \lr{(Cryptography)}}
 
-\subsection{کیف پول دیجیتال (Digital Wallet)}
+\subsection{کیف پول دیجیتال \lr{(Digital Wallet)}}
 
 هر کاربر در شبکه دارای یک کیف پول دیجیتال است که شامل:
 
 \begin{itemize}
-    \item \textbf{کلید خصوصی (Private Key)}: عددی مخفی که فقط مالک آن را میداند
-    \item \textbf{کلید عمومی (Public Key)}: عددی که از کلید خصوصی مشتق می‌شود و برای همه قابل مشاهده است
-    \item \textbf{آدرس (Address)}: شناسه منحصربه‌فرد که از کلید عمومی محاسبه می‌شود
+    \item \textbf{کلید خصوصی \lr{(Private Key)}}: عددی مخفی که فقط مالک آن را میداند
+    \item \textbf{کلید عمومی \lr{(Public Key)}}: عددی که از کلید خصوصی مشتق می‌شود و برای همه قابل مشاهده است
+    \item \textbf{آدرس \lr{(Address)}}: شناسه منحصربه‌فرد که از کلید عمومی محاسبه می‌شود
 \end{itemize}
 
 فرآیند تولید آدرس:
@@ -28,7 +28,7 @@ Public\_Key &\xrightarrow{SHA256} Address
 \end{equation}
 \end{latin}
 
-\subsection{امضای دیجیتال (Digital Signature)}
+\subsection{امضای دیجیتال \lr{(Digital Signature)}}
 
 برای تأیید اصالت تراکنش‌ها، از امضای دیجیتال استفاده می‌شود:
 
@@ -59,7 +59,7 @@ Verify(Transaction\_Hash, Signature, Public\_Key) \rightarrow \{True, False\}
     \item \textbf{غیرقابل انکار بودن}: فرستنده نمی‌تواند تراکنش خود را انکار کند
 \end{itemize}
 
-\section{اجماع و حل تعارض (Consensus \& Fork Resolution)}
+\section{اجماع و حل تعارض \lr{(Consensus \& Fork Resolution)}}
 
 \subsection{قوانین اجماع}
 
@@ -67,11 +67,11 @@ Verify(Transaction\_Hash, Signature, Public\_Key) \rightarrow \{True, False\}
 
 \begin{itemize}
     \item \textbf{حداقل دشواری}: هر بلوک باید دارای دشواری حداقلی باشد
-    \item \textbf{عمق نهایی‌سازی (Finality Depth)}: پس از 6 بلوک، یک تراکنش نهایی محسوب می‌شود
+    \item \textbf{عمق نهایی‌سازی \lr{(Finality Depth)}}: پس از 6 بلوک، یک تراکنش نهایی محسوب می‌شود
     \item \textbf{زمان‌بندی}: بلوک‌ها باید ترتیب زمانی صحیحی داشته باشند
 \end{itemize}
 
-\subsection{حل تعارض در فورک (Fork Resolution)}
+\subsection{حل تعارض در فورک \lr{(Fork Resolution)}}
 
 هنگامی که دو زنجیره موازی در شبکه ایجاد می‌شود، از قانون زیر برای انتخاب استفاده می‌شود:
 
@@ -94,9 +94,9 @@ Verify(Transaction\_Hash, Signature, Public\_Key) \rightarrow \{True, False\}
 \end{algorithm}
 \end{latin}
 
-قانون اصلی: \textbf{زنجیره طولانی‌تر برنده است} (Longest Chain Rule).
+قانون اصلی: \textbf{زنجیره طولانی‌تر برنده است} \lr{(Longest Chain Rule)}.
 
-\subsection{تحمل خطای بیزانسی (Byzantine Fault Tolerance)}
+\subsection{تحمل خطای بیزانسی \lr{(Byzantine Fault Tolerance)}}
 
 سیستم می‌تواند تا $\frac{n-1}{3}$ نود خطاکار را تحمل کند، جایی که $n$ تعداد کل نودها است.
 
@@ -117,11 +117,11 @@ False & \text{otherwise}
 \end{equation}
 \end{latin}
 
-\section{اعتبارسنجی تراکنش‌ها (Transaction Validation)}
+\section{اعتبارسنجی تراکنش‌ها \lr{(Transaction Validation)}}
 
 \subsection{مجموعه UTXO}
 
-مجموعه UTXO (Unspent Transaction Output) شامل تمام خروجی‌های خرج نشده تراکنش‌هاست:
+مجموعه UTXO \lr{(Unspent Transaction Output)} شامل تمام خروجی‌های خرج نشده تراکنش‌هاست:
 
 \begin{itemize}
     \item \textbf{UTXO Set}: نگهداری خروجی‌های خرج نشده
@@ -166,7 +166,7 @@ False & \text{otherwise}
 \end{algorithm}
 \end{latin}
 
-\subsection{جلوگیری از دوبار‌خرج (Double-Spend Prevention)}
+\subsection{جلوگیری از دوبار‌خرج \lr{(Double-Spend Prevention)}}
 
 سیستم با استفاده از مکانیسم‌های زیر از دوبار‌خرج جلوگیری می‌کند:
 
@@ -176,7 +176,7 @@ False & \text{otherwise}
     \item \textbf{Deterministic Assignment}: هر UTXO به یک زنجیره جانبی اختصاص می‌یابد
 \end{itemize}
 
-\section{ارتباطات بین زنجیره‌ای (Cross-Chain Communication)}
+\section{ارتباطات بین زنجیره‌ای \lr{(Cross-Chain Communication)}}
 
 \subsection{پروتکل انتقال بین زنجیره‌ای}
 
@@ -206,7 +206,7 @@ False & \text{otherwise}
 \caption{مراحل پروتکل انتقال بین زنجیره‌ای}
 \end{figure}
 
-\subsection{تبادل اتمی (Atomic Swap)}
+\subsection{تبادل اتمی \lr{(Atomic Swap)}}
 
 تبادل اتمی امکان مبادله دارایی بین دو زنجیره را بدون نیاز به واسطه فراهم می‌کند:
 
@@ -271,7 +271,7 @@ Hash\_Lock = SHA256(Secret)
     \item مکانیسم بازیابی در صورت عدم همگامی
 \end{itemize}
 
-\subsection{چالش تقسیم شبکه (Network Partition)}
+\subsection{چالش تقسیم شبکه \lr{(Network Partition)}}
 
 \textbf{مشکل}: ممکن است بخشی از شبکه از بقیه جدا شود.
 
