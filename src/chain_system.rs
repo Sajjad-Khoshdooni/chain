@@ -2,21 +2,21 @@ use crate::master_chain::{MasterChain, SideChainBlockReference};
 use crate::side_chain::SideChain;
 use crate::transaction::Transaction;
 
-/// AshkanChain - Main blockchain system
+/// ChainSystem - Main blockchain system
 /// 
 /// Architecture:
 /// - Master Chain: PoW consensus, 10-minute block time, stores side chain references
 /// - Side Chains: Multiple parallel chains, 1-minute block time, process transactions
 /// - Transaction Assignment: UTXO-based (utxo % side_chain_id)
 /// - Dynamic Scaling: Number of side chains adjusts to network load
-pub struct AshkanChain {
+pub struct ChainSystem {
     pub master_chain: MasterChain,
     pub side_chains: Vec<SideChain>,
     pub num_side_chains: usize,
 }
 
-impl AshkanChain {
-    /// Create a new AshkanChain with specified number of side chains
+impl ChainSystem {
+    /// Create a new ChainSystem with specified number of side chains
     pub fn new(num_side_chains: usize, master_difficulty: usize) -> Self {
         let master_chain = MasterChain::new(master_difficulty);
         let master_hash = master_chain.get_latest_block().hash.clone();
@@ -25,9 +25,9 @@ impl AshkanChain {
             .map(|id| SideChain::new(id, master_hash.clone()))
             .collect();
         
-        println!("🚀 AshkanChain initialized with {} side chains", num_side_chains);
+        println!("🚀 ChainSystem initialized with {} side chains", num_side_chains);
         
-        AshkanChain {
+        ChainSystem {
             master_chain,
             side_chains,
             num_side_chains,
@@ -107,7 +107,7 @@ impl AshkanChain {
     /// Display comprehensive statistics
     pub fn display_stats(&self) {
         println!("\n╔════════════════════════════════════════════════╗");
-        println!("║         AshkanChain Statistics                 ║");
+        println!("║         ChainSystem Statistics                 ║");
         println!("╚════════════════════════════════════════════════╝");
         println!("📊 Master Chain Blocks: {}", self.master_chain.blocks.len());
         println!("🔗 Number of Side Chains: {}", self.num_side_chains);

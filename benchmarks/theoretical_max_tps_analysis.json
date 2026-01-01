@@ -1,0 +1,59 @@
+{
+  "parameters": {
+    "master_block_time": 600,
+    "side_block_time": 60,
+    "max_block_size_mb": 1,
+    "avg_transaction_size": 250,
+    "max_transactions_per_block": 4194,
+    "cpu_cores": 8,
+    "network_bandwidth_mbps": 100
+  },
+  "theoretical_max": {
+    "1_chains": {
+      "total_tps": 76.89,
+      "master_tps": 6.99,
+      "side_tps": 69.9
+    },
+    "2_chains": {
+      "total_tps": 146.79000000000002,
+      "master_tps": 6.99,
+      "side_tps": 139.8
+    },
+    "3_chains": {
+      "total_tps": 216.69,
+      "master_tps": 6.99,
+      "side_tps": 209.7
+    },
+    "5_chains": {
+      "total_tps": 356.49,
+      "master_tps": 6.99,
+      "side_tps": 349.5
+    },
+    "10_chains": {
+      "total_tps": 705.99,
+      "master_tps": 6.99,
+      "side_tps": 699.0
+    },
+    "20_chains": {
+      "total_tps": 1404.99,
+      "master_tps": 6.99,
+      "side_tps": 1398.0
+    },
+    "50_chains": {
+      "total_tps": 3501.99,
+      "master_tps": 6.99,
+      "side_tps": 3495.0
+    },
+    "100_chains": {
+      "total_tps": 6996.99,
+      "master_tps": 6.99,
+      "side_tps": 6990.0
+    }
+  },
+  "bottleneck": "block_size",
+  "scaling_potential": {
+    "single_node": 6996.99,
+    "high_end_server": 41981.94,
+    "cluster_10_nodes": 419819.39999999997
+  }
+}

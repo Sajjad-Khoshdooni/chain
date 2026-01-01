@@ -1,0 +1,79 @@
+[
+  {
+    "side_chains": 1,
+    "tps": 3.3333333333333335,
+    "max_tps": 37.54666666666667,
+    "improvement_percent": 47.61904761904762,
+    "vs_bitcoin": 0.4761904761904762
+  },
+  {
+    "side_chains": 2,
+    "tps": 5.0,
+    "max_tps": 71.67999999999999,
+    "improvement_percent": 71.42857142857143,
+    "vs_bitcoin": 0.7142857142857143
+  },
+  {
+    "side_chains": 3,
+    "tps": 6.666666666666667,
+    "max_tps": 105.81333333333333,
+    "improvement_percent": 95.23809523809524,
+    "vs_bitcoin": 0.9523809523809524
+  },
+  {
+    "side_chains": 5,
+    "tps": 10.0,
+    "max_tps": 174.07999999999998,
+    "improvement_percent": 142.85714285714286,
+    "vs_bitcoin": 1.4285714285714286
+  },
+  {
+    "side_chains": 10,
+    "tps": 18.333333333333336,
+    "max_tps": 344.74666666666667,
+    "improvement_percent": 261.9047619047619,
+    "vs_bitcoin": 2.6190476190476195
+  },
+  {
+    "side_chains": 15,
+    "tps": 26.666666666666668,
+    "max_tps": 515.4133333333333,
+    "improvement_percent": 380.95238095238096,
+    "vs_bitcoin": 3.8095238095238098
+  },
+  {
+    "side_chains": 20,
+    "tps": 35.0,
+    "max_tps": 686.0799999999999,
+    "improvement_percent": 500.0,
+    "vs_bitcoin": 5.0
+  },
+  {
+    "side_chains": 25,
+    "tps": 43.33333333333333,
+    "max_tps": 856.7466666666667,
+    "improvement_percent": 619.047619047619,
+    "vs_bitcoin": 6.19047619047619
+  },
+  {
+    "side_chains": 30,
+    "tps": 51.666666666666664,
+    "max_tps": 1027.4133333333334,
+    "improvement_percent": 738.0952380952381,
+    "vs_bitcoin": 7.3809523809523805
+  },
+  {
+    "side_chains": 40,
+    "tps": 68.33333333333334,
+    "max_tps": 1368.7466666666667,
+    "improvement_percent": 976.1904761904763,
+    "vs_bitcoin": 9.761904761904763
+  },
+  {
+    "side_chains": 50,
+    "tps": 85.0,
+    "max_tps": 1710.0800000000002,
+    "improvement_percent": 1214.2857142857142,
+    "vs_bitcoin": 12.142857142857142
+  }
+]

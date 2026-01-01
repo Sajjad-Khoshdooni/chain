@@ -1,0 +1,154 @@
+% !TeX root=main.tex
+%% دو سری دستور زیر باید در اولین فایل پیوست باشند. آنها را حذف نکنید!
+% دستورات لازم برای تبدیل «فصل آ» به «پیوست آ» در فهرست مطالب
+\addtocontents{toc}{
+    \protect\renewcommand\protect\cftchappresnum{\appendixname~}%
+    \protect\setlength{\cftchapnumwidth}{\mylenapp}}
+    
+\let\Chapter\chapter
+% دستورات لازم برای شماره‌گذاری صفحات پیوست‌ها بشکل آ-۱ (فعلا با glossaries سازگار نیست)
+%\pretocmd{\chapter}{
+%  \clearpage
+%  \pagenumbering{arabic}
+%  \renewcommand*{\thepage}{\rl{\thechapter-\arabic{page}}}}{}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% \
+
+\chapter{کدهای پیاده‌سازی}
+
+در این پیوست، بخش‌هایی از کد پیاده‌سازی معماری پیشنهادی با زبان برنامه‌نویسی Rust ارائه شده است. کد کامل در مخزن GitHub پروژه در دسترس است.
+
+\section{ساختار کلی پروژه}
+
+پروژه در زبان Rust پیاده‌سازی شده و شامل ماژول‌های زیر است:
+
+\begin{itemize}
+    \item \texttt{blockchain.rs}: سیستم اصلی بلاکچین
+    \item \texttt{master\_chain.rs}: پیاده‌سازی زنجیره اصلی
+    \item \texttt{side\_chain.rs}: پیاده‌سازی زنجیره‌های جانبی
+    \item \texttt{transaction.rs}: ساختار و مدیریت تراکنش‌ها
+    \item \texttt{utxo.rs}: مدل UTXO و مدیریت آن
+    \item \texttt{miner.rs}: الگوریتم استخراج و تخصیص ماینر
+    \item \texttt{utils.rs}: توابع کمکی و ابزارها
+\end{itemize}
+
+\section{ساختار بلوک}
+
+ساختار اصلی بلوک در زنجیره اصلی به صورت زیر تعریف شده است:
+
+\singlespacing
+\begin{LTR}
+\begin{lstlisting}[language=C++, caption={ساختار بلوک در زنجیره اصلی}, label={code:master_block}]
+pub struct MasterBlock {
+    pub index: u64,
+    pub timestamp: u64,
+    pub references: Vec<SideChainReference>,
+    pub previous_hash: String,
+    pub hash: String,
+    pub nonce: u64,
+    pub difficulty: u32,
+}
+\end{lstlisting}
+\end{LTR}
+\doublespacing
+
+\section{تخصیص تراکنش به زنجیره جانبی}
+
+الگوریتم تخصیص تراکنش‌ها به زنجیره‌های جانبی بر اساس هش UTXO:
+
+\singlespacing
+\begin{LTR}
+\begin{lstlisting}[language=C++, caption={تخصیص تراکنش به زنجیره جانبی}, label={code:tx_assignment}]
+pub fn assign_to_side_chain(
+    utxo_hash: &str,
+    num_side_chains: usize
+) -> usize {
+    let hash_value = u64::from_str_radix(
+        &utxo_hash[..16], 
+        16
+    ).unwrap_or(0);
+    (hash_value as usize) % num_side_chains
+}
+\end{lstlisting}
+\end{LTR}
+\doublespacing
+
+\section{تخصیص ماینر به زنجیره‌های جانبی}
+
+الگوریتم تخصیص ماینرها به دو زنجیره جانبی مختلف:
+
+\singlespacing
+\begin{LTR}
+\begin{lstlisting}[language=C++, caption={تخصیص ماینر به زنجیره‌های جانبی}, label={code:miner_assignment}]
+pub fn assign_miner_to_sidechains(
+    miner_id: u64,
+    num_side_chains: usize
+) -> (usize, usize) {
+    let side_chain_1 = (miner_id as usize) % num_side_chains;
+    let side_chain_2 = ((miner_id as usize) / num_side_chains) 
+                      % num_side_chains;
+    (side_chain_1, side_chain_2)
+}
+\end{lstlisting}
+\end{LTR}
+\doublespacing
+
+\section{محاسبه TPS}
+
+تابع محاسبه تراکنش در ثانیه بر اساس فرمول تئوری:
+
+\singlespacing
+\begin{LTR}
+\begin{lstlisting}[language=Rust, caption={محاسبه TPS}, label={code:tps_calculation}]
+pub fn calculate_tps(
+    master_tx_per_block: u64,
+    side_tx_per_block: u64,
+    num_side_chains: usize,
+    master_block_time: u64,
+    side_block_time: u64
+) -> f64 {
+    let master_tps = master_tx_per_block as f64 
+                     / master_block_time as f64;
+    let side_tps = (side_tx_per_block as f64 
+                    * num_side_chains as f64) 
+                   / side_block_time as f64;
+    master_tps + side_tps
+}
+\end{lstlisting}
+\end{LTR}
+\doublespacing
+
+\section{استخراج بلوک}
+
+الگوریتم استخراج بلوک با استفاده از اثبات کار:
+
+\singlespacing
+\begin{LTR}
+\begin{lstlisting}[language=Rust, caption={استخراج بلوک}, label={code:mining}]
+pub fn mine_block(
+    block: &mut Block,
+    difficulty: u32
+) -> bool {
+    let target = "0".repeat(difficulty as usize);
+    loop {
+        block.nonce += 1;
+        block.hash = calculate_hash(block);
+        if block.hash.starts_with(&target) {
+            return true;
+        }
+    }
+}
+\end{lstlisting}
+\end{LTR}
+\doublespacing
+
+\section{نتیجه‌گیری}
+
+کدهای ارائه شده در این پیوست، بخشی از پیاده‌سازی کامل معماری پیشنهادی است. کد کامل شامل تست‌ها، مستندات و مثال‌های استفاده در مخزن GitHub پروژه در دسترس است.
+
+پیاده‌سازی در Rust انجام شده که مزایای زیر را دارد:
+\begin{itemize}
+    \item عملکرد بالا و مصرف حافظه کم
+    \item امنیت حافظه بدون نیاز به garbage collector
+    \item همزمانی (concurrency) قوی
+    \item سیستم type checking قوی
+\end{itemize}

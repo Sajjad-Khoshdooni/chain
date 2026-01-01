@@ -1,0 +1,77 @@
+% !TeX document-id = {d11ec887-967f-47dd-b58f-2345d0feed09}
+% !TEX TS-program = XeLaTeX
+% Command for running this example (needs latexmkrc file):
+%    latexmk -bibtex -pdf main.tex
+
+%	نمونه پایان‌نامه آماده شده با استفاده از کلاس tehran-thesis، نگارش 1
+%	سینا ممکن، دانشگاه تهران 
+%	https://github.com/sinamomken/tehran-thesis
+%	گروه پارسی‌لاتک
+%	http://www.parsilatex.com
+%	این نسخه، بر اساس نسخه‌ 0.1 از کلاس IUST-Thesis آقای محمود امین‌طوسی آماده شده است.
+%        http://profsite.sttu.ac.ir/mamintoosi
+
+%----------------------------------------------------------------------------------------------
+% اگر قصد نوشتن پروژه کارشناسی را دارید، در خط زیر به جای msc، کلمه bsc و اگر قصد نوشتن رساله دکترا را دارید، کلمه phd را قرار دهید. کلیه تنظیمات لازم، به طور خودکار، اعمال می‌شود.
+
+% اگر مایلید پایان‌نامه شما دورو باشد به جای oneside در خط زیر از twoside استفاده کنید.
+
+% برای حاشیه‌نویسی و کم کردن صفحات ابتدایی، گزینه draft را وارد و برای نسخه نهایی آن را حذف کنید.
+\documentclass[twoside,openany,msc]{tehran-thesis} % draft
+
+% فایل commands.tex را مطالعه کنید؛ چون دستورات مربوط به فراخوانی بسته‌ها، فونت و دستورات خاص در این فایل قرار دارد.
+\input{commands}
+
+% تنظیمات و تعاریف واژه‌نامه و اختصارات
+\input{glossaries-settings}
+\input{words}
+%\input{acronyms}
+
+\begin{document}
+\pagenumbering{adadi} % یک، دو، ...
+% مشخصات پایان‌نامه را در فایلهای faTitle و enTitle وارد نمایید.
+\input{faTitle}
+
+% اگر شما فصل اول  خود را در فایلی به جز chapter1 نوشته‌اید باید چندخط اول آن را در فایل خود کپی کنید.
+\include{chapter1}		% فصل اول: مقدمه
+\include{chapter2-1}		% فصول دوم: مروری بر مطالعات انجام شده
+\include{chapter2-2}
+\include{chapter_architecture}		% فصل سوم: معماری سیستم بلاکچین پیشنهادی
+\include{chapter_results}		% فصل چهارم: نتایج آزمایشات و ارزیابی عملکرد
+\include{chapter_conclusion}		% فصل پنجم: نتیجه‌گیری و کارهای آینده
+%\include{chapter3}		% فصل سوم: روش تحقیق
+%\include{chapter4}		% فصل چهارم: نتایج
+%\include{chapter5}		% فصل پنجم: بحث و نتیجه‌گیری
+\appendix
+\include{appendix1}
+% مراجع
+% اگر از استیل‌های natbib استفاده می‌کنید باید دو خط را در فایل commands.tex تغییر دهید.
+\onehalfspacing
+\bibliographystyle{acm-fa} % or plainnat-fa for author-date
+\bibliography{MyReferences}
+
+\newpage
+\pagestyle{fancy}
+
+
+% فصلهای پس از این قسمت به عنوان ضمیمه خواهند آمد.
+% چندخط اول فایل appendix1 باید در فایل اولین پیوست بیاید.
+		% پیوست اول: آشنایی مقدماتی با لاتک
+%\include{appendix2}		% پیوست دوم: جدول، نمودار و الگوریتم در لاتک
+%\include{appendix3} 	% پیوست سوم: مراجع، واژه‌نامه و حاشیه‌نویسی
+
+% برگرداندن شماره‌بندی صفحات فصول
+
+%\baselineskip=.75cm
+
+% چاپ واژه‌نامه‌ها و نمایه 
+\onehalfspacing
+\let\chapter\Chapter
+\printglossary
+\printindex
+% مشخصات انگلیسی پایان‌نامه
+\pagenumbering{tartibi} % اول، دوم، ...
+\input{enTitle}
+\label{LastPage}
+
+\end{document}

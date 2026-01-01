@@ -1,0 +1,83 @@
+{
+  "timestamp": "2025-12-14T12:11:31.438203",
+  "platform": "Rust",
+  "build_mode": "release",
+  "bitcoin_tps_baseline": 7,
+  "results": [
+    {
+      "config": {
+        "side_chains": 1,
+        "transactions": 50,
+        "rounds": 3
+      },
+      "tps_avg": 44824.86666666667,
+      "tps_median": 45068.72,
+      "tps_stdev": 5474.684658337258,
+      "tps_min": 39232.33,
+      "tps_max": 50173.55,
+      "time_avg": 0.001,
+      "iterations": 3,
+      "vs_bitcoin": 6403.552380952381
+    },
+    {
+      "config": {
+        "side_chains": 2,
+        "transactions": 100,
+        "rounds": 3
+      },
+      "tps_avg": 7619.893333333333,
+      "tps_median": 4890.99,
+      "tps_stdev": 6142.470682488711,
+      "tps_min": 3314.71,
+      "tps_max": 14653.98,
+      "time_avg": 0.019,
+      "iterations": 3,
+      "vs_bitcoin": 1088.5561904761905
+    },
+    {
+      "config": {
+        "side_chains": 3,
+        "transactions": 150,
+        "rounds": 3
+      },
+      "tps_avg": 7049.84,
+      "tps_median": 7113.3,
+      "tps_stdev": 1933.041408325233,
+      "tps_min": 5085.85,
+      "tps_max": 8950.37,
+      "time_avg": 0.022333333333333334,
+      "iterations": 3,
+      "vs_bitcoin": 1007.12
+    },
+    {
+      "config": {
+        "side_chains": 5,
+        "transactions": 250,
+        "rounds": 3
+      },
+      "tps_avg": 13740.696666666667,
+      "tps_median": 13690.88,
+      "tps_stdev": 4102.721840465586,
+      "tps_min": 9663.11,
+      "tps_max": 17868.1,
+      "time_avg": 0.019333333333333334,
+      "iterations": 3,
+      "vs_bitcoin": 1962.9566666666667
+    },
+    {
+      "config": {
+        "side_chains": 10,
+        "transactions": 500,
+        "rounds": 3
+      },
+      "tps_avg": 8934.463333333333,
+      "tps_median": 10117.45,
+      "tps_stdev": 2425.370847320742,
+      "tps_min": 6144.6,
+      "tps_max": 10541.34,
+      "time_avg": 0.059000000000000004,
+      "iterations": 3,
+      "vs_bitcoin": 1276.3519047619047
+    }
+  ]
+}
