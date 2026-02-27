@@ -11,156 +11,156 @@
 \contentsline {subsection}{\numberline {1-3-4}مکانیزم‌های اثبات سهام}{3}{subsection.1.3.4}%
 \contentsline {section}{\numberline {1-4}اهداف پژوهش}{3}{section.1.4}%
 \contentsline {section}{\numberline {1-5}ساختار پایان‌نامه}{4}{section.1.5}%
-\contentsline {chapter}{\numberline {2}مروری بر مطالعات انجام شده}{6}{chapter.2}%
-\contentsline {section}{\numberline {2-1}مقدمه}{6}{section.2.1}%
-\contentsline {section}{\numberline {2-2}بیتکوین و معماری آن}{6}{section.2.2}%
-\contentsline {subsection}{\numberline {2-2-1}الگوریتم اجماع اثبات کار}{6}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2-2-2}محدودیت‌های مقیاس‌پذیری}{7}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2-3}راه‌حل‌های لایه دوم}{7}{section.2.3}%
-\contentsline {subsection}{\numberline {2-3-1}شبکه لایتنینگ}{7}{subsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2-3-1-1}مزایا}{7}{subsubsection.2.3.1.1}%
-\contentsline {subsubsection}{\numberline {2-3-1-2}معایب}{8}{subsubsection.2.3.1.2}%
-\contentsline {subsection}{\numberline {2-3-2}راه‌حل‌های مشابه}{8}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2-4}شاردینگ}{8}{section.2.4}%
-\contentsline {subsection}{\numberline {2-4-1}شاردینگ در اتریوم 2.0}{8}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2-4-2}چالش‌های شاردینگ}{9}{subsection.2.4.2}%
-\contentsline {section}{\numberline {2-5}زنجیره‌های جانبی}{10}{section.2.5}%
-\contentsline {subsection}{\numberline {2-5-1}مفهوم زنجیره جانبی}{10}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2-5-2}نمونه‌های عملی}{10}{subsection.2.5.2}%
-\contentsline {subsubsection}{\numberline {2-5-2-1}RSK \lr {(Rootstock)}}{10}{subsubsection.2.5.2.1}%
-\contentsline {subsubsection}{\numberline {2-5-2-2}Liquid Network}{10}{subsubsection.2.5.2.2}%
-\contentsline {subsection}{\numberline {2-5-3}مزایا و معایب}{10}{subsection.2.5.3}%
-\contentsline {subsubsection}{\numberline {2-5-3-1}مزایا}{10}{subsubsection.2.5.3.1}%
-\contentsline {subsubsection}{\numberline {2-5-3-2}معایب}{11}{subsubsection.2.5.3.2}%
-\contentsline {section}{\numberline {2-6}الگوریتم‌های اجماع جایگزین}{11}{section.2.6}%
-\contentsline {subsection}{\numberline {2-6-1}اثبات سهام \lr {(Proof of Stake)}}{11}{subsection.2.6.1}%
-\contentsline {subsubsection}{\numberline {2-6-1-1}مزایا}{11}{subsubsection.2.6.1.1}%
-\contentsline {subsubsection}{\numberline {2-6-1-2}معایب}{11}{subsubsection.2.6.1.2}%
-\contentsline {subsection}{\numberline {2-6-2}الگوریتم‌های هیبریدی}{12}{subsection.2.6.2}%
-\contentsline {section}{\numberline {2-7}راه‌حل‌های افزایش اندازه بلوک}{12}{section.2.7}%
-\contentsline {subsection}{\numberline {2-7-1}Bitcoin Cash}{12}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2-7-2}مزایا و معایب}{12}{subsection.2.7.2}%
-\contentsline {subsubsection}{\numberline {2-7-2-1}مزایا}{12}{subsubsection.2.7.2.1}%
-\contentsline {subsubsection}{\numberline {2-7-2-2}معایب}{12}{subsubsection.2.7.2.2}%
-\contentsline {section}{\numberline {2-8}مقایسه راه‌حل‌ها}{13}{section.2.8}%
-\contentsline {section}{\numberline {2-9}خلاصه و نتیجه‌گیری}{13}{section.2.9}%
-\contentsline {chapter}{\numberline {3}معماری سیستم بلاکچین پیشنهادی}{15}{chapter.3}%
-\contentsline {section}{\numberline {3-1}مقدمه}{15}{section.3.1}%
-\contentsline {section}{\numberline {3-2}معماری کلی سیستم}{15}{section.3.2}%
-\contentsline {subsection}{\numberline {3-2-1}زنجیره اصلی \lr {(Master Chain)}}{15}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3-2-2}زنجیره‌های جانبی \lr {(Side Chains)}}{17}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3-3}الگوریتم‌های کلیدی}{17}{section.3.3}%
-\contentsline {subsection}{\numberline {3-3-1}الگوریتم تخصیص تراکنش}{17}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3-3-2}ماژول‌های پیشرفته در پیاده‌سازی}{18}{subsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3-3-2-1}ماژول رمزنگاری \lr {(Crypto Module)}}{19}{subsubsection.3.3.2.1}%
-\contentsline {subsubsection}{\numberline {3-3-2-2}ماژول اجماع \lr {(Consensus Module)}}{19}{subsubsection.3.3.2.2}%
-\contentsline {subsubsection}{\numberline {3-3-2-3}ماژول اعتبارسنجی (Validation Module)}{19}{subsubsection.3.3.2.3}%
-\contentsline {subsubsection}{\numberline {3-3-2-4}ماژول تراکنش بین زنجیره‌ای (Cross-Chain Module)}{19}{subsubsection.3.3.2.4}%
-\contentsline {section}{\numberline {3-4}فرآیند پردازش تراکنش}{20}{section.3.4}%
-\contentsline {section}{\numberline {3-5}مزایای معماری پیشنهادی}{20}{section.3.5}%
-\contentsline {subsection}{\numberline {3-5-1}مقیاص‌پذیری افقی}{20}{subsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3-5-1-1}مدل تئوری}{21}{subsubsection.3.5.1.1}%
-\contentsline {subsubsection}{\numberline {3-5-1-2}نتایج بنچمارک واقعی}{21}{subsubsection.3.5.1.2}%
-\contentsline {subsection}{\numberline {3-5-2}کاهش تاخیر}{22}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3-5-3}حفظ امنیت}{22}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3-5-4}کارایی انرژی}{22}{subsection.3.5.4}%
-\contentsline {section}{\numberline {3-6}محاسبه حداکثر TPS تئوری}{23}{section.3.6}%
-\contentsline {subsection}{\numberline {3-6-1}روش‌شناسی محاسبه}{23}{subsection.3.6.1}%
-\contentsline {subsubsection}{\numberline {3-6-1-1}محدودیت اندازه بلوک}{23}{subsubsection.3.6.1.1}%
-\contentsline {subsubsection}{\numberline {3-6-1-2}محدودیت CPU و اعتبارسنجی}{23}{subsubsection.3.6.1.2}%
-\contentsline {subsubsection}{\numberline {3-6-1-3}محدودیت رمزنگاری}{23}{subsubsection.3.6.1.3}%
-\contentsline {subsubsection}{\numberline {3-6-1-4}تعیین گلوگاه سیستم}{23}{subsubsection.3.6.1.4}%
-\contentsline {subsection}{\numberline {3-6-2}فرمول محاسبه TPS}{24}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3-6-3}نتایج محاسبات تئوری}{25}{subsection.3.6.3}%
-\contentsline {subsection}{\numberline {3-6-4}مقایسه ظرفیت محاسباتی و تئوری شبکه}{26}{subsection.3.6.4}%
-\contentsline {subsection}{\numberline {3-6-5}پتانسیل بهبود}{27}{subsection.3.6.5}%
-\contentsline {section}{\numberline {3-7}چرا یک زنجیره جانبی کافی نیست؟}{27}{section.3.7}%
-\contentsline {subsection}{\numberline {3-7-1}محدودیت‌های یک زنجیره}{27}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3-7-2}راه‌حل: پردازش موازی}{28}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3-7-3}مقایسه رویکردها}{29}{subsection.3.7.3}%
-\contentsline {subsection}{\numberline {3-7-4}هماهنگی بین زنجیره‌ای}{29}{subsection.3.7.4}%
-\contentsline {subsection}{\numberline {3-7-5}امنیت زنجیره‌های جانبی}{29}{subsection.3.7.5}%
-\contentsline {subsection}{\numberline {3-7-6}پیچیدگی پیاده‌سازی}{30}{subsection.3.7.6}%
-\contentsline {section}{\numberline {3-8}جمع‌بندی}{30}{section.3.8}%
-\contentsline {chapter}{\numberline {4}نتایج آزمایشات و ارزیابی عملکرد}{31}{chapter.4}%
-\contentsline {section}{\numberline {4-1}مقدمه}{31}{section.4.1}%
-\contentsline {section}{\numberline {4-2}محیط آزمایش و پارامترها}{32}{section.4.2}%
-\contentsline {subsection}{\numberline {4-2-1}پارامترهای سیستم}{32}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4-2-2}پارامترهای بنچمارک}{32}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4-3}فرمول محاسبه TPS}{33}{section.4.3}%
-\contentsline {section}{\numberline {4-4}نتایج آزمایشات}{34}{section.4.4}%
-\contentsline {subsection}{\numberline {4-4-1}نتایج کامل بنچمارک واقعی}{34}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4-4-2}تحلیل نتایج}{35}{subsection.4.4.2}%
-\contentsline {subsubsection}{\numberline {4-4-2-1}ظرفیت محاسباتی بسیار بالا}{35}{subsubsection.4.4.2.1}%
-\contentsline {subsubsection}{\numberline {4-4-2-2}تاثیر overhead هماهنگی}{35}{subsubsection.4.4.2.2}%
-\contentsline {subsubsection}{\numberline {4-4-2-3}بهبود قابل توجه نسبت به بیتکوین}{36}{subsubsection.4.4.2.3}%
-\contentsline {section}{\numberline {4-5}مقیاس‌پذیری افقی}{36}{section.4.5}%
-\contentsline {section}{\numberline {4-6}محاسبه حداکثر TPS}{37}{section.4.6}%
-\contentsline {subsection}{\numberline {4-6-1}محدودیت‌های فیزیکی}{37}{subsection.4.6.1}%
-\contentsline {subsubsection}{\numberline {4-6-1-1}پهنای باند شبکه}{37}{subsubsection.4.6.1.1}%
-\contentsline {subsubsection}{\numberline {4-6-1-2}قدرت پردازش}{38}{subsubsection.4.6.1.2}%
-\contentsline {subsubsection}{\numberline {4-6-1-3}محدودیت اندازه بلوک}{38}{subsubsection.4.6.1.3}%
-\contentsline {subsection}{\numberline {4-6-2}حداکثر TPS تئوری}{38}{subsection.4.6.2}%
-\contentsline {section}{\numberline {4-7}مقایسه با سایر راه‌حل‌های مقیاس‌پذیری}{39}{section.4.7}%
-\contentsline {section}{\numberline {4-8}تحلیل کارایی انرژی}{39}{section.4.8}%
-\contentsline {section}{\numberline {4-9}آزمایش سناریوهای واقعی}{40}{section.4.9}%
-\contentsline {subsection}{\numberline {4-9-1}سناریو 1: شبکه کوچک {(}\lr {5 زنجیره جانبی}{)}}{40}{subsection.4.9.1}%
-\contentsline {subsection}{\numberline {4-9-2}سناریو 2: شبکه متوسط {(}\lr {20 زنجیره جانبی}{)}}{40}{subsection.4.9.2}%
-\contentsline {subsection}{\numberline {4-9-3}سناریو 3: شبکه بزرگ {(}\lr {50 زنجیره جانبی}{)}}{40}{subsection.4.9.3}%
-\contentsline {section}{\numberline {4-10}تحلیل اقتصادی}{41}{section.4.10}%
-\contentsline {subsection}{\numberline {4-10-1}هزینه تراکنش}{41}{subsection.4.10.1}%
-\contentsline {subsection}{\numberline {4-10-2}بازگشت سرمایه (ROI)}{41}{subsection.4.10.2}%
-\contentsline {section}{\numberline {4-11}جمع‌بندی}{41}{section.4.11}%
-\contentsline {chapter}{\numberline {5}نتیجه‌گیری و کارهای آینده}{43}{chapter.5}%
-\contentsline {section}{\numberline {5-1}خلاصه تحقیق}{43}{section.5.1}%
-\contentsline {subsection}{\numberline {5-1-1}اهداف محقق شده}{43}{subsection.5.1.1}%
-\contentsline {section}{\numberline {5-2}مزایای معماری پیشنهادی}{44}{section.5.2}%
-\contentsline {subsection}{\numberline {5-2-1}مزایای فنی}{44}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5-2-2}مزایای اقتصادی}{45}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5-2-3}مزایای کاربری}{46}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5-3}محدودیت‌ها و چالش‌ها}{46}{section.5.3}%
-\contentsline {subsection}{\numberline {5-3-1}پیچیدگی پیاده‌سازی}{46}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5-3-2}تراکنش‌های بین زنجیره‌ای}{46}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5-3-3}امنیت زنجیره‌های جانبی}{47}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5-3-4}نیازمندی‌های زیرساختی}{47}{subsection.5.3.4}%
-\contentsline {section}{\numberline {5-4}کارهای آینده}{47}{section.5.4}%
-\contentsline {subsection}{\numberline {5-4-1}بهبودهای فنی}{47}{subsection.5.4.1}%
-\contentsline {subsubsection}{\numberline {5-4-1-1}پروتکل تراکنش بین زنجیره‌ای}{47}{subsubsection.5.4.1.1}%
-\contentsline {subsubsection}{\numberline {5-4-1-2}الگوریتم‌های اجماع ترکیبی}{48}{subsubsection.5.4.1.2}%
-\contentsline {subsubsection}{\numberline {5-4-1-3}مدیریت دینامیک زنجیره‌های جانبی}{48}{subsubsection.5.4.1.3}%
-\contentsline {subsubsection}{\numberline {5-4-1-4}بهبود کارایی انرژی}{48}{subsubsection.5.4.1.4}%
-\contentsline {subsection}{\numberline {5-4-2}پیاده‌سازی و تست}{48}{subsection.5.4.2}%
-\contentsline {subsubsection}{\numberline {5-4-2-1}پیاده‌سازی کامل}{48}{subsubsection.5.4.2.1}%
-\contentsline {subsubsection}{\numberline {5-4-2-2}تست شبکه}{49}{subsubsection.5.4.2.2}%
-\contentsline {subsubsection}{\numberline {5-4-2-3}بنچمارک پیشرفته}{49}{subsubsection.5.4.2.3}%
-\contentsline {subsubsection}{\numberline {5-4-2-4}افزودن ویژگی‌های پیشرفته}{49}{subsubsection.5.4.2.4}%
-\contentsline {subsection}{\numberline {5-4-3}کاربردهای تجاری}{50}{subsection.5.4.3}%
-\contentsline {subsubsection}{\numberline {5-4-3-1}سیستم پرداخت}{50}{subsubsection.5.4.3.1}%
-\contentsline {subsubsection}{\numberline {5-4-3-2}قراردادهای هوشمند}{50}{subsubsection.5.4.3.2}%
-\contentsline {subsubsection}{\numberline {5-4-3-3}برنامه‌های غیرمتمرکز (DApps)}{50}{subsubsection.5.4.3.3}%
-\contentsline {subsection}{\numberline {5-4-4}تحقیقات نظری}{51}{subsection.5.4.4}%
-\contentsline {subsubsection}{\numberline {5-4-4-1}تحلیل امنیت رسمی}{51}{subsubsection.5.4.4.1}%
-\contentsline {subsubsection}{\numberline {5-4-4-2}بهینه‌سازی پارامترها}{51}{subsubsection.5.4.4.2}%
-\contentsline {subsubsection}{\numberline {5-4-4-3}تحلیل اقتصادی}{51}{subsubsection.5.4.4.3}%
-\contentsline {section}{\numberline {5-5}کاربردهای بالقوه}{51}{section.5.5}%
-\contentsline {subsection}{\numberline {5-5-1}حوزه مالی}{52}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5-5-2}زنجیره تامین}{52}{subsection.5.5.2}%
-\contentsline {subsection}{\numberline {5-5-3}دولت الکترونیک}{52}{subsection.5.5.3}%
-\contentsline {subsection}{\numberline {5-5-4}اینترنت اشیا (IoT)}{52}{subsection.5.5.4}%
-\contentsline {section}{\numberline {5-6}تاثیر اجتماعی و اقتصادی}{53}{section.5.6}%
-\contentsline {subsection}{\numberline {5-6-1}دموکراتیزه کردن سیستم‌های مالی}{53}{subsection.5.6.1}%
-\contentsline {subsection}{\numberline {5-6-2}کاهش واسطه‌ها}{53}{subsection.5.6.2}%
-\contentsline {subsection}{\numberline {5-6-3}شفافیت و مسئولیت‌پذیری}{53}{subsection.5.6.3}%
-\contentsline {section}{\numberline {5-7}نتیجه‌گیری نهایی}{53}{section.5.7}%
-\contentsline {subsection}{\numberline {5-7-1}پیام نهایی}{54}{subsection.5.7.1}%
+\contentsline {chapter}{\numberline {2}مروری بر مطالعات انجام شده}{5}{chapter.2}%
+\contentsline {section}{\numberline {2-1}مقدمه}{5}{section.2.1}%
+\contentsline {section}{\numberline {2-2}بیتکوین و معماری آن}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2-2-1}الگوریتم اجماع اثبات کار}{5}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2-2-2}محدودیت‌های مقیاس‌پذیری}{6}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2-3}راه‌حل‌های لایه دوم}{6}{section.2.3}%
+\contentsline {subsection}{\numberline {2-3-1}شبکه لایتنینگ}{6}{subsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2-3-1-1}مزایا}{6}{subsubsection.2.3.1.1}%
+\contentsline {subsubsection}{\numberline {2-3-1-2}معایب}{7}{subsubsection.2.3.1.2}%
+\contentsline {subsection}{\numberline {2-3-2}راه‌حل‌های مشابه}{7}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2-4}شاردینگ}{7}{section.2.4}%
+\contentsline {subsection}{\numberline {2-4-1}شاردینگ در اتریوم 2.0}{7}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2-4-2}چالش‌های شاردینگ}{8}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2-5}زنجیره‌های جانبی}{9}{section.2.5}%
+\contentsline {subsection}{\numberline {2-5-1}مفهوم زنجیره جانبی}{9}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2-5-2}نمونه‌های عملی}{9}{subsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2-5-2-1}RSK \lr {(Rootstock)}}{9}{subsubsection.2.5.2.1}%
+\contentsline {subsubsection}{\numberline {2-5-2-2}Liquid Network}{9}{subsubsection.2.5.2.2}%
+\contentsline {subsection}{\numberline {2-5-3}مزایا و معایب}{9}{subsection.2.5.3}%
+\contentsline {subsubsection}{\numberline {2-5-3-1}مزایا}{9}{subsubsection.2.5.3.1}%
+\contentsline {subsubsection}{\numberline {2-5-3-2}معایب}{10}{subsubsection.2.5.3.2}%
+\contentsline {section}{\numberline {2-6}الگوریتم‌های اجماع جایگزین}{10}{section.2.6}%
+\contentsline {subsection}{\numberline {2-6-1}اثبات سهام \lr {(Proof of Stake)}}{10}{subsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2-6-1-1}مزایا}{10}{subsubsection.2.6.1.1}%
+\contentsline {subsubsection}{\numberline {2-6-1-2}معایب}{10}{subsubsection.2.6.1.2}%
+\contentsline {subsection}{\numberline {2-6-2}الگوریتم‌های هیبریدی}{11}{subsection.2.6.2}%
+\contentsline {section}{\numberline {2-7}راه‌حل‌های افزایش اندازه بلوک}{11}{section.2.7}%
+\contentsline {subsection}{\numberline {2-7-1}Bitcoin Cash}{11}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2-7-2}مزایا و معایب}{11}{subsection.2.7.2}%
+\contentsline {subsubsection}{\numberline {2-7-2-1}مزایا}{11}{subsubsection.2.7.2.1}%
+\contentsline {subsubsection}{\numberline {2-7-2-2}معایب}{11}{subsubsection.2.7.2.2}%
+\contentsline {section}{\numberline {2-8}مقایسه راه‌حل‌ها}{12}{section.2.8}%
+\contentsline {section}{\numberline {2-9}خلاصه و نتیجه‌گیری}{12}{section.2.9}%
+\contentsline {chapter}{\numberline {3}معماری سیستم بلاکچین پیشنهادی}{14}{chapter.3}%
+\contentsline {section}{\numberline {3-1}مقدمه}{14}{section.3.1}%
+\contentsline {section}{\numberline {3-2}معماری کلی سیستم}{14}{section.3.2}%
+\contentsline {subsection}{\numberline {3-2-1}زنجیره اصلی \lr {(Master Chain)}}{14}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3-2-2}زنجیره‌های جانبی \lr {(Side Chains)}}{16}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3-3}الگوریتم‌های کلیدی}{16}{section.3.3}%
+\contentsline {subsection}{\numberline {3-3-1}الگوریتم تخصیص تراکنش}{16}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3-3-2}ماژول‌های پیشرفته در پیاده‌سازی}{17}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3-3-2-1}ماژول رمزنگاری \lr {(Crypto Module)}}{18}{subsubsection.3.3.2.1}%
+\contentsline {subsubsection}{\numberline {3-3-2-2}ماژول اجماع \lr {(Consensus Module)}}{18}{subsubsection.3.3.2.2}%
+\contentsline {subsubsection}{\numberline {3-3-2-3}ماژول اعتبارسنجی (Validation Module)}{18}{subsubsection.3.3.2.3}%
+\contentsline {subsubsection}{\numberline {3-3-2-4}ماژول تراکنش بین زنجیره‌ای (Cross-Chain Module)}{18}{subsubsection.3.3.2.4}%
+\contentsline {section}{\numberline {3-4}فرآیند پردازش تراکنش}{19}{section.3.4}%
+\contentsline {section}{\numberline {3-5}مزایای معماری پیشنهادی}{19}{section.3.5}%
+\contentsline {subsection}{\numberline {3-5-1}مقیاص‌پذیری افقی}{19}{subsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3-5-1-1}مدل تئوری}{20}{subsubsection.3.5.1.1}%
+\contentsline {subsubsection}{\numberline {3-5-1-2}نتایج بنچمارک واقعی}{20}{subsubsection.3.5.1.2}%
+\contentsline {subsection}{\numberline {3-5-2}کاهش تاخیر}{21}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3-5-3}حفظ امنیت}{21}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3-5-4}کارایی انرژی}{21}{subsection.3.5.4}%
+\contentsline {section}{\numberline {3-6}محاسبه حداکثر TPS تئوری}{22}{section.3.6}%
+\contentsline {subsection}{\numberline {3-6-1}روش‌شناسی محاسبه}{22}{subsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3-6-1-1}محدودیت اندازه بلوک}{22}{subsubsection.3.6.1.1}%
+\contentsline {subsubsection}{\numberline {3-6-1-2}محدودیت CPU و اعتبارسنجی}{22}{subsubsection.3.6.1.2}%
+\contentsline {subsubsection}{\numberline {3-6-1-3}محدودیت رمزنگاری}{22}{subsubsection.3.6.1.3}%
+\contentsline {subsubsection}{\numberline {3-6-1-4}تعیین گلوگاه سیستم}{22}{subsubsection.3.6.1.4}%
+\contentsline {subsection}{\numberline {3-6-2}فرمول محاسبه TPS}{23}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3-6-3}نتایج محاسبات تئوری}{24}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3-6-4}مقایسه ظرفیت محاسباتی و تئوری شبکه}{25}{subsection.3.6.4}%
+\contentsline {subsection}{\numberline {3-6-5}پتانسیل بهبود}{26}{subsection.3.6.5}%
+\contentsline {section}{\numberline {3-7}چرا یک زنجیره جانبی کافی نیست؟}{26}{section.3.7}%
+\contentsline {subsection}{\numberline {3-7-1}محدودیت‌های یک زنجیره}{26}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3-7-2}راه‌حل: پردازش موازی}{27}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3-7-3}مقایسه رویکردها}{28}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3-7-4}هماهنگی بین زنجیره‌ای}{28}{subsection.3.7.4}%
+\contentsline {subsection}{\numberline {3-7-5}امنیت زنجیره‌های جانبی}{28}{subsection.3.7.5}%
+\contentsline {subsection}{\numberline {3-7-6}پیچیدگی پیاده‌سازی}{29}{subsection.3.7.6}%
+\contentsline {section}{\numberline {3-8}جمع‌بندی}{29}{section.3.8}%
+\contentsline {chapter}{\numberline {4}نتایج آزمایشات و ارزیابی عملکرد}{30}{chapter.4}%
+\contentsline {section}{\numberline {4-1}مقدمه}{30}{section.4.1}%
+\contentsline {section}{\numberline {4-2}محیط آزمایش و پارامترها}{31}{section.4.2}%
+\contentsline {subsection}{\numberline {4-2-1}پارامترهای سیستم}{31}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4-2-2}پارامترهای بنچمارک}{31}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4-3}فرمول محاسبه TPS}{32}{section.4.3}%
+\contentsline {section}{\numberline {4-4}نتایج آزمایشات}{33}{section.4.4}%
+\contentsline {subsection}{\numberline {4-4-1}نتایج کامل بنچمارک واقعی}{33}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4-4-2}تحلیل نتایج}{34}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4-4-2-1}ظرفیت محاسباتی بسیار بالا}{34}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4-4-2-2}تاثیر overhead هماهنگی}{34}{subsubsection.4.4.2.2}%
+\contentsline {subsubsection}{\numberline {4-4-2-3}بهبود قابل توجه نسبت به بیتکوین}{35}{subsubsection.4.4.2.3}%
+\contentsline {section}{\numberline {4-5}مقیاس‌پذیری افقی}{35}{section.4.5}%
+\contentsline {section}{\numberline {4-6}محاسبه حداکثر TPS}{36}{section.4.6}%
+\contentsline {subsection}{\numberline {4-6-1}محدودیت‌های فیزیکی}{36}{subsection.4.6.1}%
+\contentsline {subsubsection}{\numberline {4-6-1-1}پهنای باند شبکه}{36}{subsubsection.4.6.1.1}%
+\contentsline {subsubsection}{\numberline {4-6-1-2}قدرت پردازش}{37}{subsubsection.4.6.1.2}%
+\contentsline {subsubsection}{\numberline {4-6-1-3}محدودیت اندازه بلوک}{37}{subsubsection.4.6.1.3}%
+\contentsline {subsection}{\numberline {4-6-2}حداکثر TPS تئوری}{37}{subsection.4.6.2}%
+\contentsline {section}{\numberline {4-7}مقایسه با سایر راه‌حل‌های مقیاس‌پذیری}{38}{section.4.7}%
+\contentsline {section}{\numberline {4-8}تحلیل کارایی انرژی}{38}{section.4.8}%
+\contentsline {section}{\numberline {4-9}آزمایش سناریوهای واقعی}{39}{section.4.9}%
+\contentsline {subsection}{\numberline {4-9-1}سناریو 1: شبکه کوچک {(}\lr {5 زنجیره جانبی}{)}}{39}{subsection.4.9.1}%
+\contentsline {subsection}{\numberline {4-9-2}سناریو 2: شبکه متوسط {(}\lr {20 زنجیره جانبی}{)}}{39}{subsection.4.9.2}%
+\contentsline {subsection}{\numberline {4-9-3}سناریو 3: شبکه بزرگ {(}\lr {50 زنجیره جانبی}{)}}{39}{subsection.4.9.3}%
+\contentsline {section}{\numberline {4-10}تحلیل اقتصادی}{40}{section.4.10}%
+\contentsline {subsection}{\numberline {4-10-1}هزینه تراکنش}{40}{subsection.4.10.1}%
+\contentsline {subsection}{\numberline {4-10-2}بازگشت سرمایه (ROI)}{40}{subsection.4.10.2}%
+\contentsline {section}{\numberline {4-11}جمع‌بندی}{40}{section.4.11}%
+\contentsline {chapter}{\numberline {5}نتیجه‌گیری و کارهای آینده}{42}{chapter.5}%
+\contentsline {section}{\numberline {5-1}خلاصه تحقیق}{42}{section.5.1}%
+\contentsline {subsection}{\numberline {5-1-1}اهداف محقق شده}{42}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5-2}مزایای معماری پیشنهادی}{43}{section.5.2}%
+\contentsline {subsection}{\numberline {5-2-1}مزایای فنی}{43}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5-2-2}مزایای اقتصادی}{44}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5-2-3}مزایای کاربری}{45}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5-3}محدودیت‌ها و چالش‌ها}{45}{section.5.3}%
+\contentsline {subsection}{\numberline {5-3-1}پیچیدگی پیاده‌سازی}{45}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5-3-2}تراکنش‌های بین زنجیره‌ای}{45}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5-3-3}امنیت زنجیره‌های جانبی}{46}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5-3-4}نیازمندی‌های زیرساختی}{46}{subsection.5.3.4}%
+\contentsline {section}{\numberline {5-4}کارهای آینده}{46}{section.5.4}%
+\contentsline {subsection}{\numberline {5-4-1}بهبودهای فنی}{46}{subsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5-4-1-1}پروتکل تراکنش بین زنجیره‌ای}{46}{subsubsection.5.4.1.1}%
+\contentsline {subsubsection}{\numberline {5-4-1-2}الگوریتم‌های اجماع ترکیبی}{47}{subsubsection.5.4.1.2}%
+\contentsline {subsubsection}{\numberline {5-4-1-3}مدیریت دینامیک زنجیره‌های جانبی}{47}{subsubsection.5.4.1.3}%
+\contentsline {subsubsection}{\numberline {5-4-1-4}بهبود کارایی انرژی}{47}{subsubsection.5.4.1.4}%
+\contentsline {subsection}{\numberline {5-4-2}پیاده‌سازی و تست}{47}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5-4-2-1}پیاده‌سازی کامل}{47}{subsubsection.5.4.2.1}%
+\contentsline {subsubsection}{\numberline {5-4-2-2}تست شبکه}{48}{subsubsection.5.4.2.2}%
+\contentsline {subsubsection}{\numberline {5-4-2-3}بنچمارک پیشرفته}{48}{subsubsection.5.4.2.3}%
+\contentsline {subsubsection}{\numberline {5-4-2-4}افزودن ویژگی‌های پیشرفته}{48}{subsubsection.5.4.2.4}%
+\contentsline {subsection}{\numberline {5-4-3}کاربردهای تجاری}{49}{subsection.5.4.3}%
+\contentsline {subsubsection}{\numberline {5-4-3-1}سیستم پرداخت}{49}{subsubsection.5.4.3.1}%
+\contentsline {subsubsection}{\numberline {5-4-3-2}قراردادهای هوشمند}{49}{subsubsection.5.4.3.2}%
+\contentsline {subsubsection}{\numberline {5-4-3-3}برنامه‌های غیرمتمرکز (DApps)}{49}{subsubsection.5.4.3.3}%
+\contentsline {subsection}{\numberline {5-4-4}تحقیقات نظری}{50}{subsection.5.4.4}%
+\contentsline {subsubsection}{\numberline {5-4-4-1}تحلیل امنیت رسمی}{50}{subsubsection.5.4.4.1}%
+\contentsline {subsubsection}{\numberline {5-4-4-2}بهینه‌سازی پارامترها}{50}{subsubsection.5.4.4.2}%
+\contentsline {subsubsection}{\numberline {5-4-4-3}تحلیل اقتصادی}{50}{subsubsection.5.4.4.3}%
+\contentsline {section}{\numberline {5-5}کاربردهای بالقوه}{50}{section.5.5}%
+\contentsline {subsection}{\numberline {5-5-1}حوزه مالی}{51}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5-5-2}زنجیره تامین}{51}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5-5-3}دولت الکترونیک}{51}{subsection.5.5.3}%
+\contentsline {subsection}{\numberline {5-5-4}اینترنت اشیا (IoT)}{51}{subsection.5.5.4}%
+\contentsline {section}{\numberline {5-6}تاثیر اجتماعی و اقتصادی}{52}{section.5.6}%
+\contentsline {subsection}{\numberline {5-6-1}دموکراتیزه کردن سیستم‌های مالی}{52}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5-6-2}کاهش واسطه‌ها}{52}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {5-6-3}شفافیت و مسئولیت‌پذیری}{52}{subsection.5.6.3}%
+\contentsline {section}{\numberline {5-7}نتیجه‌گیری نهایی}{52}{section.5.7}%
+\contentsline {subsection}{\numberline {5-7-1}پیام نهایی}{53}{subsection.5.7.1}%
  \renewcommand \cftchappresnum {پیوست~}\setlength {\cftchapnumwidth }{\mylenapp }
-\contentsline {chapter}{\numberline {آ}کدهای پیاده‌سازی}{56}{appendix.Alph1}%
-\contentsline {section}{\numberline {آ-1}ساختار کلی پروژه}{56}{section.Alph1.1}%
-\contentsline {section}{\numberline {آ-2}ساختار بلوک}{57}{section.Alph1.2}%
-\contentsline {section}{\numberline {آ-3}تخصیص تراکنش به زنجیره جانبی}{57}{section.Alph1.3}%
-\contentsline {section}{\numberline {آ-4}تخصیص ماینر به زنجیره‌های جانبی}{58}{section.Alph1.4}%
-\contentsline {section}{\numberline {آ-5}محاسبه TPS}{58}{section.Alph1.5}%
-\contentsline {section}{\numberline {آ-6}استخراج بلوک}{59}{section.Alph1.6}%
-\contentsline {section}{\numberline {آ-7}نتیجه‌گیری}{59}{section.Alph1.7}%
-\contentsline {chapter}{واژه نامه فارسی به انگلیسی}{60}{section.Alph1.7}%
-\contentsline {chapter}{واژه نامه انگلیسی به فارسی}{63}{section*.40}%
+\contentsline {chapter}{\numberline {آ}کدهای پیاده‌سازی}{55}{appendix.Alph1}%
+\contentsline {section}{\numberline {آ-1}ساختار کلی پروژه}{55}{section.Alph1.1}%
+\contentsline {section}{\numberline {آ-2}ساختار بلوک}{56}{section.Alph1.2}%
+\contentsline {section}{\numberline {آ-3}تخصیص تراکنش به زنجیره جانبی}{56}{section.Alph1.3}%
+\contentsline {section}{\numberline {آ-4}تخصیص ماینر به زنجیره‌های جانبی}{57}{section.Alph1.4}%
+\contentsline {section}{\numberline {آ-5}محاسبه TPS}{57}{section.Alph1.5}%
+\contentsline {section}{\numberline {آ-6}استخراج بلوک}{58}{section.Alph1.6}%
+\contentsline {section}{\numberline {آ-7}نتیجه‌گیری}{58}{section.Alph1.7}%
+\contentsline {chapter}{واژه نامه فارسی به انگلیسی}{59}{section.Alph1.7}%
+\contentsline {chapter}{واژه نامه انگلیسی به فارسی}{62}{section*.40}%

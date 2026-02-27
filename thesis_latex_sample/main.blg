@@ -9,14 +9,14 @@ A level-1 auxiliary file: chapter_results.aux
 A level-1 auxiliary file: chapter_conclusion.aux
 A level-1 auxiliary file: appendix1.aux
 I couldn't open style file acm-fa.bst
----line 42 of file main.aux
+---line 45 of file main.aux
  : \bibstyle{acm-fa
  :                 }
 I'm skipping whatever remains of this command
 I found no style file---while reading file main.aux
-You've used 5 entries,
+You've used 4 entries,
             0 wiz_defined-function locations,
-            98 strings with 700 characters,
+            96 strings with 680 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0

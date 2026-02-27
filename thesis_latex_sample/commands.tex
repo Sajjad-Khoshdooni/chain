@@ -6,7 +6,11 @@
 %\makeatother
 % در ورژن جدید زی‌پرشین برای تایپ متن‌های ریاضی، این سه بسته، حتماً باید فراخوانی شود
 
-\usepackage[top=40mm, bottom=40mm, left=25mm, right=35mm]{geometry}
+\usepackage[top=40mm, bottom=40mm, left=25mm, right=35mm, headheight=15pt]{geometry}
+% رفع خطای UseMathForPositioningText در bidi برای جداول فارسی
+\makeatletter
+\providecommand{\UseMathForPositioningText}{}
+\makeatother
 % بسته‌‌ای برای ظاهر شدن شکل‌ها و تعیین آدرس تصاویر
 \usepackage[final]{graphicx}
 \graphicspath{{./img/}}
@@ -137,7 +141,7 @@ pdfdirection={R2L}
 \renewcommand{\@todonotes@MissingFigureDown}{جاافتاده}
 \makeatother
 % دستوری برای حذف کلمه «چکیده»
-\renewcommand{\abstractname}{}
+\providecommand{\abstractname}{}
 % دستوری برای حذف کلمه «abstract»
 %\renewcommand{\latinabstract}{}
 % دستوری برای تغییر نام کلمه «اثبات» به «برهان»
