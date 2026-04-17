@@ -73,4 +73,4 @@
 \contentsline {section}{\numberline {آ-6}استخراج بلوک}{35}{section.Alph1.6}%
 \contentsline {section}{\numberline {آ-7}نتیجه‌گیری}{35}{section.Alph1.7}%
 \contentsline {chapter}{واژه نامه فارسی به انگلیسی}{37}{section.Alph1.7}%
-\contentsline {chapter}{واژه نامه انگلیسی به فارسی}{39}{section*.21}%
+\contentsline {chapter}{واژه نامه انگلیسی به فارسی}{38}{appendix*.18}%
