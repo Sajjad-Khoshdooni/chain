@@ -15,7 +15,10 @@
 
 \begin{latin}
 \begin{equation}
-MasterBlock = \{index, timestamp, references, previous\_hash, hash, nonce, difficulty\}
+\begin{split}
+\text{MasterBlock} = \bigl\{ &\text{index},\ \text{timestamp},\ \text{references},\ \text{previous\_hash}, \\
+&\text{hash},\ \text{nonce},\ \text{difficulty} \bigr\}
+\end{split}
 \end{equation}
 \end{latin}
 
@@ -27,7 +30,10 @@ MasterBlock = \{index, timestamp, references, previous\_hash, hash, nonce, diffi
 
 \begin{latin}
 \begin{equation}
-SideChainBlock = \{index, side\_chain\_id, timestamp, transactions, previous\_hash, parent\_master\_hash, hash, nonce\}
+\begin{split}
+\text{SideChainBlock} = \bigl\{ &\text{index},\ \text{side\_chain\_id},\ \text{timestamp},\ \text{transactions}, \\
+&\text{previous\_hash},\ \text{parent\_master\_hash},\ \text{hash},\ \text{nonce} \bigr\}
+\end{split}
 \end{equation}
 \end{latin}
 
@@ -46,7 +52,7 @@ SideChainBlock = \{index, side\_chain\_id, timestamp, transactions, previous\_ha
 
 \begin{latin}
 \begin{equation}
-side\_chain\_id = numeric\_hash(UTXO) \bmod N
+\text{side\_chain\_id} = \text{numeric\_hash}(\text{UTXO}) \bmod N
 \end{equation}
 \end{latin}
 
@@ -67,7 +73,7 @@ side\_chain\_id = numeric\_hash(UTXO) \bmod N
 
 \section{مزایای معماری پیشنهادی}
 
-\subsection{مقیاص‌پذیری افقی}
+\subsection{مقیاس‌پذیری افقی}
 
 یکی از مهم‌ترین مزایای این معماری، قابلیت مقیاس‌پذیری افقی است. با افزایش تعداد زنجیره‌های جانبی، ظرفیت کل شبکه به صورت خطی افزایش می‌یابد.
 
@@ -110,7 +116,10 @@ TPS_{theoretical} = \frac{M}{T_m} + \frac{N \times S}{T_s}
 
 \begin{latin}
 \begin{equation}
-Max\_Tx\_Per\_Block = \frac{Block\_Size}{Avg\_Tx\_Size} = \frac{1,048,576}{250} = 4,194
+\begin{split}
+\text{Max\_Tx\_Per\_Block} &= \frac{\text{Block\_Size}}{\text{Avg\_Tx\_Size}} = \frac{1{,}048{,}576}{250} \\
+&= 4{,}194
+\end{split}
 \end{equation}
 \end{latin}
 
@@ -118,7 +127,10 @@ Max\_Tx\_Per\_Block = \frac{Block\_Size}{Avg\_Tx\_Size} = \frac{1,048,576}{250} 
 
 \begin{latin}
 \begin{equation}
-Max\_Tx\_CPU = \frac{Block\_Time}{Validation\_Time} = \frac{60,000 ms}{0.1 ms} = 600,000
+\begin{split}
+\text{Max\_Tx\_CPU} &= \frac{\text{Block\_Time}}{\text{Validation\_Time}} = \frac{60{,}000\ \text{ms}}{0.1\ \text{ms}} \\
+&= 600{,}000
+\end{split}
 \end{equation}
 \end{latin}
 
@@ -126,7 +138,7 @@ Max\_Tx\_CPU = \frac{Block\_Time}{Validation\_Time} = \frac{60,000 ms}{0.1 ms} =
 
 \begin{latin}
 \begin{equation}
-Max\_Tx\_Crypto = \frac{60,000 ms}{0.5 ms} = 120,000
+\text{Max\_Tx\_Crypto} = \frac{60{,}000\ \text{ms}}{0.5\ \text{ms}} = 120{,}000
 \end{equation}
 \end{latin}
 
@@ -134,7 +146,10 @@ Max\_Tx\_Crypto = \frac{60,000 ms}{0.5 ms} = 120,000
 
 \begin{latin}
 \begin{equation}
-Bottleneck = \min(4,194, 600,000, 120,000, ...) = 4,194
+\begin{split}
+\text{Bottleneck} &= \min(4{,}194,\ 600{,}000,\ 120{,}000,\ \ldots) \\
+&= 4{,}194
+\end{split}
 \end{equation}
 \end{latin}
 
@@ -210,7 +225,10 @@ TPS_{total} &= 6.99 + (69.90 \times N)
 
 \begin{latin}
 \begin{equation}
-TPS_{1\ chain} = \frac{M}{600} + \frac{1 \times S}{60} = \frac{4194}{600} + \frac{4194}{60} = 6.99 + 69.90 = 76.89
+\begin{split}
+TPS_{\text{1 chain}} &= \frac{M}{600} + \frac{1 \times S}{60} = \frac{4194}{600} + \frac{4194}{60} \\
+&= 6.99 + 69.90 = 76.89
+\end{split}
 \end{equation}
 \end{latin}
 
@@ -220,7 +238,10 @@ TPS_{1\ chain} = \frac{M}{600} + \frac{1 \times S}{60} = \frac{4194}{600} + \fra
 \centering
 \begin{latin}
 \begin{equation}
-TPS_{total} = TPS_{master} + \sum_{i=1}^{N} TPS_{side\_chain\_i} = 6.99 + N \times 69.90
+\begin{split}
+TPS_{\text{total}} &= TPS_{\text{master}} + \sum_{i=1}^{N} TPS_{\text{side}_{i}} \\
+&= 6.99 + N \times 69.90
+\end{split}
 \end{equation}
 \end{latin}
 \caption{فرمول مقیاس‌پذیری افقی: TPS به صورت خطی با تعداد زنجیره‌ها رشد می‌کند}

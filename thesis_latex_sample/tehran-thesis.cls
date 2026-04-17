@@ -358,7 +358,7 @@
 }
 \end{center}
 %\vspace{.5cm}
-هیأت داوران \hspace{1ex} \@projectLabel{} \@degree{} \hspace{1ex} آقای / خانم \@name{} \@surname{} \hspace{1ex} به شماره دانشجویی \@studentID{} \hspace{1ex} در رشته \@subject{} - گرايش \@field{} \hspace{1ex} را در تاريخ 1397/6/31 با عنوان « \@title{} »\\
+هیأت داوران \hspace{1ex} \@projectLabel{} \@degree{} \hspace{1ex} آقای / خانم \@name{} \@surname{} \hspace{1ex} به شماره دانشجویی \@studentID{} \hspace{1ex} در رشته \@subject{} - گرايش \@field{} \hspace{1ex} را در تاريخ \hspace{2.5cm} با عنوان « \@title{} »\\
 \makebox[\textwidth][l]{
 \parbox{0.7\textwidth}{
 \makebox[2cm]{}\hspace{1ex}\makebox[2cm]{به عدد}\makebox[5cm]{به حروف}\\

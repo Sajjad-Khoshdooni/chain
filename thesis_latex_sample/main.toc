@@ -1,6 +1,6 @@
-\contentsline {chapter}{فهرست تصاویر}{ح}{section*.2}%
-\contentsline {chapter}{فهرست جداول}{خ}{section*.3}%
-\contentsline {chapter}{فهرست برنامه‌ها}{د}{section*.3}%
+\contentsline {chapter}{فهرست تصاویر}{ث}{section*.2}%
+\contentsline {chapter}{فهرست جداول}{ج}{section*.3}%
+\contentsline {chapter}{فهرست برنامه‌ها}{چ}{section*.3}%
 \contentsline {chapter}{\numberline {1}مقدمه}{1}{chapter.1}%
 \contentsline {section}{\numberline {1-1}تعریف مسئله}{1}{section.1.1}%
 \contentsline {section}{\numberline {1-2}انگیزه پژوهش}{2}{section.1.2}%
@@ -37,7 +37,7 @@
 \contentsline {subsection}{\numberline {3-3-1}الگوریتم تخصیص تراکنش}{12}{subsection.3.3.1}%
 \contentsline {section}{\numberline {3-4}فرآیند پردازش تراکنش}{14}{section.3.4}%
 \contentsline {section}{\numberline {3-5}مزایای معماری پیشنهادی}{14}{section.3.5}%
-\contentsline {subsection}{\numberline {3-5-1}مقیاص‌پذیری افقی}{14}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3-5-1}مقیاس‌پذیری افقی}{14}{subsection.3.5.1}%
 \contentsline {subsubsection}{\numberline {3-5-1-1}مدل تئوری}{14}{subsubsection.3.5.1.1}%
 \contentsline {section}{\numberline {3-6}محاسبه حداکثر TPS تئوری}{16}{section.3.6}%
 \contentsline {section}{\numberline {3-7}چرا یک زنجیره جانبی کافی نیست؟}{18}{section.3.7}%

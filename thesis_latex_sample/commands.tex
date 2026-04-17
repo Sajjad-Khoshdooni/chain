@@ -24,7 +24,8 @@
 \usepackage{lastpage}
 % بسته‌ٔ لازم برای: ۱. تغییر شماره‌گذاری صفحات پیوست. ۲. تصحیح باگ آدرس وب حاوی '%' در مراجع
 \usepackage{etoolbox}
-% بسته برای تعریف قضیه، تعریف، مثال و ...
+% بسته برای فرمول‌های چندخطی (split، align، …) و تعریف قضیه
+\usepackage{amsmath}
 \usepackage{amsthm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -222,7 +223,7 @@ pdfdirection={R2L}
 \makeatletter
 {\def\thebibliography#1{\chapter*{\refname\@mkboth
    {\uppercase{\refname}}{\uppercase{\refname}}}\list
-   {[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}
+   {\lr{[\@arabic\c@enumiv]}}{\settowidth\labelwidth{\lr{[#1]}}
    \rightmargin\labelwidth
    \advance\rightmargin\labelsep
    \advance\rightmargin\bibindent
@@ -230,7 +231,7 @@ pdfdirection={R2L}
 
    \listparindent \itemindent
    \parsep \z@
-   \usecounter{enumi}}
+   \usecounter{enumiv}}
    \def\newblock{}
    \sloppy
    \sfcode`\.=1000\relax}}
