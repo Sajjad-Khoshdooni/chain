@@ -7,7 +7,7 @@
 %%% ش
 %%% شبکه ...................................... Network
 \newglossarystyle{myFaToEn}{%
-	\renewenvironment{theglossary}{\setlength{\parskip}{0pt}\setlength{\parindent}{0pt}}{}
+	\renewenvironment{theglossary}{\begin{multicols}{2}\setlength{\parskip}{0pt}\setlength{\parindent}{0pt}}{\end{multicols}}
 	% برای جلوگیری از خطوط خالی و کاراکترهای نامعتبر در گروه‌بندی فارسی
 	\renewcommand*{\glsgroupskip}{}
 	\renewcommand*{\glsgroupheading}[1]{}
@@ -26,7 +26,7 @@
 \newglossarystyle{myEntoFa}{%
 	%%% این دستور در حقیقت عملیات گروه‌بندی را انجام می‌دهد. بدین صورت که واژه‌ها در بخش‌های جداگانه گروه‌بندی می‌شوند، 
 	%%% عنوان بخش همان نام حرفی است که هر واژه در آن گروه با آن شروع شده است. 
-	\renewenvironment{theglossary}{\setlength{\parskip}{0pt}\setlength{\parindent}{0pt}}{}
+	\renewenvironment{theglossary}{\begin{multicols}{2}\setlength{\parskip}{0pt}\setlength{\parindent}{0pt}}{\end{multicols}}
 	\renewcommand*{\glsgroupskip}{}
 	\renewcommand*{\glsgroupheading}[1]{}
 	%%% در این دستور نحوه نمایش واژه‌ها می‌آید. در این جا واژه فارسی در سمت راست و واژه انگلیسی در سمت چپ قرار داده شده است، و بین آن با نقطه پر می‌شود. 
@@ -105,15 +105,18 @@
 \newcommand{\printacronyms}{\printabbreviation}
 %%% در این جا محیط هر دو واژه نامه را باز تعریف کرده ایم، تا اولا مشکل قرار دادن صفحه اضافی را حل کنیم، ثانیا عنوان واژه نامه ها را با دستور addcontentlist وارد فهرست مطالب کرده ایم.
 \let\Oldprintglossary\printglossary
+% جلوگیری از رفتار chapter* (و صفحه خالی در حالت twoside) برای عنوان واژه‌نامه‌ها
+\renewcommand*{\glossarysection}[2][]{\section*{#2}}
 \renewcommand{\printglossary}{
 	\let\appendix\relax
+	% جلوگیری از ایجاد صفحه خالی زوج قبل از عنوان واژه‌نامه در حالت دورو
+	\let\cleardoublepage\clearpage
 	%% همه مدخل‌ها را حتی اگر در متن فراخوانی نشده باشند، به واژه‌نامه اضافه کن
 	\glsaddall
 	%% تنظیم کننده فاصله بین خطوط در این قسمت
-	\clearpage
+	% \clearpage  % حذف شد تا صفحه خالی قبل از واژه‌نامه ایجاد نشود
 	%\phantomsection
-	%% این دستور موجب این می‌شود که واژه‌نامه‌ها در  حالت دو ستونی نوشته شود. 
-	\twocolumn{}
+	%% حالت دوستونه در خود استایل واژه‌نامه مدیریت می‌شود (multicols)
 	%% با این دستور عنوان واژه‌نامه به فهرست مطالب اضافه می‌شود. 
 	\addcontentsline{toc}{chapter}{واژه نامه فارسی به انگلیسی}
 	\setglossarystyle{myFaToEn}
@@ -124,6 +127,5 @@
 	\addcontentsline{toc}{chapter}{واژه نامه انگلیسی به فارسی}
 	\setglossarystyle{myEntoFa}
 	\Oldprintglossary[type=english]	
-	\onecolumn{}
 }%
 %%%%%%

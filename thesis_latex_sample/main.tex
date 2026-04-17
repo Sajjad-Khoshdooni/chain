@@ -45,12 +45,14 @@
 \appendix
 \include{appendix1}
 % مراجع
-% اگر از استیل‌های natbib استفاده می‌کنید باید دو خط را در فایل commands.tex تغییر دهید.
-\onehalfspacing
-\bibliographystyle{acm-fa} % یا plainnat-fa؛ اگر خطا داد از plain استفاده کنید
-\bibliography{MyReferences}
+% چون در حال حاضر استناد فعالی وجود ندارد و main.bbl خالی است،
+% چاپ منابع موقتاً غیرفعال شد تا صفحه خالی ایجاد نشود.
+% اگر بعداً استناد اضافه شد، خطوط زیر را دوباره فعال کنید.
+% \onehalfspacing
+% \bibliographystyle{acm-fa} % یا plainnat-fa؛ اگر خطا داد از plain استفاده کنید
+% \bibliography{MyReferences}
 
-\newpage
+% \newpage  % حذف شد تا قبل از واژه‌نامه صفحه خالی ایجاد نشود
 \pagestyle{fancy}
 
 
@@ -66,6 +68,7 @@
 
 % چاپ واژه‌نامه‌ها و نمایه 
 \onehalfspacing
+\let\cleardoublepage\clearpage
 \let\chapter\Chapter
 \printglossary
 \printindex

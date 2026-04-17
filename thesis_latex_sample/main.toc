@@ -72,5 +72,5 @@
 \contentsline {section}{\numberline {آ-5}محاسبه TPS}{34}{section.Alph1.5}%
 \contentsline {section}{\numberline {آ-6}استخراج بلوک}{35}{section.Alph1.6}%
 \contentsline {section}{\numberline {آ-7}نتیجه‌گیری}{35}{section.Alph1.7}%
-\contentsline {chapter}{واژه نامه فارسی به انگلیسی}{37}{section.Alph1.7}%
-\contentsline {chapter}{واژه نامه انگلیسی به فارسی}{38}{appendix*.18}%
+\contentsline {chapter}{واژه نامه فارسی به انگلیسی}{36}{section.Alph1.7}%
+\contentsline {chapter}{واژه نامه انگلیسی به فارسی}{اول}{section*.17}%
