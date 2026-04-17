@@ -110,6 +110,8 @@
 \let\Oldprintglossary\printglossary
 \renewcommand{\printglossary}{
 	\let\appendix\relax
+	%% همه مدخل‌ها را حتی اگر در متن فراخوانی نشده باشند، به واژه‌نامه اضافه کن
+	\glsaddall
 	%% تنظیم کننده فاصله بین خطوط در این قسمت
 	\clearpage
 	%\phantomsection

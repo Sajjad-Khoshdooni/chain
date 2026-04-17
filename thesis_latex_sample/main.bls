@@ -1,253 +1,94 @@
 \glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
-\providecommand*\glsXpageXglsnumberformat[2]{\setentrycounter[#1]{page}\glsnumberformat{#2}}
-\providecommand*\glsXpageXtextrm[2]{\setentrycounter[#1]{page}\textrm{#2}}
-\providecommand*\glsXpageXtextsf[2]{\setentrycounter[#1]{page}\textsf{#2}}
-\providecommand*\glsXpageXtexttt[2]{\setentrycounter[#1]{page}\texttt{#2}}
-\providecommand*\glsXpageXtextbf[2]{\setentrycounter[#1]{page}\textbf{#2}}
-\providecommand*\glsXpageXtextmd[2]{\setentrycounter[#1]{page}\textmd{#2}}
-\providecommand*\glsXpageXtextit[2]{\setentrycounter[#1]{page}\textit{#2}}
-\providecommand*\glsXpageXtextup[2]{\setentrycounter[#1]{page}\textup{#2}}
-\providecommand*\glsXpageXtextsl[2]{\setentrycounter[#1]{page}\textsl{#2}}
-\providecommand*\glsXpageXtextsc[2]{\setentrycounter[#1]{page}\textsc{#2}}
-\providecommand*\glsXpageXemph[2]{\setentrycounter[#1]{page}\emph{#2}}
-\providecommand*\glsXpageXglshypernumber[2]{\setentrycounter[#1]{page}\glshypernumber{#2}}
-\providecommand*\glsXpageXhyperrm[2]{\setentrycounter[#1]{page}\hyperrm{#2}}
-\providecommand*\glsXpageXhypersf[2]{\setentrycounter[#1]{page}\hypersf{#2}}
-\providecommand*\glsXpageXhypertt[2]{\setentrycounter[#1]{page}\hypertt{#2}}
-\providecommand*\glsXpageXhyperbf[2]{\setentrycounter[#1]{page}\hyperbf{#2}}
-\providecommand*\glsXpageXhypermd[2]{\setentrycounter[#1]{page}\hypermd{#2}}
-\providecommand*\glsXpageXhyperit[2]{\setentrycounter[#1]{page}\hyperit{#2}}
-\providecommand*\glsXpageXhyperup[2]{\setentrycounter[#1]{page}\hyperup{#2}}
-\providecommand*\glsXpageXhypersl[2]{\setentrycounter[#1]{page}\hypersl{#2}}
-\providecommand*\glsXpageXhypersc[2]{\setentrycounter[#1]{page}\hypersc{#2}}
-\providecommand*\glsXpageXhyperemph[2]{\setentrycounter[#1]{page}\hyperemph{#2}}
-\providecommand*\glsXpageXglsignore[2]{\setentrycounter[#1]{page}\glsignore{#2}}
 \begin{theglossary}\glossaryheader
-\glsgroupheading{ا}\relax\glsresetentrylist
-\glossentry{f-Adenine}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{12}}}\relax\glsresetentrylist
-\glossentry{f-Linear Regression Testing}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{38}}}\relax\glsresetentrylist
-\glossentry{f-Initiation}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{15}}}\relax\glsresetentrylist
-\glossentry{f-Allele}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{2}\delimN 
-\glsXpageXglsnumberformat{}{8}\delimN 
-\glsXpageXglsnumberformat{}{17}}}\relax\glsresetentrylist
-\glossentry{f-Entropy}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{45}}}\relax\glsresetentrylist
-\glossentry{f-Restriction Enzymes}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{20}}}\relax\glsresetentrylist
-\glossentry{f-Epistasis}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{3}\delimN 
-\glsXpageXglsnumberformat{}{7}\delimN 
-\glsXpageXglsnumberformat{}{24}}}\relax\glsresetentrylist
-\glossentry{f-Termination}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{15}}}\relax\glsresetentrylist
-\glossentry{f-Hidden Association}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{38}}}\relax\glsresetentrylist
-\glossentry{f-Associations}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{35}}}\relax\glsresetentrylist
-\glossentry{f-Bias}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{26}}}\relax\glsresetentrylist
-\glossentry{f-Baysian Inference}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{43}}}\relax\glsresetentrylist
-\glossentry{f-Ribonucleic Acid(RNA)}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{12}}}\relax\glsresetentrylist
-\glossentry{f-Messenger RNA}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{13}}}\relax\glsresetentrylist
-\glossentry{f-Ribosomal RNA}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{13}}}\relax\glsresetentrylist
-\glossentry{f-Transfer RNA}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{13}}}\relax\glsresetentrylist
-\glossentry{f-Metropolis-Hastings Algorithm}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{43}}}\relax\glsresetentrylist
-\glossentry{f-Natural Selection}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{18}}}\relax\glsresetentrylist
-\glossentry{f-Elongation}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{15}}}\relax\glsresetentrylist
-\glossentry{f-Uracil}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{12}}}\relax\glsresetentrylist
-\glossentry{f-Intron}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{4}}}\glsgroupskip
-\glsgroupheading{ب}\relax\glsresetentrylist
-\glossentry{f-Eigenvector}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{35}}}\relax\glsresetentrylist
-\glossentry{f-Non-Parametric Bayes}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{71}}}\relax\glsresetentrylist
-\glossentry{f-Robust Bayesian}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{71}}}\relax\glsresetentrylist
-\glossentry{f-Maximum A Posteriori Probability}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{33}\delimN 
-\glsXpageXglsnumberformat{}{57}}}\relax\glsresetentrylist
-\glossentry{f-Softmax}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{61}\delimN 
-\glsXpageXglsnumberformat{}{73}}}\relax\glsresetentrylist
-\glossentry{f-Bioinformatics}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{1}}}\glsgroupskip
-\glsgroupheading{پ}\relax\glsresetentrylist
-\glossentry{f-Stable}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{72}}}\relax\glsresetentrylist
-\glossentry{f-Human Genome Project}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{25}}}\relax\glsresetentrylist
-\glossentry{f-Posterior Regret Gamma-Minimax}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{72}}}\relax\glsresetentrylist
-\glossentry{f-Conjugate Prior}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{28}\delimN 
-\glsXpageXglsnumberformat{}{44}}}\glsgroupskip
-\glsgroupheading{ت}\relax\glsresetentrylist
-\glossentry{f-Principal Component Analysis}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{9}}}\relax\glsresetentrylist
-\glossentry{f-Translation}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{14}}}\relax\glsresetentrylist
-\glossentry{f-Hardy-Weinberg Equilibrium}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{22}}}\relax\glsresetentrylist
-\glossentry{f-Single Nucleotide Polymorphism}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{1}\delimN 
-\glsXpageXglsnumberformat{}{20}}}\relax\glsresetentrylist
-\glossentry{f-Sequencing}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{1}}}\relax\glsresetentrylist
-\glossentry{f-Posterior Distribution}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{43}}}\relax\glsresetentrylist
-\glossentry{f-Proposal Distribution}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{46}}}\relax\glsresetentrylist
-\glossentry{f-Full Conditional Distribution}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{57}}}\relax\glsresetentrylist
-\glossentry{f-Symmetric Dirichlet Distribution}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{44}}}\relax\glsresetentrylist
-\glossentry{f-Stationary Distribution}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{47}}}\glsgroupskip
-\glsgroupheading{ج}\relax\glsresetentrylist
-\glossentry{f-Exhaustive Search}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{61}\delimN 
-\glsXpageXglsnumberformat{}{71}\delimN 
-\glsXpageXglsnumberformat{}{72}}}\relax\glsresetentrylist
-\glossentry{f-Base Pair}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{11}}}\relax\glsresetentrylist
-\glossentry{f-Mutation}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{19}}}\relax\glsresetentrylist
-\glossentry{f-Somatic Mutations}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{19}}}\glsgroupskip
-\glsgroupheading{چ}\relax\glsresetentrylist
-\glossentry{f-Multinomial}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{28}}}\glsgroupskip
-\glsgroupheading{ح}\relax\glsresetentrylist
-\glossentry{f-Genome-Wide Association Study}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{1}}}\glsgroupskip
-\glsgroupheading{خ}\relax\glsresetentrylist
-\glossentry{f-Disease Risk}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{3}}}\relax\glsresetentrylist
-\glossentry{f-Unsupervised Clustering}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{63}}}\glsgroupskip
-\glsgroupheading{د}\relax\glsresetentrylist
-\glossentry{f-Deoxyribonucleic(DNA)}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{10}}}\relax\glsresetentrylist
-\glossentry{f-Diploid}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{18}}}\glsgroupskip
-\glsgroupheading{ر}\relax\glsresetentrylist
-\glossentry{f-Linear Regression}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{39}}}\relax\glsresetentrylist
-\glossentry{f-Logistic Regression}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{39}}}\relax\glsresetentrylist
-\glossentry{f-Armitage Trend}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{40}}}\glsgroupskip
-\glsgroupheading{ز}\relax\glsresetentrylist
-\glossentry{f-Markov chain Monte Carlo(MCMC)}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{3}}}\glsgroupskip
-\glsgroupheading{ژ}\relax\glsresetentrylist
-\glossentry{f-Genotype}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{16}}}\glsgroupskip
-\glsgroupheading{س}\relax\glsresetentrylist
-\glossentry{f-Cytosine}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{12}}}\relax\glsresetentrylist
-\glossentry{f-System Biology}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{1}}}\glsgroupskip
-\glsgroupheading{ش}\relax\glsresetentrylist
-\glossentry{f-Personalized Medicine}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{3}}}\glsgroupskip
-\glsgroupheading{ع}\relax\glsresetentrylist
-\glossentry{f-Linkage Disequilibrium}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{22}}}\glsgroupskip
-\glsgroupheading{غ}\relax\glsresetentrylist
-\glossentry{f-Non-Replications}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{26}}}\relax\glsresetentrylist
-\glossentry{f-Without-Admixture}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{28}}}\relax\glsresetentrylist
-\glossentry{f-Anti-Parallel}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{11}}}\glsgroupskip
-\glsgroupheading{ف}\relax\glsresetentrylist
-\glossentry{f-Distance-based}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{27}}}\relax\glsresetentrylist
-\glossentry{f-Chinese restaurant process}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{72}}}\relax\glsresetentrylist
-\glossentry{f-MetaAnalysis}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{40}\delimN 
-\glsXpageXglsnumberformat{}{42}}}\relax\glsresetentrylist
-\glossentry{f-Allele Frequency}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{17}}}\relax\glsresetentrylist
-\glossentry{f-Minor Allele Frequency (MAF)}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{8}\delimN 
-\glsXpageXglsnumberformat{}{23}}}\relax\glsresetentrylist
-\glossentry{f-Phenotype}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{16}}}\glsgroupskip
-\glsgroupheading{ک}\relax\glsresetentrylist
-\glossentry{f-Spectral Dimensionality Reduction}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{37}}}\relax\glsresetentrylist
-\glossentry{f-Chromosome}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{11}}}\glsgroupskip
-\glsgroupheading{گ}\relax\glsresetentrylist
-\glossentry{f-Gamma-Minimax}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{72}}}\relax\glsresetentrylist
-\glossentry{f-Guanine}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{12}}}\glsgroupskip
-\glsgroupheading{م}\relax\glsresetentrylist
-\glossentry{f-Double Helix}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{11}}}\relax\glsresetentrylist
-\glossentry{f-Covariates}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{38}}}\relax\glsresetentrylist
-\glossentry{f-False Positive}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{35}\delimN 
-\glsXpageXglsnumberformat{}{41}}}\relax\glsresetentrylist
-\glossentry{f-Parallel Computing}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{62}}}\relax\glsresetentrylist
-\glossentry{f-Restriction Fragment Length Polymorphisms(RFLP)}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{20}}}\relax\glsresetentrylist
-\glossentry{f-Admix}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{2}}}\relax\glsresetentrylist
-\glossentry{f-Admixture}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{1}\delimN 
-\glsXpageXglsnumberformat{}{3}}}\relax\glsresetentrylist
-\glossentry{f-Mixture Model}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{9}\delimN 
-\glsXpageXglsnumberformat{}{38}}}\relax\glsresetentrylist
-\glossentry{f-Probabilistic Graphical Model}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{43}}}\relax\glsresetentrylist
-\glossentry{f-Linear Mixed Models}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{38}}}\relax\glsresetentrylist
-\glossentry{f-Model-based}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{27}}}\relax\glsresetentrylist
-\glossentry{f-Biological Pathway}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{64}}}\relax\glsresetentrylist
-\glossentry{f-Restriction Sites}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{21}}}\relax\glsresetentrylist
-\glossentry{f-Passive}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{13}}}\relax\glsresetentrylist
-\glossentry{f-Case-Control}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{26}}}\relax\glsresetentrylist
-\glossentry{f-Centromere}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{12}}}\glsgroupskip
-\glsgroupheading{ن}\relax\glsresetentrylist
-\glossentry{f-Ancestry}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{26}}}\relax\glsresetentrylist
-\glossentry{f-Marker}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{5}}}\relax\glsresetentrylist
-\glossentry{f-Haplotype Map}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{24}}}\relax\glsresetentrylist
-\glossentry{f-Fisher Score}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{40}}}\relax\glsresetentrylist
-\glossentry{f-Gibbs Sampling}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{43}}}\glsgroupskip
-\glsgroupheading{ی}\relax\glsresetentrylist
-\glossentry{f-Spurious}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{26}}}%
+\glsgroupheading{�}\relax \glsresetentrylist %
+\glossentry{f-PoW}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-Consensus}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-Mempool}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-Mining}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-Validation}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-ECDSA}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-sha256}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-blockSize}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-Blockchain}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-Block}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-Benchmark}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-Bitcoin}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-bitcoinCash}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-byzantineFaultTolerance}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-Transaction}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-crossChainTransaction}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-TPS}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-Throughput}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-releaseMode}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-UTXO}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-API}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-Rust}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-Cryptography}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-wallClockTime}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-masterChain}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-sideChain}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-Difficulty}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-SegWit}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-Mainnet}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-liquidNetwork}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-Decentralization}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}\glsgroupskip
+\glsgroupheading{�}\relax \glsresetentrylist %
+\glossentry{f-Fork}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-smartContract}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-atomicLock}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-Scalability}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-horizontalScalability}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-Nonce}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-Overhead}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-Hash}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-parentMasterHash}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-parallelProcessing}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}\glsgroupskip
+\glsgroupheading{�}\relax \glsresetentrylist %
+\glossentry{f-Checkpoint}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-energyEfficiency}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
+\glossentry{f-Bottleneck}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}}}%
 \end{theglossary}\glossarypostamble

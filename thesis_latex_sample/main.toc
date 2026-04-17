@@ -23,11 +23,11 @@
 \contentsline {subsection}{\numberline {2-5-1}مفهوم زنجیره جانبی}{8}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2-5-2}نمونه‌های عملی}{8}{subsection.2.5.2}%
 \contentsline {subsubsection}{\numberline {2-5-2-1}RSK \lr {(Rootstock)}}{8}{subsubsection.2.5.2.1}%
-\contentsline {subsubsection}{\numberline {2-5-2-2}Liquid Network}{8}{subsubsection.2.5.2.2}%
+\contentsline {subsubsection}{\numberline {2-5-2-2}\hbox {\lr {Liquid Network}}}{8}{subsubsection.2.5.2.2}%
 \contentsline {section}{\numberline {2-6}الگوریتم‌های اجماع جایگزین}{9}{section.2.6}%
 \contentsline {subsection}{\numberline {2-6-1}اثبات سهام \lr {(Proof of Stake)}}{9}{subsection.2.6.1}%
 \contentsline {section}{\numberline {2-7}راه‌حل‌های افزایش اندازه بلوک}{9}{section.2.7}%
-\contentsline {subsection}{\numberline {2-7-1}Bitcoin Cash}{9}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2-7-1}\hbox {\lr {Bitcoin Cash}}}{9}{subsection.2.7.1}%
 \contentsline {section}{\numberline {2-8}مقایسه راه‌حل‌ها}{9}{section.2.8}%
 \contentsline {section}{\numberline {2-9}خلاصه و نتیجه‌گیری}{10}{section.2.9}%
 \contentsline {chapter}{\numberline {3}معماری سیستم بلاکچین پیشنهادی}{11}{chapter.3}%
@@ -72,5 +72,5 @@
 \contentsline {section}{\numberline {آ-5}محاسبه TPS}{34}{section.Alph1.5}%
 \contentsline {section}{\numberline {آ-6}استخراج بلوک}{35}{section.Alph1.6}%
 \contentsline {section}{\numberline {آ-7}نتیجه‌گیری}{35}{section.Alph1.7}%
-\contentsline {chapter}{واژه نامه فارسی به انگلیسی}{36}{section.Alph1.7}%
-\contentsline {chapter}{واژه نامه انگلیسی به فارسی}{39}{section*.40}%
+\contentsline {chapter}{واژه نامه فارسی به انگلیسی}{37}{section.Alph1.7}%
+\contentsline {chapter}{واژه نامه انگلیسی به فارسی}{39}{section*.21}%
