@@ -1,15 +1,16 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2-1}{\ignorespaces مقایسه راه‌حل‌های مقیاس‌پذیری}}{10}{table.caption.4}%
+\contentsline {table}{\numberline {2-1}{\ignorespaces تکسونومی روش‌های مقیاس‌پذیری و مکانیزم افزایش \lr {TPS}}}{9}{table.caption.5}%
+\contentsline {table}{\numberline {2-2}{\ignorespaces مقایسه راه‌حل‌های مقیاس‌پذیری (کیفی)}}{11}{table.caption.6}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3-1}{\ignorespaces نتایج واقعی بنچمارک TPS با پیاده‌سازی Rust (Release Mode)}}{15}{table.caption.6}%
-\contentsline {table}{\numberline {3-2}{\ignorespaces مقیاس‌پذیری شبکه: TPS تئوری برای 1 تا 1000 زنجیره جانبی}}{17}{table.caption.7}%
-\contentsline {table}{\numberline {3-3}{\ignorespaces مقایسه عملکرد واقعی با حداکثر تئوری}}{18}{table.caption.8}%
-\contentsline {table}{\numberline {3-4}{\ignorespaces مقایسه رویکرد تک زنجیره \lr {vs} چند زنجیره}}{19}{table.caption.10}%
+\contentsline {table}{\numberline {3-1}{\ignorespaces مقایسه مقیاس‌پذیری: معماری پیشنهادی در برابر روش‌های مشابه}}{18}{table.caption.8}%
+\contentsline {table}{\numberline {3-2}{\ignorespaces مقیاس‌پذیری شبکه: TPS تئوری برای 1 تا 1000 زنجیره جانبی}}{21}{table.caption.9}%
+\contentsline {table}{\numberline {3-3}{\ignorespaces مقایسه عملکرد واقعی با حداکثر تئوری}}{22}{table.caption.10}%
+\contentsline {table}{\numberline {3-4}{\ignorespaces مقایسه رویکرد تک زنجیره \lr {vs} چند زنجیره}}{24}{table.caption.12}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4-1}{\ignorespaces پارامترهای سیستم}}{22}{table.caption.11}%
-\contentsline {table}{\numberline {4-2}{\ignorespaces نتایج کامل بنچمارک واقعی TPS}}{23}{table.caption.12}%
-\contentsline {table}{\numberline {4-3}{\ignorespaces مقایسه عملکرد با بیتکوین}}{23}{table.caption.13}%
-\contentsline {table}{\numberline {4-4}{\ignorespaces مقایسه با سایر راه‌حل‌های مقیاس‌پذیری}}{26}{table.caption.16}%
+\contentsline {table}{\numberline {4-1}{\ignorespaces پارامترهای سیستم}}{26}{table.caption.13}%
+\contentsline {table}{\numberline {4-2}{\ignorespaces نتایج کامل بنچمارک واقعی TPS}}{27}{table.caption.14}%
+\contentsline {table}{\numberline {4-3}{\ignorespaces مقایسه عملکرد با بیتکوین}}{27}{table.caption.15}%
+\contentsline {table}{\numberline {4-4}{\ignorespaces مقایسه با سایر راه‌حل‌های مقیاس‌پذیری}}{30}{table.caption.18}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

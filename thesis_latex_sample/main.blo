@@ -1,44 +1,44 @@
-\glossaryentry{زمان واقعی اجرا?\glossentry{f-wallClockTime}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{اعتبارسنجی?\glossentry{f-Validation}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{خروجی تراکنش خرج‌نشده?\glossentry{f-UTXO}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{تراکنش در ثانیه?\glossentry{f-TPS}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{تراکنش?\glossentry{f-Transaction}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{توان عملیاتی?\glossentry{f-Throughput}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{بیتکوین کش?\glossentry{f-bitcoinCash}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{قرارداد هوشمند?\glossentry{f-smartContract}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{زنجیره جانبی?\glossentry{f-sideChain}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{الگوریتم هش SHA-256?\glossentry{f-sha256}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{شاهد جداگانه?\glossentry{f-SegWit}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{مقیاس‌پذیری?\glossentry{f-Scalability}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{راست?\glossentry{f-Rust}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{حالت انتشار?\glossentry{f-releaseMode}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{اثبات کار?\glossentry{f-PoW}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{پردازش موازی?\glossentry{f-parallelProcessing}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{هش مرجع زنجیره اصلی?\glossentry{f-parentMasterHash}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{هزینه سربار?\glossentry{f-Overhead}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{نانس?\glossentry{f-Nonce}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{استخراج?\glossentry{f-Mining}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{استخر تراکنش?\glossentry{f-Mempool}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{زنجیره اصلی?\glossentry{f-masterChain}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{شبکه اصلی?\glossentry{f-Mainnet}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{شبکه لیکوئید?\glossentry{f-liquidNetwork}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{مقیاس‌پذیری افقی?\glossentry{f-horizontalScalability}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{هش?\glossentry{f-Hash}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{فورک?\glossentry{f-Fork}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{کارایی انرژی?\glossentry{f-energyEfficiency}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{الگوریتم امضای دیجیتال منحنی بیضوی?\glossentry{f-ECDSA}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{سطح دشواری?\glossentry{f-Difficulty}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{غیرمتمرکز بودن?\glossentry{f-Decentralization}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{رمزنگاری?\glossentry{f-Cryptography}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{تراکنش بین‌زنجیره‌ای?\glossentry{f-crossChainTransaction}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{اجماع?\glossentry{f-Consensus}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{چک‌پوینت?\glossentry{f-Checkpoint}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{تحمل خطای بیزانسی?\glossentry{f-byzantineFaultTolerance}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{گلوگاه?\glossentry{f-Bottleneck}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{اندازه بلوک?\glossentry{f-blockSize}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{بلوک?\glossentry{f-Block}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{بلاکچین?\glossentry{f-Blockchain}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{بیتکوین?\glossentry{f-Bitcoin}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{بنچمارک?\glossentry{f-Benchmark}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{قفل اتمیک?\glossentry{f-atomicLock}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{رابط برنامه‌نویسی کاربردی?\glossentry{f-API}|setentrycounter[]{page}"\glsnumberformat}{36}
+\glossaryentry{زمان واقعی اجرا?\glossentry{f-wallClockTime}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{اعتبارسنجی?\glossentry{f-Validation}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{خروجی تراکنش خرج‌نشده?\glossentry{f-UTXO}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{تراکنش در ثانیه?\glossentry{f-TPS}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{تراکنش?\glossentry{f-Transaction}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{توان عملیاتی?\glossentry{f-Throughput}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{بیتکوین کش?\glossentry{f-bitcoinCash}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{قرارداد هوشمند?\glossentry{f-smartContract}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{زنجیره جانبی?\glossentry{f-sideChain}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{الگوریتم هش SHA-256?\glossentry{f-sha256}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{شاهد جداگانه?\glossentry{f-SegWit}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{مقیاس‌پذیری?\glossentry{f-Scalability}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{راست?\glossentry{f-Rust}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{حالت انتشار?\glossentry{f-releaseMode}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{اثبات کار?\glossentry{f-PoW}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{پردازش موازی?\glossentry{f-parallelProcessing}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{هش مرجع زنجیره اصلی?\glossentry{f-parentMasterHash}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{هزینه سربار?\glossentry{f-Overhead}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{نانس?\glossentry{f-Nonce}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{استخراج?\glossentry{f-Mining}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{استخر تراکنش?\glossentry{f-Mempool}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{زنجیره اصلی?\glossentry{f-masterChain}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{شبکه اصلی?\glossentry{f-Mainnet}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{شبکه لیکوئید?\glossentry{f-liquidNetwork}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{مقیاس‌پذیری افقی?\glossentry{f-horizontalScalability}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{هش?\glossentry{f-Hash}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{فورک?\glossentry{f-Fork}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{کارایی انرژی?\glossentry{f-energyEfficiency}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{الگوریتم امضای دیجیتال منحنی بیضوی?\glossentry{f-ECDSA}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{سطح دشواری?\glossentry{f-Difficulty}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{غیرمتمرکز بودن?\glossentry{f-Decentralization}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{رمزنگاری?\glossentry{f-Cryptography}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{تراکنش بین‌زنجیره‌ای?\glossentry{f-crossChainTransaction}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{اجماع?\glossentry{f-Consensus}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{چک‌پوینت?\glossentry{f-Checkpoint}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{تحمل خطای بیزانسی?\glossentry{f-byzantineFaultTolerance}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{گلوگاه?\glossentry{f-Bottleneck}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{اندازه بلوک?\glossentry{f-blockSize}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{بلوک?\glossentry{f-Block}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{بلاکچین?\glossentry{f-Blockchain}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{بیتکوین?\glossentry{f-Bitcoin}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{بنچمارک?\glossentry{f-Benchmark}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{قفل اتمیک?\glossentry{f-atomicLock}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{رابط برنامه‌نویسی کاربردی?\glossentry{f-API}|setentrycounter[]{page}"\glsnumberformat}{40}

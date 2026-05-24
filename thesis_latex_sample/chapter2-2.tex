@@ -1,4 +1,60 @@
 % !TeX root=main.tex
+\section{تکسونومی روش‌های مقیاس‌پذیری}
+
+برای سامان‌دهی پیشینه پژوهش، روش‌های مقیاس‌پذیری را در چهار خانواده اصلی دسته‌بندی می‌کنیم. شکل \ref{fig:scaling-taxonomy} نمای کلی این تکسونومی را نشان می‌دهد.
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[
+  level 1/.style={sibling distance=5.2cm, level distance=1.6cm},
+  level 2/.style={sibling distance=2.4cm, level distance=1.4cm},
+  every node/.style={rectangle, draw, rounded corners, align=center, font=\small, inner sep=4pt}
+]
+\node {مقیاس‌پذیری بلاکچین}
+  child {node {لایه اول\\$\text{(L1)}$}}
+    child {node {افزایش\\ظرفیت بلوک}}
+    child {node {بلوک\\سریع‌تر}}
+    child {node {تغییر\\اجماع $\text{(PoS)}$}}
+  }
+  child {node {لایه دوم\\$\text{(L2)}$}}
+    child {node {کانال\\حالت}}
+    child {node {رول‌آپ}}
+  }
+  child {node {موازی‌سازی}
+    child {node {شاردینگ}}
+    child {node {چندزنجیره\\/ زنجیره جانبی}}
+  };
+\end{tikzpicture}
+\caption{تکسونومی روش‌های مقیاس‌پذیری: هر شاخه نشان‌دهنده «دیدگاه طراحی» متفاوت است}
+\label{fig:scaling-taxonomy}
+\end{figure}
+
+\begin{table}[h]
+\centering
+\caption{تکسونومی روش‌های مقیاس‌پذیری و مکانیزم افزایش \lr{TPS}}
+\label{tab:scaling-taxonomy}
+\small
+\begin{tabular}{|p{2.4cm}|p{3.2cm}|p{3.8cm}|p{2.8cm}|}
+\hline
+\textbf{خانواده} & \textbf{نمونه‌های شاخص} & \textbf{مکانیزم مقیاس‌پذیری} & \textbf{دیدگاه طراحی} \\
+\hline
+\lr{L1} -- ظرفیت بلوک & \lr{BCH}, \lr{BSV}, \lr{SegWit} & افزایش تعداد تراکنش در هر بلوک & سادگی؛ هزینه نود بالا \\
+\hline
+\lr{L1} -- زمان بلوک & برخی \lr{altcoins} & کاهش فاصله بلوک & تأخیر کمتر؛ ریسک امنیت \\
+\hline
+\lr{L1} -- اجماع & \lr{Ethereum PoS}, \lr{Cardano} & جایگزینی \lr{PoW} با \lr{PoS}/\lr{DPoS} & کارایی انرژی؛ ریسک تمرکز سهام \\
+\hline
+\lr{L2} -- کانال & \lr{Lightning}, \lr{Raiden}, \lr{Plasma} & تراکنش خارج از زنجیره + تسویه دوره‌ای & \lr{off-chain}؛ وابستگی نقدینگی \\
+\hline
+\lr{L2} -- رول‌آپ & \lr{Optimistic}/\lr{ZK Rollup} & اثبات دسته‌ای روی \lr{L1} & امنیت \lr{L1}؛ پیچیدگی اثبات \\
+\hline
+موازی‌سازی -- شارد & \lr{Ethereum 2.0}, \lr{Zilliqa} & تقسیم حالت/تراکنش بین شاردها & \lr{TPS} بسیار بالا؛ پیچیدگی بین‌شاردی \\
+\hline
+موازی‌سازی -- چندزنجیره & \lr{RSK}, \lr{Liquid}, \textbf{معماری پیشنهادی} & زنجیره‌های مستقل + لنگر در \lr{L1} & تخصصی‌سازی + پردازش موازی \\
+\hline
+\end{tabular}
+\end{table}
+
 \section{زنجیره‌های جانبی}
 
 زنجیره‌های جانبی \lr{(Sidechains)} بلاکچین‌هایی هستند که به موازات بلاکچین اصلی عمل می‌کنند و امکان انتقال دارایی بین زنجیره اصلی و زنجیره جانبی را فراهم می‌کنند.
@@ -37,29 +93,38 @@ RSK یک زنجیره جانبی برای بیتکوین است که امکان 
 
 \section{مقایسه راه‌حل‌ها}
 
-در جدول \ref{tab:solutions_comparison} مقایسه‌ای بین راه‌حل‌های مختلف ارائه شده است.
+جدول \ref{tab:solutions_comparison} مقایسه کیفی راه‌حل‌های مرورشده را نشان می‌دهد. ستون «رشد مقیاس» بیان می‌کند آیا با افزودن منابع/زیرسیستم، \lr{TPS} به‌صورت تقریباً خطی رشد می‌کند یا خیر.
 
 \begin{table}[h]
 \centering
-\caption{مقایسه راه‌حل‌های مقیاس‌پذیری}
+\caption{مقایسه راه‌حل‌های مقیاس‌پذیری (کیفی)}
 \label{tab:solutions_comparison}
-\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+\small
+\begin{tabular}{|p{2.6cm}|p{1.6cm}|p{1.5cm}|p{1.5cm}|p{1.8cm}|p{2.2cm}|}
 \hline
-\textbf{راه‌حل} & \textbf{TPS} & \textbf{امنیت} & \textbf{غیرمتمرکز} & \textbf{پیچیدگی} \\
+\textbf{راه‌حل} & \textbf{TPS تقریبی} & \textbf{امنیت} & \textbf{غیرمتمرکز} & \textbf{رشد مقیاس} & \textbf{نیاز به تغییر \lr{L1}} \\
 \hline
-بیتکوین (پایه) & 7 & $\star\star\star\star\star$ & $\star\star\star\star\star$ & $\star$ \\
+بیتکوین (پایه) & $\sim$7 & $\star\star\star\star\star$ & $\star\star\star\star\star$ & ثابت & --- \\
 \hline
-شبکه لایتنینگ & 1000+ & $\star\star\star$ & $\star\star\star$ & $\star\star\star\star$ \\
+افزایش اندازه بلوک & 50--100 & $\star\star\star\star$ & $\star\star\star\star$ & محدود & کم \\
 \hline
-شاردینگ & 100k+ & $\star\star\star\star$ & $\star\star\star\star$ & $\star\star\star\star\star$ \\
+شبکه لایتنینگ & $10^3+$ & $\star\star\star$ & $\star\star\star$ & وابسته به کانال & خیر (\lr{L2}) \\
 \hline
-زنجیره‌های جانبی & متغیر & $\star\star\star\star$ & $\star\star\star\star$ & $\star\star\star$ \\
+رول‌آپ (\lr{L2}) & $10^3$--$10^4$ & $\star\star\star\star$ & $\star\star\star\star$ & با ظرفیت \lr{prover} & قرارداد/پروتکل \\
 \hline
-افزایش اندازه بلوک & 50-100 & $\star\star\star\star$ & $\star\star\star\star$ & $\star\star$ \\
+شاردینگ (اتریوم ۲) & $10^4$+ & $\star\star\star\star$ & $\star\star\star\star$ & خطی با شارد & زیاد \\
+\hline
+زنجیره جانبی (\lr{RSK}/\lr{Liquid}) & متغیر & $\star\star\star\star$ & $\star\star\star$--$\star\star\star\star$ & محدود (تعداد ثابت) & پل دوطرفه \\
+\hline
+\textbf{معماری پیشنهادی} & خطی با $N$ & $\star\star\star\star\star$ (\lr{L1}) & $\star\star\star\star$ & \textbf{خطی با $N$} & کم (لایه جانبی) \\
 \hline
 \end{tabular}
 \end{table}
 
+\subsection{جایگاه معماری پیشنهادی}
+
+برخلاف لایتنینگ که مقیاس را به «کانال‌های خصوصی» واگذار می‌کند، و برخلاف شاردینگ که نیازمند بازطراحی کامل پروتکل است، معماری این پایان‌نامه \textbf{پردازش موازی روی چند زنجیره \lr{PoW} سبک‌وزن} را با \textbf{لنگر امنیتی \lr{PoW} در زنجیره اصلی} ترکیب می‌کند. از این نظر به خانواده «موازی‌سازی -- چندزنجیره» نزدیک است، اما تمرکز آن بر \lr{TPS} قابل پیش‌بینی و سازگاری با مدل \lr{UTXO} بیتکوین است (فصل سوم).
+
 \section{خلاصه و نتیجه‌گیری}
 
-در این فصل، راه‌حل‌های مختلف برای مقیاس‌پذیری بلاکچین را بررسی کردیم. راه‌حل‌های لایه دوم مانند شبکه لایتنینگ TPS بالایی دارند اما پیچیدگی فنی و نیاز به مدیریت کانال‌ها دارند؛ شاردینگ می‌تواند TPS بسیار بالایی فراهم کند اما نیاز به تغییرات اساسی در پروتکل و پیچیدگی بالای پیاده‌سازی دارد؛ زنجیره‌های جانبی انعطاف‌پذیری خوبی دارند اما نیاز به پروتکل‌های پیچیده برای ارتباط با زنجیره اصلی دارند؛ و افزایش اندازه بلوک ساده است اما محدودیت‌های ذاتی دارد و می‌تواند منجر به تمرکز شود. معماری پیشنهادی در این پایان‌نامه با ترکیب مزایای زنجیره‌های جانبی و پردازش موازی، راه‌حلی ارائه می‌دهد که هم مقیاس‌پذیری بالایی دارد و هم امنیت و غیرمتمرکز بودن را حفظ می‌کند.
+در این فصل، مسئله مقیاس‌پذیری را به‌عنوان تضاد میان ظرفیت بلوک، تأخیر اجماع و هزینه نود تحلیل کردیم. تکسونومی شکل \ref{fig:scaling-taxonomy} و جدول \ref{tab:scaling-taxonomy} نشان داد که هر روش از یک «دیدگاه طراحی» متفاوت پیروی می‌کند: افزایش ظرفیت \lr{L1}، اجرای \lr{off-chain}، شاردینگ، یا چندزنجیره‌ای. راه‌حل‌های \lr{L2} \lr{TPS} بالایی ارائه می‌دهند اما پیچیدگی عملیاتی و وابستگی نقدینگی دارند؛ شاردینگ ظرفیت بسیار بالایی هدف می‌گیرد اما پیاده‌سازی و امنیت بین‌شاردی دشوار است؛ زنجیره‌های جانبی کلاسیک اغلب تعداد محدودی زنجیره دارند. معماری پیشنهادی با \textbf{افزودن خطی زنجیره‌های جانبی} و \textbf{حفظ \lr{PoW} در زنجیره اصلی}، شکاف «مقیاس خطی + سازگاری با بیتکوین» را هدف می‌گیرد که در فصل سوم به‌صورت رسمی تعریف می‌شود.
