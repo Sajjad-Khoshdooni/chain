@@ -35,21 +35,21 @@
 که $H$ تابع هش رمزنگاری (\lr{SHA-256}) و خروجی به بازه $\{0,\ldots,N-1\}$ نگاشت می‌شود.
 \end{definition}
 
-\subsection{خواص صحت (Validity, Agreement, Termination)}
+\subsection{خواص صحت}
 
 الگوریتم‌های اجماع کلاسیک سه خواص \lr{Validity}، \lr{Agreement} و \lr{Termination} را مطرح می‌کنند. در معماری پیشنهادی، خواص زیر معادل نقش مشابهی دارند:
 
-\begin{definition}[صحت \lr{(Validity)}]
+\begin{definition}[صحت]
 \textbf{صحت تخصیص:} هر تراکنش $tx$ تنها در زنجیره $C_{\mathcal{A}(u)}$ پذیرفته می‌شود که $u$ یک \lr{UTXO} ورودی معتبر $tx$ باشد و $tx$ از نظر امضا، مبلغ و عدم دوبارخرج معتبر باشد.
 
 \textbf{صحت ارجاع:} هر ارجاع $r$ در بلوک $C_0$ به هدر بلوکی اشاره می‌کند که واقعاً در $C_i$ استخراج شده و هش آن با $r$ سازگار است.
 \end{definition}
 
-\begin{definition}[توافق \lr{(Agreement)}]
+\begin{definition}[توافق]
 تمام نودهای صادق بر (۱) مقدار $\mathcal{A}(u)$ برای هر \lr{UTXO}، (۲) ترتیب بلوک‌های $C_0$ بر اساس بیشترین کار انجام‌شده \lr{(PoW)}، و (۳) مجموعه ارجاعات ثبت‌شده در هر بلوک $C_0$ توافق دارند.
 \end{definition}
 
-\begin{definition}[پایان‌پذیری \lr{(Termination)}]
+\begin{definition}[پایان‌پذیری]
 برای هر تراکنش معتبر $tx$ که در \lr{mempool} مربوطه قرار گیرد، پس از زمان محدود $T_{fin}$، $tx$ در یک بلوک $C_i$ گنجانده شده و هدر آن بلوک در یک بلوک $C_0$ ارجاع می‌شود؛ یعنی $tx$ \textbf{نهایی} (\lr{finalized}) می‌شود.
 \end{definition}
 
@@ -101,7 +101,7 @@ TPS_{total} = \frac{M}{\Delta T_m} + \sum_{i=1}^{N}\frac{S_i}{\Delta T_s}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.9\textwidth]{img/architecture_diagram.png}
+\includegraphics[width=0.9\textwidth]{img/chain_chart_all_sxy_to_my.png}
 \caption{نمای کلی معماری زنجیره اصلی و زنجیره‌های جانبی}
 \label{fig:architecture}
 \end{figure}

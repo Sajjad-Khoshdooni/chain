@@ -39,6 +39,11 @@
 \let\citep\cite
 \let\citelatin\cite
 \let\citeplatin\cite
+% جلوگیری از نمایش معکوس [n] در متن RTL (مثلاً ]؟[ به‌جای [?])
+\makeatletter
+\let\ORG@cite\cite
+\renewcommand{\cite}[1]{\begingroup\lr{\ORG@cite{#1}}\endgroup}
+\makeatother
 %%%%%%%%%%%%
 % بررسی حالت پیش نویس
 \usepackage{ifdraft}

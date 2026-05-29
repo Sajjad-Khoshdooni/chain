@@ -58,8 +58,10 @@ TPS_{total} = 1.67 + 1.67N
 
 \begin{table}[h]
 \centering
-\caption{نتایج کامل بنچمارک واقعی TPS}
+\caption{نتایج کامل بنچمارک واقعی \lr{TPS}}
 \label{tab:real-benchmark-results}
+\footnotesize
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
 \textbf{تعداد زنجیره‌های جانبی ($N$)} & \textbf{کل تراکنش‌های آزمون} & \textbf{TPS میانگین} & \textbf{TPS میانه} & \textbf{حداقل TPS} & \textbf{حداکثر TPS} & \textbf{انحراف معیار} \\ \hline
@@ -68,7 +70,8 @@ TPS_{total} = 1.67 + 1.67N
 3 & 150 & 7,049.84 & 7,113.30 & 5,085.85 & 8,950.37 & 1,933.04 \\ \hline
 5 & 250 & 13,740.70 & 13,690.88 & 9,663.11 & 17,868.10 & 4,102.72 \\ \hline
 10 & 500 & 8,934.46 & 10,117.45 & 6,144.60 & 10,541.34 & 2,425.37 \\ \hline
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 \begin{table}[h]

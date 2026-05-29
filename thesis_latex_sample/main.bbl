@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+
+\bibitem{buterin2014ethereum}
+Vitalik Buterin.
+\newblock Ethereum: A next-generation smart contract and decentralized
+  application platform.
+\newblock 2014.
+\newblock Accessed: 2024.
+
+\bibitem{rsk2015}
+RSK Labs.
+\newblock Rsk: Bitcoin smart contracts platform.
+\newblock \url{https://www.rsk.co/}, 2015.
+\newblock Accessed: 2024.
+
+\bibitem{nakamoto2008bitcoin}
+Satoshi Nakamoto.
+\newblock Bitcoin: A peer-to-peer electronic cash system.
+\newblock \url{https://bitcoin.org/bitcoin.pdf}, 2008.
+\newblock Accessed: 2024.
+
+\bibitem{poon2016lightning}
+Joseph Poon and Thaddeus Dryja.
+\newblock The bitcoin lightning network: Scalable off-chain instant payments.
+\newblock 2016.
+\newblock Draft version 0.5.9.2.
+
+\end{thebibliography}
