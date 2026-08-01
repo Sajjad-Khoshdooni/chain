@@ -1,89 +1,122 @@
-\contentsline {chapter}{فهرست تصاویر}{ث}{section*.2}%
-\contentsline {chapter}{فهرست جداول}{ج}{section*.3}%
-\contentsline {chapter}{فهرست برنامه‌ها}{چ}{section*.3}%
+\contentsline {chapter}{فهرست تصاویر}{چ}{section*.2}%
+\contentsline {chapter}{فهرست جداول}{ح}{section*.3}%
+\contentsline {chapter}{فهرست برنامه‌ها}{خ}{section*.3}%
 \contentsline {chapter}{\numberline {1}مقدمه}{1}{chapter.1}%
-\contentsline {section}{\numberline {1-1}تعریف مسئله}{1}{section.1.1}%
-\contentsline {section}{\numberline {1-2}انگیزه پژوهش}{2}{section.1.2}%
-\contentsline {section}{\numberline {1-3}پیشینه پژوهش}{2}{section.1.3}%
-\contentsline {subsection}{\numberline {1-3-1}شبکه لایتنینگ}{2}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1-3-2}شاردینگ}{3}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1-3-3}زنجیره‌های جانبی}{3}{subsection.1.3.3}%
-\contentsline {subsection}{\numberline {1-3-4}مکانیزم‌های اثبات سهام}{3}{subsection.1.3.4}%
-\contentsline {section}{\numberline {1-4}اهداف پژوهش}{3}{section.1.4}%
-\contentsline {section}{\numberline {1-5}ساختار پایان‌نامه}{4}{section.1.5}%
-\contentsline {chapter}{\numberline {2}مروری بر مطالعات انجام شده}{5}{chapter.2}%
-\contentsline {section}{\numberline {2-1}مقدمه}{5}{section.2.1}%
-\contentsline {subsection}{\numberline {2-1-1}چرا مقیاس‌پذیری یک مسئله سیستمی است؟}{5}{subsection.2.1.1}%
-\contentsline {section}{\numberline {2-2}بیتکوین و معماری آن}{6}{section.2.2}%
-\contentsline {subsection}{\numberline {2-2-1}الگوریتم اجماع اثبات کار}{6}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2-2-2}شاخص‌های رایج ارزیابی مقیاس‌پذیری}{6}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2-3}راه‌حل‌های لایه دوم}{7}{section.2.3}%
-\contentsline {subsection}{\numberline {2-3-1}شبکه لایتنینگ}{7}{subsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2-3-1-1}Plasma، کانال حالت و رول‌آپ}{7}{subsubsection.2.3.1.1}%
-\contentsline {section}{\numberline {2-4}شاردینگ}{7}{section.2.4}%
-\contentsline {subsection}{\numberline {2-4-1}شاردینگ در اتریوم 2.0}{8}{subsection.2.4.1}%
-\contentsline {section}{\numberline {2-5}تکسونومی روش‌های مقیاس‌پذیری}{9}{section.2.5}%
-\contentsline {section}{\numberline {2-6}زنجیره‌های جانبی}{9}{section.2.6}%
-\contentsline {subsection}{\numberline {2-6-1}مفهوم زنجیره جانبی}{9}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2-6-2}نمونه‌های عملی}{10}{subsection.2.6.2}%
-\contentsline {subsubsection}{\numberline {2-6-2-1}RSK \lr {(Rootstock)}}{10}{subsubsection.2.6.2.1}%
-\contentsline {subsubsection}{\numberline {2-6-2-2}\hbox {\lr {Liquid Network}}}{10}{subsubsection.2.6.2.2}%
-\contentsline {section}{\numberline {2-7}الگوریتم‌های اجماع جایگزین}{10}{section.2.7}%
-\contentsline {subsection}{\numberline {2-7-1}اثبات سهام \lr {(Proof of Stake)}}{10}{subsection.2.7.1}%
-\contentsline {section}{\numberline {2-8}راه‌حل‌های افزایش اندازه بلوک}{11}{section.2.8}%
-\contentsline {subsection}{\numberline {2-8-1}\hbox {\lr {Bitcoin Cash}}}{11}{subsection.2.8.1}%
-\contentsline {section}{\numberline {2-9}مقایسه راه‌حل‌ها}{11}{section.2.9}%
-\contentsline {subsection}{\numberline {2-9-1}جایگاه معماری پیشنهادی}{12}{subsection.2.9.1}%
-\contentsline {section}{\numberline {2-10}خلاصه و نتیجه‌گیری}{12}{section.2.10}%
-\contentsline {chapter}{\numberline {3}معماری سیستم بلاکچین پیشنهادی}{13}{chapter.3}%
-\contentsline {section}{\numberline {3-1}مقدمه}{13}{section.3.1}%
-\contentsline {section}{\numberline {3-2}مدل رسمی مسئله و شاخص‌ها}{13}{section.3.2}%
-\contentsline {subsection}{\numberline {3-2-1}مدل سیستم}{13}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3-2-2}تخصیص قطعی}{14}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3-2-3}خواص صحت}{14}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3-2-4}شاخص‌های عملکرد}{15}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3-3}معماری کلی سیستم}{15}{section.3.3}%
-\contentsline {section}{\numberline {3-4}الگوریتم‌های کلیدی}{16}{section.3.4}%
-\contentsline {subsection}{\numberline {3-4-1}الگوریتم تخصیص تراکنش}{16}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3-4-2}اجماع و ماژول‌های پیاده‌سازی}{17}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3-5}فرآیند پردازش تراکنش}{18}{section.3.5}%
-\contentsline {section}{\numberline {3-6}مقایسه مقیاس‌پذیری با روش‌های مشابه}{18}{section.3.6}%
-\contentsline {section}{\numberline {3-7}مزایای معماری پیشنهادی}{19}{section.3.7}%
-\contentsline {subsection}{\numberline {3-7-1}مقیاس‌پذیری افقی}{19}{subsection.3.7.1}%
-\contentsline {subsubsection}{\numberline {3-7-1-1}مدل تئوری}{19}{subsubsection.3.7.1.1}%
-\contentsline {section}{\numberline {3-8}محاسبه حداکثر TPS تئوری}{20}{section.3.8}%
-\contentsline {section}{\numberline {3-9}چرا یک زنجیره جانبی کافی نیست؟}{22}{section.3.9}%
-\contentsline {subsection}{\numberline {3-9-1}مقایسه رویکردها}{23}{subsection.3.9.1}%
-\contentsline {section}{\numberline {3-10}جمع‌بندی}{24}{section.3.10}%
-\contentsline {chapter}{\numberline {4}نتایج آزمایشات و ارزیابی عملکرد}{25}{chapter.4}%
-\contentsline {section}{\numberline {4-1}مقدمه}{25}{section.4.1}%
-\contentsline {section}{\numberline {4-2}محیط آزمایش و پارامترها}{25}{section.4.2}%
-\contentsline {section}{\numberline {4-3}فرمول محاسبه TPS}{26}{section.4.3}%
-\contentsline {section}{\numberline {4-4}نتایج آزمایشات}{27}{section.4.4}%
-\contentsline {section}{\numberline {4-5}مقیاس‌پذیری افقی}{27}{section.4.5}%
-\contentsline {section}{\numberline {4-6}محاسبه حداکثر TPS}{28}{section.4.6}%
-\contentsline {section}{\numberline {4-7}مقایسه با سایر راه‌حل‌های مقیاس‌پذیری}{29}{section.4.7}%
-\contentsline {section}{\numberline {4-8}تحلیل کارایی انرژی}{30}{section.4.8}%
-\contentsline {section}{\numberline {4-9}آزمایش سناریوهای واقعی}{30}{section.4.9}%
-\contentsline {section}{\numberline {4-10}تحلیل اقتصادی}{30}{section.4.10}%
-\contentsline {section}{\numberline {4-11}جمع‌بندی}{31}{section.4.11}%
-\contentsline {chapter}{\numberline {5}نتیجه‌گیری و کارهای آینده}{32}{chapter.5}%
-\contentsline {section}{\numberline {5-1}خلاصه تحقیق}{32}{section.5.1}%
-\contentsline {section}{\numberline {5-2}مزایای معماری پیشنهادی}{33}{section.5.2}%
-\contentsline {section}{\numberline {5-3}محدودیت‌ها و چالش‌ها}{33}{section.5.3}%
-\contentsline {section}{\numberline {5-4}کارهای آینده}{33}{section.5.4}%
-\contentsline {section}{\numberline {5-5}کاربردهای بالقوه و تاثیر اجتماعی}{34}{section.5.5}%
-\contentsline {section}{\numberline {5-6}نتیجه‌گیری نهایی}{34}{section.5.6}%
-\contentsline {subsection}{\numberline {5-6-1}پیام نهایی}{35}{subsection.5.6.1}%
+\contentsline {section}{\numberline {1-1}مقدمه کلی}{1}{section.1.1}%
+\contentsline {section}{\numberline {1-2}بیان مسئله}{2}{section.1.2}%
+\contentsline {section}{\numberline {1-3}اهمیت و ضرورت پژوهش}{6}{section.1.3}%
+\contentsline {section}{\numberline {1-4}چالش سه‌گانه مقیاس‌پذیری، امنیت و غیرمتمرکز بودن}{7}{section.1.4}%
+\contentsline {section}{\numberline {1-5}اهداف پژوهش}{7}{section.1.5}%
+\contentsline {section}{\numberline {1-6}پرسش‌های پژوهش}{8}{section.1.6}%
+\contentsline {section}{\numberline {1-7}نوآوری و سهم پژوهش}{8}{section.1.7}%
+\contentsline {section}{\numberline {1-8}دامنه و فرضیات پژوهش}{9}{section.1.8}%
+\contentsline {section}{\numberline {1-9}بسط مسئله از منظر صف و گلوگاه}{9}{section.1.9}%
+\contentsline {section}{\numberline {1-10}تمایز میان مقیاس‌پذیری عمودی و افقی}{10}{section.1.10}%
+\contentsline {section}{\numberline {1-11}تعریف دقیق‌تر مسئله پژوهش}{11}{section.1.11}%
+\contentsline {section}{\numberline {1-12}ساختار پایان‌نامه}{11}{section.1.12}%
+\contentsline {chapter}{\numberline {2}مروری بر مطالعات انجام شده}{12}{chapter.2}%
+\contentsline {section}{\numberline {2-1}مقدمه}{12}{section.2.1}%
+\contentsline {section}{\numberline {2-2}بلاکچین به عنوان دفترکل توزیع‌شده}{13}{section.2.2}%
+\contentsline {section}{\numberline {2-3}مدل تراکنش مبتنی بر خروجی‌های خرج‌نشده}{14}{section.2.3}%
+\contentsline {section}{\numberline {2-4}اجماع ناکاموتو و اثبات کار}{14}{section.2.4}%
+\contentsline {section}{\numberline {2-5}نرخ بلوک‌های کهنه و پروتکل گوست}{15}{section.2.5}%
+\contentsline {section}{\numberline {2-6}محدودیت مقیاس‌پذیری بیتکوین}{16}{section.2.6}%
+\contentsline {section}{\numberline {2-7}تجربه تاریخی مناقشه اندازه بلوک}{17}{section.2.7}%
+\contentsline {section}{\numberline {2-8}شاخص‌های ارزیابی مقیاس‌پذیری}{18}{section.2.8}%
+\contentsline {section}{\numberline {2-9}راهکارهای لایه اول}{19}{section.2.9}%
+\contentsline {section}{\numberline {2-10}بیتکوین-ان‌جی و جداسازی انتخاب رهبر از انتشار تراکنش}{19}{section.2.10}%
+\contentsline {section}{\numberline {2-11}شبکه لایتنینگ و کانال‌های پرداخت}{20}{section.2.11}%
+\contentsline {section}{\numberline {2-12}کانال‌های حالت و پلاسما}{21}{section.2.12}%
+\contentsline {section}{\numberline {2-13}رول‌آپ‌ها}{22}{section.2.13}%
+\contentsline {section}{\numberline {2-14}شاردینگ}{23}{section.2.14}%
+\contentsline {section}{\numberline {2-15}مرور طرح‌های شاخص شاردینگ}{23}{section.2.15}%
+\contentsline {section}{\numberline {2-16}پروتکل‌های تراکنش بین‌شاردی}{25}{section.2.16}%
+\contentsline {section}{\numberline {2-17}زنجیره‌های جانبی}{26}{section.2.17}%
+\contentsline {section}{\numberline {2-18}استخراج ادغام‌شده و طرح‌های درایوچین}{26}{section.2.18}%
+\contentsline {section}{\numberline {2-19}تغییر الگوریتم اجماع}{27}{section.2.19}%
+\contentsline {section}{\numberline {2-20}تکسونومی روش‌های مقیاس‌پذیری}{29}{section.2.20}%
+\contentsline {section}{\numberline {2-21}جایگاه معماری پیشنهادی}{29}{section.2.21}%
+\contentsline {section}{\numberline {2-22}مروری عمیق‌تر بر مسئله داده‌دسترسی}{30}{section.2.22}%
+\contentsline {section}{\numberline {2-23}مدل‌های پل و انتقال دارایی میان زنجیره‌ها}{31}{section.2.23}%
+\contentsline {section}{\numberline {2-24}نودهای سبک و اثبات‌های فشرده زنجیره}{32}{section.2.24}%
+\contentsline {section}{\numberline {2-25}مقایسه شاردینگ و چندزنجیره‌ای از منظر سازگاری}{33}{section.2.25}%
+\contentsline {section}{\numberline {2-26}معیارهای امنیتی در طراحی اجماع مقیاس‌پذیر}{34}{section.2.26}%
+\contentsline {section}{\numberline {2-27}نقش درخت مرکل و اثبات‌های عضویت}{34}{section.2.27}%
+\contentsline {section}{\numberline {2-28}ساختارهای گراف بلوکی و پردازش بلوک‌های همزمان}{35}{section.2.28}%
+\contentsline {section}{\numberline {2-29}مقایسه با معماری رول‌آپ‌محور اتریوم}{36}{section.2.29}%
+\contentsline {section}{\numberline {2-30}اقتصاد کارمزد و بازار فضای بلوک}{36}{section.2.30}%
+\contentsline {section}{\numberline {2-31}چارچوب داوری برای ارزیابی پژوهش‌های مقیاس‌پذیری}{37}{section.2.31}%
+\contentsline {section}{\numberline {2-32}جمع‌بندی انتقادی ادبیات}{38}{section.2.32}%
+\contentsline {section}{\numberline {2-33}خلاصه فصل}{39}{section.2.33}%
+\contentsline {chapter}{\numberline {3}معماری سیستم بلاکچین پیشنهادی}{40}{chapter.3}%
+\contentsline {section}{\numberline {3-1}مقدمه}{40}{section.3.1}%
+\contentsline {section}{\numberline {3-2}اهداف طراحی}{41}{section.3.2}%
+\contentsline {section}{\numberline {3-3}مدل سیستم}{41}{section.3.3}%
+\contentsline {section}{\numberline {3-4}نمای کلی معماری}{42}{section.3.4}%
+\contentsline {section}{\numberline {3-5}زنجیره اصلی}{42}{section.3.5}%
+\contentsline {section}{\numberline {3-6}زنجیره‌های جانبی}{43}{section.3.6}%
+\contentsline {section}{\numberline {3-7}تابع تخصیص قطعی}{44}{section.3.7}%
+\contentsline {section}{\numberline {3-8}الگوریتم پردازش تراکنش}{44}{section.3.8}%
+\contentsline {section}{\numberline {3-9}تراکنش‌های بین‌زنجیره‌ای}{45}{section.3.9}%
+\contentsline {section}{\numberline {3-10}مدل نهایی‌سازی}{46}{section.3.10}%
+\contentsline {section}{\numberline {3-11}مدل توان عملیاتی}{47}{section.3.11}%
+\contentsline {section}{\numberline {3-12}تحلیل کران تک‌زنجیره‌ای}{47}{section.3.12}%
+\contentsline {section}{\numberline {3-13}تحلیل امنیت}{48}{section.3.13}%
+\contentsline {subsection}{\numberline {3-13-1}امنیت زنجیره اصلی}{48}{subsection.3.13.1}%
+\contentsline {subsection}{\numberline {3-13-2}امنیت زنجیره جانبی}{49}{subsection.3.13.2}%
+\contentsline {subsection}{\numberline {3-13-3}امنیت تخصیص}{49}{subsection.3.13.3}%
+\contentsline {subsection}{\numberline {3-13-4}امنیت تراکنش بین‌زنجیره‌ای}{49}{subsection.3.13.4}%
+\contentsline {section}{\numberline {3-14}داده‌دسترسی و اعتبارسنجی}{49}{section.3.14}%
+\contentsline {section}{\numberline {3-15}ماژول‌های پیاده‌سازی در زبان راست}{50}{section.3.15}%
+\contentsline {section}{\numberline {3-16}الگوریتم استخراج بلوک}{51}{section.3.16}%
+\contentsline {section}{\numberline {3-17}مدیریت فورک و بازسازماندهی}{52}{section.3.17}%
+\contentsline {section}{\numberline {3-18}تحلیل پیچیدگی}{52}{section.3.18}%
+\contentsline {section}{\numberline {3-19}مزایا و محدودیت‌های معماری پیشنهادی}{52}{section.3.19}%
+\contentsline {section}{\numberline {3-20}طراحی سیاست تغییر تعداد زنجیره‌های جانبی}{53}{section.3.20}%
+\contentsline {section}{\numberline {3-21}سیاست تعادل بار}{53}{section.3.21}%
+\contentsline {section}{\numberline {3-22}ساختار داده پیشنهادی برای وضعیت محلی و جهانی خروجی‌ها}{54}{section.3.22}%
+\contentsline {section}{\numberline {3-23}سیاست کارمزد و انگیزه ماینرها}{55}{section.3.23}%
+\contentsline {section}{\numberline {3-24}نودهای سبک و وارسی ساده پرداخت در معماری پیشنهادی}{55}{section.3.24}%
+\contentsline {section}{\numberline {3-25}سناریوی نمونه اجرای تراکنش}{56}{section.3.25}%
+\contentsline {section}{\numberline {3-26}معیارهای صحت معماری}{56}{section.3.26}%
+\contentsline {section}{\numberline {3-27}استدلال امنیتی برای جلوگیری از دوبارخرج}{57}{section.3.27}%
+\contentsline {section}{\numberline {3-28}استدلال درباره رشد خطی ظرفیت}{58}{section.3.28}%
+\contentsline {section}{\numberline {3-29}طراحی رابط برنامه‌نویسی داخلی}{58}{section.3.29}%
+\contentsline {section}{\numberline {3-30}ملاحظات پیاده‌سازی همزمانی در زبان راست}{59}{section.3.30}%
+\contentsline {section}{\numberline {3-31}جمع‌بندی فصل}{60}{section.3.31}%
+\contentsline {chapter}{\numberline {4}نتایج آزمایشات و ارزیابی عملکرد}{61}{chapter.4}%
+\contentsline {section}{\numberline {4-1}مقدمه}{61}{section.4.1}%
+\contentsline {section}{\numberline {4-2}محیط آزمایش}{61}{section.4.2}%
+\contentsline {section}{\numberline {4-3}مدل نظری شبکه}{62}{section.4.3}%
+\contentsline {section}{\numberline {4-4}نتایج بنچمارک پیاده‌سازی}{63}{section.4.4}%
+\contentsline {section}{\numberline {4-5}تحلیل تفاوت مدل نظری و بنچمارک}{64}{section.4.5}%
+\contentsline {section}{\numberline {4-6}مقایسه با راهکارهای موجود}{65}{section.4.6}%
+\contentsline {section}{\numberline {4-7}تحلیل حساسیت}{65}{section.4.7}%
+\contentsline {section}{\numberline {4-8}تهدیدهای اعتبار ارزیابی}{66}{section.4.8}%
+\contentsline {section}{\numberline {4-9}پیشنهاد پروتکل ارزیابی کامل‌تر}{66}{section.4.9}%
+\contentsline {section}{\numberline {4-10}تحلیل حذف اجزا}{67}{section.4.10}%
+\contentsline {section}{\numberline {4-11}تحلیل خطا و موارد شکست}{68}{section.4.11}%
+\contentsline {section}{\numberline {4-12}تحلیل هزینه اجرای نود}{68}{section.4.12}%
+\contentsline {section}{\numberline {4-13}تحلیل اقتصادی ساده}{69}{section.4.13}%
+\contentsline {section}{\numberline {4-14}جمع‌بندی فصل}{69}{section.4.14}%
+\contentsline {chapter}{\numberline {5}نتیجه‌گیری و کارهای آینده}{71}{chapter.5}%
+\contentsline {section}{\numberline {5-1}جمع‌بندی پژوهش}{71}{section.5.1}%
+\contentsline {section}{\numberline {5-2}پاسخ به پرسش‌های پژوهش}{72}{section.5.2}%
+\contentsline {section}{\numberline {5-3}دستاوردهای اصلی}{72}{section.5.3}%
+\contentsline {section}{\numberline {5-4}محدودیت‌ها}{73}{section.5.4}%
+\contentsline {section}{\numberline {5-5}کارهای آینده}{73}{section.5.5}%
+\contentsline {section}{\numberline {5-6}نتیجه نهایی}{74}{section.5.6}%
+\contentsline {section}{\numberline {5-7}دستاورد روش‌شناختی پژوهش}{74}{section.5.7}%
+\contentsline {section}{\numberline {5-8}مسیر تبدیل پایان‌نامه به مقاله}{75}{section.5.8}%
  \renewcommand \cftchappresnum {پیوست~}\setlength {\cftchapnumwidth }{\mylenapp }
-\contentsline {chapter}{\numberline {آ}کدهای پیاده‌سازی}{36}{appendix.Alph1}%
-\contentsline {section}{\numberline {آ-1}ساختار کلی پروژه}{36}{section.Alph1.1}%
-\contentsline {section}{\numberline {آ-2}ساختار بلوک}{37}{section.Alph1.2}%
-\contentsline {section}{\numberline {آ-3}تخصیص تراکنش به زنجیره جانبی}{37}{section.Alph1.3}%
-\contentsline {section}{\numberline {آ-4}تخصیص ماینر به زنجیره‌های جانبی}{38}{section.Alph1.4}%
-\contentsline {section}{\numberline {آ-5}محاسبه TPS}{38}{section.Alph1.5}%
-\contentsline {section}{\numberline {آ-6}استخراج بلوک}{39}{section.Alph1.6}%
-\contentsline {section}{\numberline {آ-7}نتیجه‌گیری}{39}{section.Alph1.7}%
-\contentsline {chapter}{کتاب‌نامه}{40}{appendix*.19}%
-\contentsline {chapter}{واژه نامه فارسی به انگلیسی}{40}{appendix*.19}%
-\contentsline {chapter}{واژه نامه انگلیسی به فارسی}{اول}{section*.20}%
+\contentsline {chapter}{\numberline {آ}کدهای پیاده‌سازی}{76}{appendix.Alph1}%
+\contentsline {section}{\numberline {آ-1}ساختار کلی پروژه}{76}{section.Alph1.1}%
+\contentsline {section}{\numberline {آ-2}ساختار بلوک}{77}{section.Alph1.2}%
+\contentsline {section}{\numberline {آ-3}تخصیص تراکنش به زنجیره جانبی}{77}{section.Alph1.3}%
+\contentsline {section}{\numberline {آ-4}تخصیص ماینر به زنجیره‌های جانبی}{78}{section.Alph1.4}%
+\contentsline {section}{\numberline {آ-5}محاسبه توان عملیاتی}{78}{section.Alph1.5}%
+\contentsline {section}{\numberline {آ-6}استخراج بلوک}{79}{section.Alph1.6}%
+\contentsline {section}{\numberline {آ-7}نتیجه‌گیری}{79}{section.Alph1.7}%
+\contentsline {chapter}{کتاب‌نامه}{81}{appendix*.13}%
+\contentsline {chapter}{واژه نامه فارسی به انگلیسی}{81}{appendix*.13}%
+\contentsline {chapter}{واژه نامه انگلیسی به فارسی}{83}{section*.14}%

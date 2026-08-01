@@ -7,9 +7,10 @@
 % در ورژن جدید زی‌پرشین برای تایپ متن‌های ریاضی، این سه بسته، حتماً باید فراخوانی شود
 
 \usepackage[top=40mm, bottom=40mm, left=25mm, right=35mm, headheight=15pt]{geometry}
-% رفع خطای UseMathForPositioningText در bidi برای جداول فارسی
+% رفع ناسازگاری bidi/xepersian با tabular در LaTeX 2024+
 \makeatletter
 \providecommand{\UseMathForPositioningText}{}
+\providecommand{\@kernel@tabular@init}{}
 \makeatother
 % بسته‌‌ای برای ظاهر شدن شکل‌ها و تعیین آدرس تصاویر
 \usepackage[final]{graphicx}
@@ -102,6 +103,7 @@ pdfdirection={R2L}
 % \usepackage{algpseudocode}
 
 % بسته‌های لازم برای رسم بهتر جداول
+\usepackage{array}
 \usepackage{tabulary}
 \usepackage{tabularx}
 % بسته‌های لازم برای رسم تنظیم بهتر شکل‌ها و زیرشکل‌ها

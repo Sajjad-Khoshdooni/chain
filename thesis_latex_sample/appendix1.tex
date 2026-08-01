@@ -15,18 +15,18 @@
 
 \chapter{کدهای پیاده‌سازی}
 
-در این پیوست، بخش‌هایی از کد پیاده‌سازی معماری پیشنهادی با زبان برنامه‌نویسی Rust ارائه شده است. کد کامل در مخزن GitHub پروژه در دسترس است.
+در این پیوست، بخش‌هایی از کد پیاده‌سازی معماری پیشنهادی با زبان برنامه‌نویسی راست\LTRfootnote{Rust} ارائه شده است. کد کامل در مخزن گیت‌هاب\LTRfootnote{GitHub} پروژه در دسترس است.
 
 \section{ساختار کلی پروژه}
 
-پروژه در زبان Rust پیاده‌سازی شده و شامل ماژول‌های زیر است:
+پروژه در زبان راست پیاده‌سازی شده و شامل ماژول‌های زیر است:
 
 \begin{itemize}
     \item \texttt{blockchain.rs}: سیستم اصلی بلاکچین
     \item \texttt{master\_chain.rs}: پیاده‌سازی زنجیره اصلی
     \item \texttt{side\_chain.rs}: پیاده‌سازی زنجیره‌های جانبی
     \item \texttt{transaction.rs}: ساختار و مدیریت تراکنش‌ها
-    \item \texttt{utxo.rs}: مدل UTXO و مدیریت آن
+    \item \texttt{utxo.rs}: مدل خروجی‌های تراکنش خرج‌نشده\LTRfootnote{Unspent Transaction Output (UTXO)} و مدیریت آن
     \item \texttt{miner.rs}: الگوریتم استخراج و تخصیص ماینر
     \item \texttt{utils.rs}: توابع کمکی و ابزارها
 \end{itemize}
@@ -53,7 +53,7 @@ pub struct MasterBlock {
 
 \section{تخصیص تراکنش به زنجیره جانبی}
 
-الگوریتم تخصیص تراکنش‌ها به زنجیره‌های جانبی بر اساس هش UTXO:
+الگوریتم تخصیص تراکنش‌ها به زنجیره‌های جانبی بر اساس هش خروجی خرج‌نشده:
 
 \singlespacing
 \begin{LTR}
@@ -92,13 +92,13 @@ pub fn assign_miner_to_sidechains(
 \end{LTR}
 \doublespacing
 
-\section{محاسبه TPS}
+\section{محاسبه توان عملیاتی}
 
-تابع محاسبه تراکنش در ثانیه بر اساس فرمول تئوری:
+تابع محاسبه تراکنش بر ثانیه\LTRfootnote{Transactions Per Second (TPS)} بر اساس فرمول تئوری:
 
 \singlespacing
 \begin{LTR}
-\begin{lstlisting}[language=C, caption={محاسبه TPS}, label={code:tps_calculation}]
+\begin{lstlisting}[language=C, caption={محاسبه توان عملیاتی}, label={code:tps_calculation}]
 pub fn calculate_tps(
     master_tx_per_block: u64,
     side_tx_per_block: u64,
@@ -143,12 +143,12 @@ pub fn mine_block(
 
 \section{نتیجه‌گیری}
 
-کدهای ارائه شده در این پیوست، بخشی از پیاده‌سازی کامل معماری پیشنهادی است. کد کامل شامل تست‌ها، مستندات و مثال‌های استفاده در مخزن GitHub پروژه در دسترس است.
+کدهای ارائه شده در این پیوست، بخشی از پیاده‌سازی کامل معماری پیشنهادی است. کد کامل شامل تست‌ها، مستندات و مثال‌های استفاده در مخزن گیت‌هاب پروژه در دسترس است.
 
-پیاده‌سازی در Rust انجام شده که مزایای زیر را دارد:
+پیاده‌سازی در زبان راست انجام شده که مزایای زیر را دارد:
 \begin{itemize}
     \item عملکرد بالا و مصرف حافظه کم
-    \item امنیت حافظه بدون نیاز به garbage collector
-    \item همزمانی (concurrency) قوی
-    \item سیستم type checking قوی
+    \item امنیت حافظه بدون نیاز به زباله‌روب\LTRfootnote{Garbage Collector}
+    \item همزمانی\LTRfootnote{Concurrency} قوی
+    \item سامانه قوی بررسی نوع داده\LTRfootnote{Type Checking}
 \end{itemize}
