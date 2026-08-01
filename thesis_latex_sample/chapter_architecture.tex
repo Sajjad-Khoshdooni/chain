@@ -60,12 +60,16 @@
 ساختار پیشنهادی بلوک اصلی به صورت زیر است:
 
 \begin{latin}
-\[
-MasterBlock = \{index, timestamp, references, previous\_hash, merkle\_root, nonce, difficulty\}
-\]
+\begin{equation}
+\begin{array}{@{}l@{}}
+\text{MasterBlock} = \{ \\
+\quad \text{index},\ \text{timestamp},\ \text{references},\ \text{previous\_hash}, \\
+\quad \text{merkle\_root},\ \text{nonce},\ \text{difficulty}\}
+\end{array}
+\end{equation}
 \end{latin}
 
-در این ساختار، \lr{references} شامل فهرستی از تعهدها یا هدرهای بلوک‌های جانبی است. هر ارجاع می‌تواند شامل شناسه زنجیره جانبی، ارتفاع بلوک جانبی، هش بلوک جانبی، ریشه مرکل تراکنش‌های جانبی و امضای تولیدکننده یا اثبات کار جانبی باشد.
+که در آن \(index\) شماره بلوک، \(timestamp\) زمان تولید، \(references\) لیست ارجاعات به بلوک‌های زنجیره‌های جانبی، \(previous\_hash\) هش بلوک قبلی، \(merkle\_root\) ریشه مرکل ارجاعات، \(nonce\) عدد استفاده شده در استخراج و \(difficulty\) سطح دشواری است. هر ارجاع می‌تواند شامل شناسه زنجیره جانبی، ارتفاع بلوک جانبی، هش بلوک جانبی، ریشه مرکل تراکنش‌های جانبی و امضای تولیدکننده یا اثبات کار جانبی باشد.
 
 \section{زنجیره‌های جانبی}
 
@@ -74,12 +78,23 @@ MasterBlock = \{index, timestamp, references, previous\_hash, merkle\_root, nonc
 ساختار پیشنهادی بلوک جانبی:
 
 \begin{latin}
-\[
-SideBlock = \{index, side\_chain\_id, timestamp, transactions, previous\_hash, parent\_master\_hash, merkle\_root, nonce\}
-\]
+\begin{equation}
+\begin{array}{@{}l@{}}
+\text{SideBlock} = \{ \\
+\quad \text{index},\ \text{side\_chain\_id},\ \text{timestamp},\ \text{transactions}, \\
+\quad \text{previous\_hash},\ \text{parent\_master\_hash},\ \text{merkle\_root},\ \text{nonce}\}
+\end{array}
+\end{equation}
 \end{latin}
 
 وجود \lr{parent\_master\_hash} باعث می‌شود بلوک جانبی به وضعیت مشخصی از زنجیره اصلی متصل شود. این اتصال برای مدیریت بازسازماندهی و تشخیص وضعیت نهایی مفید است.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{img/chain_chart_all_sxy_to_my.png}
+\caption{نمای کلی ارتباط زنجیره اصلی با زنجیره‌های جانبی و جریان ارجاعات}
+\label{fig:chain-chart}
+\end{figure}
 
 \section{تابع تخصیص قطعی}
 
@@ -157,62 +172,170 @@ Algorithm AssignTransaction(tx, N):
 اگر زنجیره اصلی در هر بلوک ظرفیت \(M\) ارجاع یا تراکنش و هر زنجیره جانبی در هر بلوک ظرفیت \(S\) تراکنش داشته باشد، توان عملیاتی کل چنین است:
 
 \begin{latin}
-\[
+\begin{equation}
 TPS_{total} = \frac{M}{T_m} + \sum_{i=1}^{N}\frac{S_i}{T_s}
-\]
+\end{equation}
 \end{latin}
 
 در حالت تقارنی که \(S_i = S\):
 
 \begin{latin}
-\[
+\begin{equation}
 TPS_{total} \approx \frac{M}{T_m} + \frac{N \cdot S}{T_s}
-\]
+\end{equation}
 \end{latin}
 
 این فرمول نشان می‌دهد که اگر گلوگاه زنجیره اصلی فقط ثبت ارجاع باشد و ظرفیت ارجاعات با تعداد زنجیره‌ها سازگار شود، سهم زنجیره‌های جانبی با \(N\) رشد خطی دارد. مشتق توان عملیاتی نسبت به تعداد زنجیره‌ها برابر است با:
 
 \begin{latin}
-\[
+\begin{equation}
 \frac{\partial TPS}{\partial N} = \frac{S}{T_s}
-\]
+\end{equation}
 \end{latin}
 
 بنابراین، هر زنجیره جانبی جدید به اندازه \(S/T_s\) تراکنش بر ثانیه به ظرفیت اضافه می‌کند.
 
+\section{محاسبه حداکثر توان عملیاتی تئوری}
+
+برای تعیین حداکثر ظرفیت تئوری سیستم، محدودیت‌های مختلف باید شناسایی شوند. با فرض اندازه بلوک ۱ مگابایت (مشابه بیتکوین) و میانگین اندازه تراکنش ۲۵۰ بایت:
+
+\begin{latin}
+\begin{equation}
+\begin{split}
+\text{Max\_Tx\_Per\_Block} &= \frac{\text{Block\_Size}}{\text{Avg\_Tx\_Size}} = \frac{1{,}048{,}576}{250} \\
+&= 4{,}194
+\end{split}
+\end{equation}
+\end{latin}
+
+با فرض زمان اعتبارسنجی ۰٫۱ میلی‌ثانیه برای هر تراکنش:
+
+\begin{latin}
+\begin{equation}
+\begin{split}
+\text{Max\_Tx\_CPU} &= \frac{\text{Block\_Time}}{\text{Validation\_Time}} = \frac{60{,}000\ \text{ms}}{0.1\ \text{ms}} \\
+&= 600{,}000
+\end{split}
+\end{equation}
+\end{latin}
+
+و با فرض زمان تأیید امضای دیجیتال ۰٫۵ میلی‌ثانیه:
+
+\begin{latin}
+\begin{equation}
+\text{Max\_Tx\_Crypto} = \frac{60{,}000\ \text{ms}}{0.5\ \text{ms}} = 120{,}000
+\end{equation}
+\end{latin}
+
+گلوگاه\LTRfootnote{Bottleneck} سیستم، کوچک‌ترین محدودیت است:
+
+\begin{latin}
+\begin{equation}
+\begin{split}
+\text{Bottleneck} &= \min(4{,}194,\ 600{,}000,\ 120{,}000,\ \ldots) \\
+&= 4{,}194
+\end{split}
+\end{equation}
+\end{latin}
+
+بنابراین اندازه بلوک محدودیت اصلی سیستم است. با جایگذاری \(M = S = 4{,}194\)، \(T_m = 600\) و \(T_s = 60\):
+
+\begin{latin}
+\begin{align}
+TPS_{master} &= \frac{4{,}194}{600} = 6.99 \\
+TPS_{side} &= \frac{N \times 4{,}194}{60} = 69.90 \times N \\
+TPS_{total} &= 6.99 + (69.90 \times N)
+\end{align}
+\end{latin}
+
+\begin{table}[h]
+\centering
+\caption{جدول ۳-۲. مقیاس‌پذیری شبکه: توان عملیاتی تئوری برای ۱ تا ۱۰۰۰ زنجیره جانبی}
+\label{tab:theoretical-max-tps}
+\small
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+زنجیره‌های جانبی & توان زنجیره اصلی & توان زنجیره‌های جانبی & توان کل & بهبود نسبت به بیتکوین \\
+\hline
+۱ & ۶٫۹۹ & ۶۹٫۹۰ & ۷۶٫۸۹ & ۱۱٫۰ برابر \\
+\hline
+۳ & ۶٫۹۹ & ۲۰۹٫۷۰ & ۲۱۶٫۶۹ & ۳۱٫۰ برابر \\
+\hline
+۵ & ۶٫۹۹ & ۳۴۹٫۵۰ & ۳۵۶٫۴۹ & ۵۰٫۹ برابر \\
+\hline
+۱۰ & ۶٫۹۹ & ۶۹۹٫۰۰ & ۷۰۵٫۹۹ & ۱۰۰٫۹ برابر \\
+\hline
+۲۰ & ۶٫۹۹ & ۱٬۳۹۸٫۰۰ & ۱٬۴۰۴٫۹۹ & ۲۰۰٫۷ برابر \\
+\hline
+۵۰ & ۶٫۹۹ & ۳٬۴۹۵٫۰۰ & ۳٬۵۰۱٫۹۹ & ۵۰۰٫۳ برابر \\
+\hline
+۱۰۰ & ۶٫۹۹ & ۶٬۹۹۰٫۰۰ & ۶٬۹۹۶٫۹۹ & ۹۹۹٫۶ برابر \\
+\hline
+۱۰۰۰ & ۶٫۹۹ & ۶۹٬۹۰۰٫۰۰ & ۶۹٬۹۰۶٫۹۹ & ۹٬۹۸۶٫۷ برابر \\
+\hline
+\end{tabular}
+\end{table}
+
+با تنها یک زنجیره جانبی، توان تنها حدود ۱۱ برابر بیتکوین است (۷۶٫۸۹ تراکنش بر ثانیه) و بدون پردازش موازی بهبود محدود است. با افزودن هر زنجیره جانبی، دقیقاً ۶۹٫۹۰ تراکنش بر ثانیه به ظرفیت کل اضافه می‌شود و رابطه کاملاً خطی است:
+
+\begin{latin}
+\begin{equation}
+\frac{\Delta TPS}{\Delta N} = 69.90 \text{ TPS per side chain}
+\end{equation}
+\end{latin}
+
+برای کاربردهای تجاری، ۱۰ تا ۱۰۰ زنجیره جانبی می‌تواند حدود ۷۰۶ تا ۶٬۹۹۷ تراکنش بر ثانیه فراهم کند. با ۱۰۰۰ زنجیره جانبی، سیستم قادر به پردازش حدود ۶۹٬۹۰۷ تراکنش بر ثانیه است که تقریباً ۱۰٬۰۰۰ برابر بیتکوین است.
+
+\begin{figure}[h]
+\centering
+\begin{latin}
+\begin{equation}
+\begin{split}
+TPS_{\text{total}} &= TPS_{\text{master}} + \sum_{i=1}^{N} TPS_{\text{side}_{i}} \\
+&= 6.99 + N \times 69.90
+\end{split}
+\end{equation}
+\end{latin}
+\caption{فرمول مقیاس‌پذیری افقی: توان عملیاتی به صورت خطی با تعداد زنجیره‌ها رشد می‌کند}
+\label{fig:scaling-formula}
+\end{figure}
+
 \section{تحلیل کران تک‌زنجیره‌ای}
 
-اگر فقط یک زنجیره جانبی وجود داشته باشد، ظرفیت کل محدود است:
+اگر فقط یک زنجیره جانبی وجود داشته باشد، ظرفیت کل محدود است. این ادعا را به‌صورت رسمی بیان می‌کنیم.
 
+\begin{theorem}[کران بالای تک‌زنجیره سریع]
+\label{thm:single-chain-bound}
+فرض کنید اندازه بلوک \(B\)، میانگین اندازه تراکنش \(\tau\) و فاصله بلوک جانبی \(T_s\) ثابت باشد. با یک زنجیره جانبی (\(N=1\)):
 \begin{latin}
 \[
-TPS_{N=1} = \frac{M}{T_m} + \frac{S}{T_s}
+TPS_{total} \leq \frac{M}{T_m} + \frac{\lfloor B/\tau \rfloor}{T_s}
 \]
 \end{latin}
+برای \(B=1\)MB، \(\tau=250\) بایت، \(T_m=600\)s، \(T_s=60\)s: \(TPS_{total} \leq 6.99 + 69.90 = 76.89\) که حدود \(11\times\) بیتکوین است.
+\end{theorem}
 
-با فرض بلوک یک مگابایتی و اندازه متوسط تراکنش ۲۵۰ بایت، حدود ۴۱۹۴ تراکنش در هر بلوک جای می‌گیرد. اگر \(T_m = 600\) و \(T_s = 60\) باشد:
+\begin{proof}[ایده اثبات]
+سهم زنجیره اصلی از \(M/T_m\) محدود است. سهم جانبی از ظرفیت یک بلوک در هر \(T_s\) بیشتر نمی‌شود. کاهش \(T_s\) بدون افزایش \(N\) فقط همان سهم را تقسیم می‌کند و با محدودیت \(B\) به سقف \(\lfloor B/\tau \rfloor/T_s\) می‌رسد.
+\end{proof}
 
+\begin{theorem}[مقیاس‌پذیری خطی با \(N\) زنجیره]
+\label{thm:linear-scaling}
+با فرض \(S_i=S\) برای همه \(i\) و ثابت بودن \(T_m,T_s\):
 \begin{latin}
 \[
-TPS_{master} \approx 6.99
+TPS_{total}(N) = \frac{M}{T_m} + \frac{N \cdot S}{T_s}, \qquad
+\frac{\partial TPS_{total}}{\partial N} = \frac{S}{T_s} > 0
 \]
 \end{latin}
+بنابراین هر زنجیره جانبی جدید، به‌صورت خطی ظرفیت اضافه می‌کند.
+\end{theorem}
 
-\begin{latin}
-\[
-TPS_{side} \approx 69.90
-\]
-\end{latin}
+\begin{proof}[ایده اثبات]
+جمع مستقل ظرفیت \(N\) زنجیره موازی است؛ زنجیره اصلی بار تراکنش کامل را تکرار نمی‌کند و فقط ارجاع ثبت می‌کند. در مدل تئوری، \(M\) ثابت و سهم جانبی با \(N\) رشد می‌کند.
+\end{proof}
 
-بنابراین:
-
-\begin{latin}
-\[
-TPS_{total} \approx 76.89
-\]
-\end{latin}
-
-این عدد حدود ۱۱ برابر ظرفیت تقریبی بیتکوین است، اما رشد بزرگ‌مقیاس ایجاد نمی‌کند. مقیاس‌پذیری اصلی زمانی حاصل می‌شود که تعداد زنجیره‌های جانبی افزایش یابد.
+این عدد حدود ۱۱ برابر ظرفیت تقریبی بیتکوین است، اما رشد بزرگ‌مقیاس ایجاد نمی‌کند. مقیاس‌پذیری اصلی زمانی حاصل می‌شود که تعداد زنجیره‌های جانبی افزایش یابد. با \(N=10\)، \(100\) و \(1000\) به ترتیب حدود \(706\)، \(6997\) و \(69907\) تراکنش بر ثانیه تئوری حاصل می‌شود.
 
 \section{تحلیل امنیت}
 

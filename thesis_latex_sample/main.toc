@@ -56,67 +56,71 @@
 \contentsline {section}{\numberline {3-5}زنجیره اصلی}{42}{section.3.5}%
 \contentsline {section}{\numberline {3-6}زنجیره‌های جانبی}{43}{section.3.6}%
 \contentsline {section}{\numberline {3-7}تابع تخصیص قطعی}{44}{section.3.7}%
-\contentsline {section}{\numberline {3-8}الگوریتم پردازش تراکنش}{44}{section.3.8}%
-\contentsline {section}{\numberline {3-9}تراکنش‌های بین‌زنجیره‌ای}{45}{section.3.9}%
-\contentsline {section}{\numberline {3-10}مدل نهایی‌سازی}{46}{section.3.10}%
+\contentsline {section}{\numberline {3-8}الگوریتم پردازش تراکنش}{45}{section.3.8}%
+\contentsline {section}{\numberline {3-9}تراکنش‌های بین‌زنجیره‌ای}{46}{section.3.9}%
+\contentsline {section}{\numberline {3-10}مدل نهایی‌سازی}{47}{section.3.10}%
 \contentsline {section}{\numberline {3-11}مدل توان عملیاتی}{47}{section.3.11}%
-\contentsline {section}{\numberline {3-12}تحلیل کران تک‌زنجیره‌ای}{47}{section.3.12}%
-\contentsline {section}{\numberline {3-13}تحلیل امنیت}{48}{section.3.13}%
-\contentsline {subsection}{\numberline {3-13-1}امنیت زنجیره اصلی}{48}{subsection.3.13.1}%
-\contentsline {subsection}{\numberline {3-13-2}امنیت زنجیره جانبی}{49}{subsection.3.13.2}%
-\contentsline {subsection}{\numberline {3-13-3}امنیت تخصیص}{49}{subsection.3.13.3}%
-\contentsline {subsection}{\numberline {3-13-4}امنیت تراکنش بین‌زنجیره‌ای}{49}{subsection.3.13.4}%
-\contentsline {section}{\numberline {3-14}داده‌دسترسی و اعتبارسنجی}{49}{section.3.14}%
-\contentsline {section}{\numberline {3-15}ماژول‌های پیاده‌سازی در زبان راست}{50}{section.3.15}%
-\contentsline {section}{\numberline {3-16}الگوریتم استخراج بلوک}{51}{section.3.16}%
-\contentsline {section}{\numberline {3-17}مدیریت فورک و بازسازماندهی}{52}{section.3.17}%
-\contentsline {section}{\numberline {3-18}تحلیل پیچیدگی}{52}{section.3.18}%
-\contentsline {section}{\numberline {3-19}مزایا و محدودیت‌های معماری پیشنهادی}{52}{section.3.19}%
-\contentsline {section}{\numberline {3-20}طراحی سیاست تغییر تعداد زنجیره‌های جانبی}{53}{section.3.20}%
-\contentsline {section}{\numberline {3-21}سیاست تعادل بار}{53}{section.3.21}%
-\contentsline {section}{\numberline {3-22}ساختار داده پیشنهادی برای وضعیت محلی و جهانی خروجی‌ها}{54}{section.3.22}%
-\contentsline {section}{\numberline {3-23}سیاست کارمزد و انگیزه ماینرها}{55}{section.3.23}%
-\contentsline {section}{\numberline {3-24}نودهای سبک و وارسی ساده پرداخت در معماری پیشنهادی}{55}{section.3.24}%
-\contentsline {section}{\numberline {3-25}سناریوی نمونه اجرای تراکنش}{56}{section.3.25}%
-\contentsline {section}{\numberline {3-26}معیارهای صحت معماری}{56}{section.3.26}%
-\contentsline {section}{\numberline {3-27}استدلال امنیتی برای جلوگیری از دوبارخرج}{57}{section.3.27}%
-\contentsline {section}{\numberline {3-28}استدلال درباره رشد خطی ظرفیت}{58}{section.3.28}%
-\contentsline {section}{\numberline {3-29}طراحی رابط برنامه‌نویسی داخلی}{58}{section.3.29}%
-\contentsline {section}{\numberline {3-30}ملاحظات پیاده‌سازی همزمانی در زبان راست}{59}{section.3.30}%
-\contentsline {section}{\numberline {3-31}جمع‌بندی فصل}{60}{section.3.31}%
-\contentsline {chapter}{\numberline {4}نتایج آزمایشات و ارزیابی عملکرد}{61}{chapter.4}%
-\contentsline {section}{\numberline {4-1}مقدمه}{61}{section.4.1}%
-\contentsline {section}{\numberline {4-2}محیط آزمایش}{61}{section.4.2}%
-\contentsline {section}{\numberline {4-3}مدل نظری شبکه}{62}{section.4.3}%
-\contentsline {section}{\numberline {4-4}نتایج بنچمارک پیاده‌سازی}{63}{section.4.4}%
-\contentsline {section}{\numberline {4-5}تحلیل تفاوت مدل نظری و بنچمارک}{64}{section.4.5}%
-\contentsline {section}{\numberline {4-6}مقایسه با راهکارهای موجود}{65}{section.4.6}%
-\contentsline {section}{\numberline {4-7}تحلیل حساسیت}{65}{section.4.7}%
-\contentsline {section}{\numberline {4-8}تهدیدهای اعتبار ارزیابی}{66}{section.4.8}%
-\contentsline {section}{\numberline {4-9}پیشنهاد پروتکل ارزیابی کامل‌تر}{66}{section.4.9}%
-\contentsline {section}{\numberline {4-10}تحلیل حذف اجزا}{67}{section.4.10}%
-\contentsline {section}{\numberline {4-11}تحلیل خطا و موارد شکست}{68}{section.4.11}%
-\contentsline {section}{\numberline {4-12}تحلیل هزینه اجرای نود}{68}{section.4.12}%
-\contentsline {section}{\numberline {4-13}تحلیل اقتصادی ساده}{69}{section.4.13}%
-\contentsline {section}{\numberline {4-14}جمع‌بندی فصل}{69}{section.4.14}%
-\contentsline {chapter}{\numberline {5}نتیجه‌گیری و کارهای آینده}{71}{chapter.5}%
-\contentsline {section}{\numberline {5-1}جمع‌بندی پژوهش}{71}{section.5.1}%
-\contentsline {section}{\numberline {5-2}پاسخ به پرسش‌های پژوهش}{72}{section.5.2}%
-\contentsline {section}{\numberline {5-3}دستاوردهای اصلی}{72}{section.5.3}%
-\contentsline {section}{\numberline {5-4}محدودیت‌ها}{73}{section.5.4}%
-\contentsline {section}{\numberline {5-5}کارهای آینده}{73}{section.5.5}%
-\contentsline {section}{\numberline {5-6}نتیجه نهایی}{74}{section.5.6}%
-\contentsline {section}{\numberline {5-7}دستاورد روش‌شناختی پژوهش}{74}{section.5.7}%
-\contentsline {section}{\numberline {5-8}مسیر تبدیل پایان‌نامه به مقاله}{75}{section.5.8}%
+\contentsline {section}{\numberline {3-12}محاسبه حداکثر توان عملیاتی تئوری}{48}{section.3.12}%
+\contentsline {section}{\numberline {3-13}تحلیل کران تک‌زنجیره‌ای}{50}{section.3.13}%
+\contentsline {section}{\numberline {3-14}تحلیل امنیت}{51}{section.3.14}%
+\contentsline {subsection}{\numberline {3-14-1}امنیت زنجیره اصلی}{51}{subsection.3.14.1}%
+\contentsline {subsection}{\numberline {3-14-2}امنیت زنجیره جانبی}{51}{subsection.3.14.2}%
+\contentsline {subsection}{\numberline {3-14-3}امنیت تخصیص}{52}{subsection.3.14.3}%
+\contentsline {subsection}{\numberline {3-14-4}امنیت تراکنش بین‌زنجیره‌ای}{52}{subsection.3.14.4}%
+\contentsline {section}{\numberline {3-15}داده‌دسترسی و اعتبارسنجی}{52}{section.3.15}%
+\contentsline {section}{\numberline {3-16}ماژول‌های پیاده‌سازی در زبان راست}{53}{section.3.16}%
+\contentsline {section}{\numberline {3-17}الگوریتم استخراج بلوک}{53}{section.3.17}%
+\contentsline {section}{\numberline {3-18}مدیریت فورک و بازسازماندهی}{54}{section.3.18}%
+\contentsline {section}{\numberline {3-19}تحلیل پیچیدگی}{54}{section.3.19}%
+\contentsline {section}{\numberline {3-20}مزایا و محدودیت‌های معماری پیشنهادی}{55}{section.3.20}%
+\contentsline {section}{\numberline {3-21}طراحی سیاست تغییر تعداد زنجیره‌های جانبی}{55}{section.3.21}%
+\contentsline {section}{\numberline {3-22}سیاست تعادل بار}{56}{section.3.22}%
+\contentsline {section}{\numberline {3-23}ساختار داده پیشنهادی برای وضعیت محلی و جهانی خروجی‌ها}{56}{section.3.23}%
+\contentsline {section}{\numberline {3-24}سیاست کارمزد و انگیزه ماینرها}{57}{section.3.24}%
+\contentsline {section}{\numberline {3-25}نودهای سبک و وارسی ساده پرداخت در معماری پیشنهادی}{58}{section.3.25}%
+\contentsline {section}{\numberline {3-26}سناریوی نمونه اجرای تراکنش}{58}{section.3.26}%
+\contentsline {section}{\numberline {3-27}معیارهای صحت معماری}{59}{section.3.27}%
+\contentsline {section}{\numberline {3-28}استدلال امنیتی برای جلوگیری از دوبارخرج}{59}{section.3.28}%
+\contentsline {section}{\numberline {3-29}استدلال درباره رشد خطی ظرفیت}{60}{section.3.29}%
+\contentsline {section}{\numberline {3-30}طراحی رابط برنامه‌نویسی داخلی}{60}{section.3.30}%
+\contentsline {section}{\numberline {3-31}ملاحظات پیاده‌سازی همزمانی در زبان راست}{61}{section.3.31}%
+\contentsline {section}{\numberline {3-32}جمع‌بندی فصل}{62}{section.3.32}%
+\contentsline {chapter}{\numberline {4}نتایج آزمایشات و ارزیابی عملکرد}{63}{chapter.4}%
+\contentsline {section}{\numberline {4-1}مقدمه}{63}{section.4.1}%
+\contentsline {section}{\numberline {4-2}محیط آزمایش}{63}{section.4.2}%
+\contentsline {section}{\numberline {4-3}فرمول محاسبه توان عملیاتی}{64}{section.4.3}%
+\contentsline {section}{\numberline {4-4}مدل نظری شبکه}{64}{section.4.4}%
+\contentsline {section}{\numberline {4-5}نتایج بنچمارک پیاده‌سازی}{66}{section.4.5}%
+\contentsline {section}{\numberline {4-6}مقیاس‌پذیری افقی}{66}{section.4.6}%
+\contentsline {section}{\numberline {4-7}محاسبه حداکثر توان عملیاتی}{67}{section.4.7}%
+\contentsline {section}{\numberline {4-8}تحلیل تفاوت مدل نظری و بنچمارک}{68}{section.4.8}%
+\contentsline {section}{\numberline {4-9}مقایسه با راهکارهای موجود}{70}{section.4.9}%
+\contentsline {section}{\numberline {4-10}تحلیل حساسیت}{70}{section.4.10}%
+\contentsline {section}{\numberline {4-11}تهدیدهای اعتبار ارزیابی}{71}{section.4.11}%
+\contentsline {section}{\numberline {4-12}پیشنهاد پروتکل ارزیابی کامل‌تر}{71}{section.4.12}%
+\contentsline {section}{\numberline {4-13}تحلیل حذف اجزا}{72}{section.4.13}%
+\contentsline {section}{\numberline {4-14}تحلیل خطا و موارد شکست}{73}{section.4.14}%
+\contentsline {section}{\numberline {4-15}تحلیل هزینه اجرای نود}{73}{section.4.15}%
+\contentsline {section}{\numberline {4-16}تحلیل اقتصادی ساده}{74}{section.4.16}%
+\contentsline {section}{\numberline {4-17}جمع‌بندی فصل}{74}{section.4.17}%
+\contentsline {chapter}{\numberline {5}نتیجه‌گیری و کارهای آینده}{76}{chapter.5}%
+\contentsline {section}{\numberline {5-1}جمع‌بندی پژوهش}{76}{section.5.1}%
+\contentsline {section}{\numberline {5-2}پاسخ به پرسش‌های پژوهش}{77}{section.5.2}%
+\contentsline {section}{\numberline {5-3}دستاوردهای اصلی}{77}{section.5.3}%
+\contentsline {section}{\numberline {5-4}محدودیت‌ها}{78}{section.5.4}%
+\contentsline {section}{\numberline {5-5}کارهای آینده}{78}{section.5.5}%
+\contentsline {section}{\numberline {5-6}نتیجه نهایی}{79}{section.5.6}%
+\contentsline {section}{\numberline {5-7}دستاورد روش‌شناختی پژوهش}{79}{section.5.7}%
+\contentsline {section}{\numberline {5-8}مسیر تبدیل پایان‌نامه به مقاله}{80}{section.5.8}%
  \renewcommand \cftchappresnum {پیوست~}\setlength {\cftchapnumwidth }{\mylenapp }
-\contentsline {chapter}{\numberline {آ}کدهای پیاده‌سازی}{76}{appendix.Alph1}%
-\contentsline {section}{\numberline {آ-1}ساختار کلی پروژه}{76}{section.Alph1.1}%
-\contentsline {section}{\numberline {آ-2}ساختار بلوک}{77}{section.Alph1.2}%
-\contentsline {section}{\numberline {آ-3}تخصیص تراکنش به زنجیره جانبی}{77}{section.Alph1.3}%
-\contentsline {section}{\numberline {آ-4}تخصیص ماینر به زنجیره‌های جانبی}{78}{section.Alph1.4}%
-\contentsline {section}{\numberline {آ-5}محاسبه توان عملیاتی}{78}{section.Alph1.5}%
-\contentsline {section}{\numberline {آ-6}استخراج بلوک}{79}{section.Alph1.6}%
-\contentsline {section}{\numberline {آ-7}نتیجه‌گیری}{79}{section.Alph1.7}%
-\contentsline {chapter}{کتاب‌نامه}{81}{appendix*.13}%
-\contentsline {chapter}{واژه نامه فارسی به انگلیسی}{81}{appendix*.13}%
-\contentsline {chapter}{واژه نامه انگلیسی به فارسی}{83}{section*.14}%
+\contentsline {chapter}{\numberline {آ}کدهای پیاده‌سازی}{81}{appendix.Alph1}%
+\contentsline {section}{\numberline {آ-1}ساختار کلی پروژه}{81}{section.Alph1.1}%
+\contentsline {section}{\numberline {آ-2}ساختار بلوک}{82}{section.Alph1.2}%
+\contentsline {section}{\numberline {آ-3}تخصیص تراکنش به زنجیره جانبی}{82}{section.Alph1.3}%
+\contentsline {section}{\numberline {آ-4}تخصیص ماینر به زنجیره‌های جانبی}{83}{section.Alph1.4}%
+\contentsline {section}{\numberline {آ-5}محاسبه توان عملیاتی}{83}{section.Alph1.5}%
+\contentsline {section}{\numberline {آ-6}استخراج بلوک}{84}{section.Alph1.6}%
+\contentsline {section}{\numberline {آ-7}نتیجه‌گیری}{84}{section.Alph1.7}%
+\contentsline {chapter}{کتاب‌نامه}{86}{appendix*.20}%
+\contentsline {chapter}{واژه نامه فارسی به انگلیسی}{86}{appendix*.20}%
+\contentsline {chapter}{واژه نامه انگلیسی به فارسی}{88}{section*.21}%
