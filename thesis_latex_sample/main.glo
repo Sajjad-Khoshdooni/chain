@@ -1,87 +1,87 @@
-\glossaryentry{"\lr {Zero-Knowledge Rollup}?\glossentry{zkRollup}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Watchtower}?\glossentry{Watchtower}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Wall Clock Time}?\glossentry{wallClockTime}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Verifiable Random Function (VRF)}?\glossentry{vrf}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Validation}?\glossentry{Validation}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Unspent Transaction Output (UTXO)}?\glossentry{UTXO}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Two-way Peg}?\glossentry{twoWayPeg}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Transactions Per Second (TPS)}?\glossentry{TPS}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Transaction}?\glossentry{Transaction}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Timeout}?\glossentry{Timeout}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Throughput}?\glossentry{Throughput}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Bitcoin Cash}?\glossentry{bitcoinCash}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {State Channel}?\glossentry{stateChannel}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Stale Block}?\glossentry{staleBlock}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Slashing}?\glossentry{Slashing}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Simplified Payment Verification (SPV)}?\glossentry{spv}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Smart Contract}?\glossentry{smartContract}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Side Chain}?\glossentry{sideChain}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Sharding}?\glossentry{Sharding}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Shard}?\glossentry{Shard}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {SHA-256}?\glossentry{sha256}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Sequencer}?\glossentry{Sequencer}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Selfish Mining}?\glossentry{selfishMining}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Segregated Witness (SegWit)}?\glossentry{SegWit}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Scalability}?\glossentry{Scalability}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Safety}?\glossentry{Safety}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Rust}?\glossentry{Rust}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Rollup}?\glossentry{Rollup}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Replicated State Machine}?\glossentry{replicatedStateMachine}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Release Mode}?\glossentry{releaseMode}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Proof of Work (PoW)}?\glossentry{PoW}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Proof of Stake (PoS)}?\glossentry{PoS}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Parallel Processing}?\glossentry{parallelProcessing}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Parent Master Hash}?\glossentry{parentMasterHash}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Overhead}?\glossentry{Overhead}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Optimistic Rollup}?\glossentry{optimisticRollup}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Nonce}?\glossentry{Nonce}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Mining}?\glossentry{Mining}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Merkle Tree}?\glossentry{merkleTree}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Merged Mining}?\glossentry{mergedMining}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Mempool}?\glossentry{Mempool}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Master Chain}?\glossentry{masterChain}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Mainnet}?\glossentry{Mainnet}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Load Balancing}?\glossentry{loadBalancing}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Liveness}?\glossentry{Liveness}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Liquid Network}?\glossentry{liquidNetwork}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Lightning Network}?\glossentry{lightningNetwork}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Hash Time-Locked Contract (HTLC)}?\glossentry{htlc}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Horizontal Scalability}?\glossentry{horizontalScalability}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Hash}?\glossentry{Hash}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Fraud Proof}?\glossentry{fraudProof}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Formal Verification}?\glossentry{formalVerification}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Fork}?\glossentry{Fork}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Finality}?\glossentry{Finality}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Erasure Coding}?\glossentry{erasureCoding}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Epoch}?\glossentry{Epoch}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Energy Efficiency}?\glossentry{energyEfficiency}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {ECDSA}?\glossentry{ECDSA}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Drivechain}?\glossentry{Drivechain}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Difficulty}?\glossentry{Difficulty}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Denial of Service (DoS)}?\glossentry{denialOfService}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Decentralization}?\glossentry{Decentralization}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Data Availability Sampling}?\glossentry{dataAvailabilitySampling}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Data Availability}?\glossentry{dataAvailability}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Cryptography}?\glossentry{Cryptography}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Cross-Chain Transaction}?\glossentry{crossChainTransaction}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Consistent Hashing}?\glossentry{consistentHashing}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Consistency}?\glossentry{Consistency}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Consensus}?\glossentry{Consensus}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Coinbase Transaction}?\glossentry{coinbaseTx}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Checkpoint}?\glossentry{Checkpoint}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Byzantine Fault Tolerance}?\glossentry{byzantineFaultTolerance}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Bridge}?\glossentry{Bridge}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Bottleneck}?\glossentry{Bottleneck}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Block Size}?\glossentry{blockSize}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Block}?\glossentry{Block}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {BlockDAG}?\glossentry{blockDag}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Blockchain}?\glossentry{Blockchain}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Bitcoin}?\glossentry{Bitcoin}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Benchmark}?\glossentry{Benchmark}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Baseline}?\glossentry{baseline}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Atomic Lock}?\glossentry{atomicLock}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Atomic Commit}?\glossentry{atomicCommit}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Append-only}?\glossentry{appendOnly}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {API}?\glossentry{API}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Account-based Model}?\glossentry{accountModel}|setentrycounter[]{page}"\glsnumberformat}{86}
-\glossaryentry{"\lr {Ablation Study}?\glossentry{ablationStudy}|setentrycounter[]{page}"\glsnumberformat}{86}
+\glossaryentry{"\lr {Zero-Knowledge Rollup}?\glossentry{zkRollup}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Watchtower}?\glossentry{Watchtower}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Wall Clock Time}?\glossentry{wallClockTime}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Verifiable Random Function (VRF)}?\glossentry{vrf}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Validation}?\glossentry{Validation}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Unspent Transaction Output (UTXO)}?\glossentry{UTXO}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Two-way Peg}?\glossentry{twoWayPeg}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Transactions Per Second (TPS)}?\glossentry{TPS}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Transaction}?\glossentry{Transaction}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Timeout}?\glossentry{Timeout}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Throughput}?\glossentry{Throughput}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Bitcoin Cash}?\glossentry{bitcoinCash}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {State Channel}?\glossentry{stateChannel}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Stale Block}?\glossentry{staleBlock}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Slashing}?\glossentry{Slashing}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Simplified Payment Verification (SPV)}?\glossentry{spv}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Smart Contract}?\glossentry{smartContract}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Side Chain}?\glossentry{sideChain}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Sharding}?\glossentry{Sharding}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Shard}?\glossentry{Shard}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {SHA-256}?\glossentry{sha256}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Sequencer}?\glossentry{Sequencer}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Selfish Mining}?\glossentry{selfishMining}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Segregated Witness (SegWit)}?\glossentry{SegWit}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Scalability}?\glossentry{Scalability}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Safety}?\glossentry{Safety}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Rust}?\glossentry{Rust}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Rollup}?\glossentry{Rollup}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Replicated State Machine}?\glossentry{replicatedStateMachine}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Release Mode}?\glossentry{releaseMode}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Proof of Work (PoW)}?\glossentry{PoW}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Proof of Stake (PoS)}?\glossentry{PoS}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Parallel Processing}?\glossentry{parallelProcessing}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Parent Master Hash}?\glossentry{parentMasterHash}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Overhead}?\glossentry{Overhead}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Optimistic Rollup}?\glossentry{optimisticRollup}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Nonce}?\glossentry{Nonce}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Mining}?\glossentry{Mining}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Merkle Tree}?\glossentry{merkleTree}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Merged Mining}?\glossentry{mergedMining}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Mempool}?\glossentry{Mempool}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Master Chain}?\glossentry{masterChain}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Mainnet}?\glossentry{Mainnet}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Load Balancing}?\glossentry{loadBalancing}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Liveness}?\glossentry{Liveness}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Liquid Network}?\glossentry{liquidNetwork}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Lightning Network}?\glossentry{lightningNetwork}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Hash Time-Locked Contract (HTLC)}?\glossentry{htlc}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Horizontal Scalability}?\glossentry{horizontalScalability}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Hash}?\glossentry{Hash}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Fraud Proof}?\glossentry{fraudProof}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Formal Verification}?\glossentry{formalVerification}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Fork}?\glossentry{Fork}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Finality}?\glossentry{Finality}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Erasure Coding}?\glossentry{erasureCoding}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Epoch}?\glossentry{Epoch}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Energy Efficiency}?\glossentry{energyEfficiency}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {ECDSA}?\glossentry{ECDSA}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Drivechain}?\glossentry{Drivechain}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Difficulty}?\glossentry{Difficulty}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Denial of Service (DoS)}?\glossentry{denialOfService}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Decentralization}?\glossentry{Decentralization}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Data Availability Sampling}?\glossentry{dataAvailabilitySampling}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Data Availability}?\glossentry{dataAvailability}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Cryptography}?\glossentry{Cryptography}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Cross-Chain Transaction}?\glossentry{crossChainTransaction}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Consistent Hashing}?\glossentry{consistentHashing}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Consistency}?\glossentry{Consistency}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Consensus}?\glossentry{Consensus}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Coinbase Transaction}?\glossentry{coinbaseTx}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Checkpoint}?\glossentry{Checkpoint}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Byzantine Fault Tolerance}?\glossentry{byzantineFaultTolerance}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Bridge}?\glossentry{Bridge}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Bottleneck}?\glossentry{Bottleneck}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Block Size}?\glossentry{blockSize}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Block}?\glossentry{Block}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {BlockDAG}?\glossentry{blockDag}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Blockchain}?\glossentry{Blockchain}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Bitcoin}?\glossentry{Bitcoin}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Benchmark}?\glossentry{Benchmark}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Baseline}?\glossentry{baseline}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Atomic Lock}?\glossentry{atomicLock}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Atomic Commit}?\glossentry{atomicCommit}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Append-only}?\glossentry{appendOnly}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {API}?\glossentry{API}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Account-based Model}?\glossentry{accountModel}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{"\lr {Ablation Study}?\glossentry{ablationStudy}|setentrycounter[]{page}"\glsnumberformat}{85}

@@ -111,16 +111,15 @@
 \contentsline {section}{\numberline {5-5}کارهای آینده}{78}{section.5.5}%
 \contentsline {section}{\numberline {5-6}نتیجه نهایی}{79}{section.5.6}%
 \contentsline {section}{\numberline {5-7}دستاورد روش‌شناختی پژوهش}{79}{section.5.7}%
-\contentsline {section}{\numberline {5-8}مسیر تبدیل پایان‌نامه به مقاله}{80}{section.5.8}%
  \renewcommand \cftchappresnum {پیوست~}\setlength {\cftchapnumwidth }{\mylenapp }
-\contentsline {chapter}{\numberline {آ}کدهای پیاده‌سازی}{81}{appendix.Alph1}%
-\contentsline {section}{\numberline {آ-1}ساختار کلی پروژه}{81}{section.Alph1.1}%
-\contentsline {section}{\numberline {آ-2}ساختار بلوک}{82}{section.Alph1.2}%
-\contentsline {section}{\numberline {آ-3}تخصیص تراکنش به زنجیره جانبی}{82}{section.Alph1.3}%
-\contentsline {section}{\numberline {آ-4}تخصیص ماینر به زنجیره‌های جانبی}{83}{section.Alph1.4}%
-\contentsline {section}{\numberline {آ-5}محاسبه توان عملیاتی}{83}{section.Alph1.5}%
-\contentsline {section}{\numberline {آ-6}استخراج بلوک}{84}{section.Alph1.6}%
-\contentsline {section}{\numberline {آ-7}نتیجه‌گیری}{84}{section.Alph1.7}%
-\contentsline {chapter}{کتاب‌نامه}{86}{appendix*.20}%
-\contentsline {chapter}{واژه نامه فارسی به انگلیسی}{86}{appendix*.20}%
-\contentsline {chapter}{واژه نامه انگلیسی به فارسی}{88}{section*.21}%
+\contentsline {chapter}{\numberline {آ}کدهای پیاده‌سازی}{80}{appendix.Alph1}%
+\contentsline {section}{\numberline {آ-1}ساختار کلی پروژه}{80}{section.Alph1.1}%
+\contentsline {section}{\numberline {آ-2}ساختار بلوک}{81}{section.Alph1.2}%
+\contentsline {section}{\numberline {آ-3}تخصیص تراکنش به زنجیره جانبی}{81}{section.Alph1.3}%
+\contentsline {section}{\numberline {آ-4}تخصیص ماینر به زنجیره‌های جانبی}{82}{section.Alph1.4}%
+\contentsline {section}{\numberline {آ-5}محاسبه توان عملیاتی}{82}{section.Alph1.5}%
+\contentsline {section}{\numberline {آ-6}استخراج بلوک}{83}{section.Alph1.6}%
+\contentsline {section}{\numberline {آ-7}نتیجه‌گیری}{83}{section.Alph1.7}%
+\contentsline {chapter}{کتاب‌نامه}{85}{appendix*.20}%
+\contentsline {chapter}{واژه نامه فارسی به انگلیسی}{85}{appendix*.20}%
+\contentsline {chapter}{واژه نامه انگلیسی به فارسی}{87}{section*.21}%
