@@ -2,14 +2,14 @@
 % ارائه دفاع پایان‌نامه — PDF فارسی (هر صفحه = یک اسلاید)
 % کامپایل از همین پوشه:
 %   xelatex defense_fa.tex && xelatex defense_fa.tex
-\documentclass[10pt]{article}
+\documentclass[12pt]{article}
 
 \usepackage[
   paperwidth=297mm,
   paperheight=167mm,
-  margin=10mm,
-  top=9mm,
-  bottom=12mm
+  margin=7mm,
+  top=6mm,
+  bottom=9mm
 ]{geometry}
 % سازگاری bidi/xepersian با tabular در LaTeX جدید
 \makeatletter
@@ -32,12 +32,14 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0.4pt}
 % در سند RTL، سمت راست بصری = شروع خط فارسی
-\fancyfoot[R]{\small\color{UTmuted}\thepage}
-\fancyfoot[L]{\small\color{UTmuted}دفاع کارشناسی ارشد — دانشگاه تهران}
+\fancyfoot[R]{\normalsize\color{UTmuted}\thepage}
+\fancyfoot[L]{\normalsize\color{UTmuted}دفاع کارشناسی ارشد — دانشگاه تهران}
 
-\setlength{\itemsep}{0.2em}
-\setlength{\parsep}{0pt}
-\setlength{\topsep}{0.25em}
+\setlength{\itemsep}{0.65em}
+\setlength{\parsep}{0.15em}
+\setlength{\topsep}{0.4em}
+\setlength{\parskip}{0.35em}
+\linespread{1.12}\selectfont
 
 \definecolor{UTnavy}{HTML}{0B2C4A}
 \definecolor{UTteal}{HTML}{1A6B6B}
@@ -47,40 +49,13 @@
 \definecolor{UTcard}{HTML}{F7FAFC}
 
 \newcommand{\slidetitle}[1]{%
-  \vspace*{-2mm}%
-  {\LARGE\color{UTnavy}\textbf{#1}}\par
-  \vspace{1mm}%
-  {\color{UTgold}\rule{35mm}{1.2pt}}\par
-  \vspace{3mm}%
+  \vspace*{-1mm}%
+  {\Huge\color{UTnavy}\textbf{#1}}\par
+  \vspace{1.5mm}%
+  {\color{UTgold}\rule{42mm}{1.6pt}}\par
+  \vspace{1.5mm}%
 }
 \newcommand{\newslide}{\clearpage}
-% جعبه‌ها با minipage؛ در XePersian با \raggedright متن به راست می‌چسبد
-\newcommand{\cardbox}[2]{%
-  \fcolorbox{UTsoft}{UTcard}{%
-    \begin{minipage}[t]{#1}
-      \raggedright
-      #2
-    \end{minipage}%
-  }%
-}
-\newcommand{\keybox}[1]{%
-  \noindent
-  \fcolorbox{UTteal}{UTsoft}{%
-    \begin{minipage}{0.96\textwidth}
-      \raggedright
-      #1
-    \end{minipage}%
-  }\par
-}
-\newcommand{\warnbox}[1]{%
-  \noindent
-  \fcolorbox{UTgold}{UTsoft}{%
-    \begin{minipage}{0.96\textwidth}
-      \raggedright
-      #1
-    \end{minipage}%
-  }\par
-}
 
 \usepackage{fontspec}
 \usepackage{xepersian}
@@ -88,13 +63,47 @@
   BoldFont={IRLotusICEE_Bold.ttf},
   BoldItalicFont={IRLotusICEE_BoldIranic.ttf},
   ItalicFont={IRLotusICEE_Iranic.ttf},
-  Scale=0.92]{IRLotusICEE.ttf}
-\setdigitfont[Path={../font/}, Scale=0.92]{IRLotusICEE.ttf}
+  Scale=1.12]{IRLotusICEE.ttf}
+\setdigitfont[Path={../font/}, Scale=1.12]{IRLotusICEE.ttf}
 \setlatintextfont[Path={../font/},
   BoldFont={LiberationSerif-Bold.ttf},
   ItalicFont={LiberationSerif-Italic.ttf},
   BoldItalicFont={LiberationSerif-BoldItalic.ttf},
-  Scale=0.88]{LiberationSerif-Regular.ttf}
+  Scale=1.05]{LiberationSerif-Regular.ttf}
+
+% جعبه‌ها با parbox+\setRTL (minipage بیرونی اگر RTL نباشد، تراز را خراب می‌کند)
+\setlength{\fboxsep}{8pt}
+\newcommand{\cardinnerwidth}[1]{\dimexpr #1 - 2\fboxsep - 2\fboxrule\relax}
+\newcommand{\cardbox}[2]{%
+  \noindent
+  \fcolorbox{UTsoft}{UTcard}{%
+    \parbox{\cardinnerwidth{#1}}{%
+      \setRTL\large
+      \setlength{\baselineskip}{1.3em}%
+      #2
+    }%
+  }\par
+}
+\newcommand{\keybox}[1]{%
+  \noindent
+  \fcolorbox{UTteal}{UTsoft}{%
+    \parbox{\cardinnerwidth{\textwidth}}{%
+      \setRTL\large
+      \setlength{\baselineskip}{1.3em}%
+      #1
+    }%
+  }\par
+}
+\newcommand{\warnbox}[1]{%
+  \noindent
+  \fcolorbox{UTgold}{UTsoft}{%
+    \parbox{\cardinnerwidth{\textwidth}}{%
+      \setRTL\large
+      \setlength{\baselineskip}{1.3em}%
+      #1
+    }%
+  }\par
+}
 
 \hypersetup{
   pdftitle={دفاع پایان‌نامه: طراحی و بهینه‌سازی الگوریتم اجماع مقیاس‌پذیر},
@@ -112,7 +121,7 @@
   \fill[UTnavy] (current page.south west) rectangle (current page.north east);
   \fill[UTgold] ([yshift=-48mm]current page.north west) rectangle ([yshift=-49.2mm]current page.north east);
 \end{tikzpicture}
-\vspace*{12mm}
+\vspace*{8mm}
 \begin{center}
 {\large\textcolor{UTsoft}{دانشگاه تهران — پردیس دانشکده‌های فنی}}\\[2mm]
 {\normalsize\textcolor{UTsoft}{دانشکده علوم مهندسی | گروه الگوریتم‌ها و محاسبات}}\\[10mm]
@@ -131,83 +140,110 @@
 \newslide
 \slidetitle{ساختار ارائه}
 \begin{enumerate}
-  \item مقدمه و ضرورت مقیاس‌پذیری بلاکچین
-  \item بیان مسئله، گلوگاه‌ها و سه‌گانه بلاکچین
-  \item اهداف، پرسش‌ها و دامنه پژوهش
-  \item مرور راهکارهای موجود و جایگاه پژوهش
-  \item معماری پیشنهادی: زنجیره اصلی + زنجیره‌های جانبی
-  \item تابع تخصیص قطعی، الگوریتم پردازش و نهایی‌سازی
-  \item مدل ریاضی توان عملیاتی و مقیاس‌پذیری افقی
-  \item نتایج آزمایش‌ها، بنچمارک \lr{Rust} و تفکیک روش‌شناختی
-  \item امنیت، دستاوردها، محدودیت‌ها و کارهای آینده
+  \item مسئله و ارزش پژوهش (چرا ۷ تراکنش بر ثانیه کافی نیست؟)
+  \item مبانی فنی لازم: مدل \lr{UTXO} و گلوگاه‌ها
+  \item جایگاه میان راهکارهای موجود
+  \item معماری پیشنهادی + مثال عددی یک تراکنش
+  \item تابع تخصیص، امنیت دوبارخرج و نهایی‌سازی
+  \item مدل ریاضی رشد خطی و نتایج آزمایش
+  \item ارزش کار، محدودیت‌ها و کارهای آینده
 \end{enumerate}
+
+%================ VALUE HOOK ================
+\newslide
+\slidetitle{ارزش مسئله: فاصله عملکردی واقعی}
+\cardbox{\textwidth}{%
+\textbf{\textcolor{UTteal}{بیتکوین (لایه پایه)}\\[1.5mm]}
+حدود \textbf{۷} تراکنش بر ثانیه \quad|\quad فاصله بلوک حدود \textbf{۱۰} دقیقه\\[1mm]
+امن و غیرمتمرکز است، ولی برای پرداخت پرترافیک کافی نیست.}
+\vspace{2.5mm}
+\cardbox{\textwidth}{%
+\textbf{\textcolor{UTteal}{نیاز دنیای واقعی}\\[1.5mm]}
+شبکه‌های کارت: هزاران تا ده‌ها هزار تراکنش بر ثانیه\\[1mm]
+پرداخت خرد، تسویه صرافی، بازی و اینترنت اشیا به تأخیر کم و کارمزد معقول نیاز دارند.}
+\vspace{2.5mm}
+\cardbox{\textwidth}{%
+\textbf{\textcolor{UTgold}{شکاف پژوهشی}\\[1.5mm]}
+فاصله حدود \textbf{۲ تا ۴} مرتبه بزرگی است.\\[1mm]
+بزرگ‌کردن بلوک ← تمرکز نود؛ اجماع خیلی سبک ← تضعیف امنیت.}
+\vspace{3mm}
+\keybox{\textbf{ارزش این پایان‌نامه}\\[1.5mm]
+با تقسیم بار روی چند زنجیره جانبی و حفظ مرجع امنیتی PoW، ظرفیت تقریباً خطی رشد می‌کند.\\[1mm]
+این ادعا با مدل ریاضی و پیاده‌سازی \lr{Rust} پشتیبانی شده است.}
 
 %================ INTRO ================
 \newslide
-\slidetitle{مقدمه: چرا مقیاس‌پذیری؟}
+\slidetitle{مقدمه: چرا مقیاس‌پذیری سخت است؟}
 \begin{itemize}
-  \item بلاکچین با ترکیب رمزنگاری، شبکه همتا‌به‌همتا و اجماع، دفترکل مشترک بدون متولی مرکزی می‌سازد.
-  \item بیتکوین نمونه پایدار این رویکرد است؛ اما معماری تک‌زنجیره‌ای ظرفیت را محدود می‌کند.
-  \item در زنجیره عمومی کاملاً تکرارشونده، هر نود کامل تقریباً همه تراکنش‌ها را دریافت، ذخیره و اعتبارسنجی می‌کند.
-  \item افزودن نود جدید برخلاف سامانه‌های توزیع‌شده متعارف، ظرفیت را افزایش نمی‌دهد؛ فقط افزونگی را بالا می‌برد.
-  \item با افزایش تقاضا: استخر تراکنش پر می‌شود، کارمزد بالا می‌رود، و کاربردهایی مانند پرداخت خرد و امور مالی غیرمتمرکز آسیب می‌بینند.
+  \item بلاکچین دفترکل مشترک بدون متولی مرکزی است: رمزنگاری + شبکه همتا‌به‌همتا + اجماع.
+  \item در بیتکوین، همه نودهای کامل تقریباً \textbf{همه} تراکنش‌ها را دریافت، ذخیره و اعتبارسنجی می‌کنند.
+  \item برخلاف سامانه‌های توزیع‌شده معمولی، افزودن نود ظرفیت را زیاد نمی‌کند؛ فقط افزونگی را زیاد می‌کند.
+  \item بنابراین گلوگاه، «توان یک زنجیره تکرارشونده» است نه «تعداد سرورها».
 \end{itemize}
 \vspace{2mm}
-\keybox{\textbf{پرسش محوری:} چگونه توان عملیاتی شبکه را افزایش دهیم، بدون آنکه امنیت زنجیره اصلی و اصل غیرمتمرکز بودن به‌طور جدی قربانی شود؟\\[1mm]
-\textbf{پاسخ پیشنهادی:} معماری چندزنجیره‌ای؛ زنجیره اصلی به‌عنوان مرجع امنیتی و زنجیره‌های جانبی برای پردازش موازی.}
+\warnbox{\textbf{پرسش محوری:} چگونه \(TPS\) را بالا ببریم، بدون قربانی جدی امنیت زنجیره اصلی و غیرمتمرکز بودن؟\\[1mm]
+\textbf{پاسخ:} جداسازی نقش‌ها — زنجیره اصلی = مرجع امنیتی؛ زنجیره‌های جانبی = پردازش موازی.}
+
+%================ UTXO BASICS ================
+\newslide
+\slidetitle{مبانی لازم: مدل خروجی خرج‌نشده (\lr{UTXO})}
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+\setRTL
+\cardbox{0.92\linewidth}{%
+\textbf{\textcolor{UTteal}{ایده ساده}}\\[1mm]
+در بیتکوین موجودی «حساب» نیست؛\\[0.8mm]
+مجموعه‌ای از \textbf{خروجی‌های خرج‌نشده} است.\\[1.2mm]
+هر تراکنش:\\[0.5mm]
+ورودی = خرج‌کردن یک یا چند \lr{UTXO} قدیمی\\[0.5mm]
+خروجی = ساختن \lr{UTXO}های جدید\\[1.2mm]
+دوبارخرج یعنی یک \lr{UTXO} دو بار مصرف شود.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\setRTL
+\cardbox{0.92\linewidth}{%
+\textbf{\textcolor{UTteal}{چرا برای مقیاس‌پذیری مهم است؟}}\\[1mm]
+اگر هر \lr{UTXO} را بتوان به‌صورت قطعی به یک زنجیره جانبی نسبت داد،\\[0.8mm]
+بررسی دوبارخرج همان خروجی فقط در \textbf{یک قلمرو} لازم است.\\[1.2mm]
+این همان پایه فنی تقسیم بار بدون هماهنگ‌کننده مرکزی است.}
+\end{minipage}
+\vspace{1.8mm}
+\keybox{\textbf{نکته فنی:} معماری این پژوهش برای سامانه‌های سازگار با \lr{UTXO} طراحی شده است؛ تخصیص روی شناسه خروجی انجام می‌شود نه روی «آدرس کاربر» به‌صورت متمرکز.}
 
 %================ PROBLEM ================
 \newslide
 \slidetitle{بیان مسئله: سه گلوگاه فنی}
-\noindent
-\begin{minipage}[t]{0.32\textwidth}
-\cardbox{0.92\linewidth}{%
-\textbf{\textcolor{UTteal}{گلوگاه یک: انتشار شبکه}}\\[1mm]
-{\footnotesize
-بلوک به اندازه \(B\) باید سریع به اکثریت نودها برسد.\\[0.8mm]
-رابطه تقریبی: \(p_{fork}\approx 1-e^{-\Delta/T}\)\\[0.8mm]
-اگر \(T\) کم یا \(B\) زیاد شود، نسبت \(\Delta/T\) بزرگ و فورک بیشتر می‌شود.}}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.32\textwidth}
-\cardbox{0.92\linewidth}{%
-\textbf{\textcolor{UTteal}{گلوگاه دو: اعتبارسنجی}}\\[1mm]
-{\footnotesize
-هر امضای دیجیتال هزینه پردازنده دارد.\\[0.8mm]
-تراکنش چندورودی چند بار این هزینه را تحمیل می‌کند.\\[0.8mm]
-در نرخ بالا، پردازنده نود معمولی اشباع می‌شود.}}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.32\textwidth}
-\cardbox{0.92\linewidth}{%
-\textbf{\textcolor{UTteal}{گلوگاه سه: وضعیت خروجی‌ها}}\\[1mm]
-{\footnotesize
-دسترسی تصادفی به مجموعه خروجی‌های خرج‌نشده.\\[0.8mm]
-با رشد نرخ تراکنش، دیسک و حافظه نهان محدود می‌شوند.\\[0.8mm]
-ظرفیت کل تقریباً برابر کندترین نود قابل‌قبول است.}}
-\end{minipage}
-
-\vspace{2mm}
-\keybox{\textbf{معنی پارامترها}\\[1mm]
-{\footnotesize
-\(B\) = اندازه بلوک \hfill
-\(\Delta\) = تأخیر مؤثر انتشار بلوک در شبکه \hfill
-\(T\) = فاصله متوسط تولید بلوک \hfill
-\(p_{fork}\) = احتمال فورک موقت\\[1mm]
-در بیتکوین معمولاً \(T\approx 600\) ثانیه و \(B\) حدود یک مگابایت است؛ بنابراین نمی‌توان \(T\) را آزادانه خیلی کوچک کرد.}}
-
+{\setlength{\fboxsep}{5pt}%
+\cardbox{\textwidth}{%
+\textbf{\textcolor{UTteal}{گلوگاه یک — انتشار شبکه:} }
+بلوک به اندازه \(B\) باید سریع به اکثریت برسد؛
+\(p_{fork}\approx 1-e^{-\Delta/T}\).
+اگر \(T\) کم یا \(B\) زیاد شود، فورک بیشتر می‌شود.}
+\vspace{1.2mm}
+\cardbox{\textwidth}{%
+\textbf{\textcolor{UTteal}{گلوگاه دو — اعتبارسنجی:} }
+هر امضای دیجیتال هزینه پردازنده دارد؛ تراکنش چندورودی چند بار این هزینه را تحمیل می‌کند و در نرخ بالا پردازنده نود معمولی اشباع می‌شود.}
+\vspace{1.2mm}
+\cardbox{\textwidth}{%
+\textbf{\textcolor{UTteal}{گلوگاه سه — وضعیت خروجی‌ها:} }
+دسترسی تصادفی به \lr{UTXO}؛ با رشد نرخ، دیسک/حافظه محدود می‌شوند و ظرفیت کل ≈ کندترین نود قابل‌قبول است.}
 \vspace{1.5mm}
-\warnbox{\textbf{صورت‌بندی طراحی مقید}\\[0.5mm]
-{\footnotesize
-هدف: بیشینه‌کردن \(TPS\) با این قیدها:\\[0.5mm]
-امنیت نزدیک به زنجیره اصلی \(C_0\)؛
-هزینه هر نود متناسب با \(TPS/N\)؛
-تابع تخصیص \(A\) قطعی و عمومی؛
-احتمال دوبارخرج تقریباً مانند بیتکوین.}}
+\keybox{\textbf{پارامترها:}
+\(B\)=اندازه بلوک،
+\(\Delta\)=تأخیر انتشار،
+\(T\)=فاصله بلوک (≈۶۰۰ث در بیتکوین)،
+\(p_{fork}\)=احتمال فورک.}
+\vspace{1.5mm}
+\warnbox{\textbf{صورت‌بندی مقید:}
+بیشینه‌کردن \(TPS\) با قید امنیت نزدیک \(C_0\)، هزینه نود \(O(TPS/N)\)، تخصیص قطعی \(A\)، و احتمال دوبارخرج مشابه بیتکوین.}
+}
 
 %================ TRILEMMA ================
 \newslide
 \slidetitle{سه‌گانه بلاکچین و رویکرد پژوهش}
 \noindent
 \begin{minipage}[t]{0.42\textwidth}
+\setRTL
 \cardbox{0.92\linewidth}{%
 \textbf{\color{UTteal}سه‌گانه (\lr{Trilemma})}\\[2mm]
 \begin{enumerate}
@@ -219,6 +255,7 @@
 در بیتکوین، امنیت و تمرکززدایی بر ظرفیت ترجیح داده شده‌اند (فاصله بلوک طولانی + محدودیت اندازه).}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.54\textwidth}
+\setRTL
 \cardbox{0.92\linewidth}{%
 \textbf{\color{UTteal}رویکرد این پایان‌نامه}\\[2mm]
 حذف کامل سه‌گانه ادعا نمی‌شود.\\[1mm]
@@ -231,7 +268,7 @@
 \end{itemize}}
 \end{minipage}
 
-\vspace{4mm}
+\vspace{2mm}
 از دید صف: یک صف مرکزی با ظرفیت محدود به چند صف موازی تبدیل می‌شود. اگر بار متعادل باشد، نرخ خروج کل ≈ مجموع نرخ خروج زنجیره‌های جانبی.
 
 %================ GOALS ================
@@ -258,7 +295,7 @@
   \item تفاوت توان نظری شبکه و بنچمارک محاسباتی پیاده‌سازی چیست؟
   \item مهم‌ترین ریسک‌های امنیتی، مهندسی و عملیاتی کدام‌اند؟
 \end{enumerate}}
-\vspace{3mm}
+\vspace{1.8mm}
 \warnbox{\textbf{دامنه و فرضیات:} تمرکز بر بلاکچین‌های مبتنی بر مدل \lr{UTXO}؛ زنجیره اصلی با اثبات کار و قاعده بیشترین کار انباشته؛ تخصیص قطعی و عمومی؛ نمونه اولیه برای ارزیابی معماری است و جایگزین شبکه تولیدی عمومی نیست.}
 
 %================ TAXONOMY ================
@@ -272,8 +309,7 @@
 \newslide
 \slidetitle{مقایسه کیفی راهکارهای موجود}
 \begin{center}
-\renewcommand{\arraystretch}{1.25}
-\small
+\renewcommand{\arraystretch}{1.35}
 \begin{tabular}{>{\raggedleft\arraybackslash}p{2.6cm}>{\raggedleft\arraybackslash}p{2.8cm}>{\raggedleft\arraybackslash}p{2.6cm}>{\raggedleft\arraybackslash}p{4.2cm}}
 \toprule
 \textbf{راهکار} & \textbf{نقطه قوت} & \textbf{رشد ظرفیت} & \textbf{محدودیت اصلی} \\
@@ -289,8 +325,33 @@
 \bottomrule
 \end{tabular}
 \end{center}
-\vspace{3mm}
+\vspace{1.8mm}
 \keybox{\textbf{جایگاه پژوهش:} ترکیب مزایای زنجیره اصلی امن با پردازش موازی زنجیره‌های جانبی، در مدل سازگار با \lr{UTXO} و با تابع تخصیص قطعی.}
+
+%================ WHY NOT SIMPLE FIXES ================
+\newslide
+\slidetitle{چرا راه‌حل‌های ساده کافی نیستند؟}
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+\setRTL
+\cardbox{0.92\linewidth}{%
+\textbf{\textcolor{UTteal}{افزایش اندازه بلوک / کاهش زمان بلوک}}\\[1mm]
+ساده است، ولی:\\[0.6mm]
+• نود کامل سنگین‌تر می‌شود → تمرکز\\[0.6mm]
+• \(\Delta/T\) بالا می‌رود → فورک بیشتر\\[0.6mm]
+• امنیت مؤثر و تمرکززدایی آسیب می‌بیند}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\setRTL
+\cardbox{0.92\linewidth}{%
+\textbf{\textcolor{UTteal}{لایه دوم / رول‌آپ / شاردینگ}}\\[1mm]
+مفیدند، ولی هزینه و فرض دارند:\\[0.6mm]
+• لایتنینگ: نقدینگی و کانال\\[0.6mm]
+• رول‌آپ: داده‌دسترسی و Sequencer\\[0.6mm]
+• شاردینگ: امنیت شارد و بین‌شاردی}
+\end{minipage}
+\vspace{1.8mm}
+\warnbox{\textbf{سهم فنی این کار:} به‌جای بزرگ‌کردن یک زنجیره، بار را به \(N\) زنجیره جانبی موازی تقسیم می‌کند و قطعیت نهایی را به زنجیره اصلی PoW گره می‌زند. نتیجه: رشد تقریباً خطی ظرفیت با حفظ مرجع امنیتی.}
 
 %================ ARCHITECTURE ================
 \newslide
@@ -299,7 +360,7 @@
 \includegraphics[width=0.92\textwidth,height=0.62\textheight,keepaspectratio]{architecture_master_sidechain.png}
 \end{center}
 \vspace{1mm}
-{\small جریان کار: کاربر → تابع تخصیص → استخر زنجیره جانبی → بلوک جانبی → ارجاع در زنجیره اصلی → نهایی‌سازی پس از \(k\) تأیید}
+جریان کار: کاربر → تابع تخصیص → استخر زنجیره جانبی → بلوک جانبی → ارجاع در زنجیره اصلی → نهایی‌سازی پس از \(k\) تأیید
 
 %================ SYSTEM MODEL ================
 \newslide
@@ -310,9 +371,10 @@
 \]
 \(P\) نودها/ماینرها؛ \(C_0\) زنجیره اصلی؛ \(C_i\) زنجیره‌های جانبی؛ \(U\) مجموعه \lr{UTXO}؛ \(M\) استخرها؛ \(A\) تابع تخصیص؛ \(R\) ارجاعات ثبت‌شده در \(C_0\).}
 
-\vspace{3mm}
+\vspace{1.8mm}
 \noindent
 \begin{minipage}[t]{0.48\textwidth}
+\setRTL
 \cardbox{0.92\linewidth}{%
 \textbf{\color{UTteal}زنجیره اصلی \(C_0\)}\\[1mm]
 \begin{itemize}
@@ -324,6 +386,7 @@
 \end{itemize}}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.48\textwidth}
+\setRTL
 \cardbox{0.92\linewidth}{%
 \textbf{\color{UTteal}زنجیره جانبی \(C_i\)}\\[1mm]
 \begin{itemize}
@@ -340,17 +403,19 @@
 \slidetitle{ساختار بلوک و ارتباط زنجیره‌ها}
 \noindent
 \begin{minipage}[t]{0.48\textwidth}
+\setRTL
 \cardbox{0.92\linewidth}{%
 \textbf{\color{UTteal}MasterBlock}\\[1mm]
-{\small\lr{index, timestamp, references, previous\_hash, merkle\_root, nonce, difficulty}}\\[1mm]
+\lr{index, timestamp, references, previous\_hash, merkle\_root, nonce, difficulty}\\[1mm]
 هر ارجاع: شناسه زنجیره، ارتفاع، هش بلوک جانبی، ریشه مرکل تراکنش‌ها.}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.48\textwidth}
+\setRTL
 \cardbox{0.92\linewidth}{%
 \textbf{\color{UTteal}SideBlock}\\[1mm]
-{\small\lr{index, side\_chain\_id, timestamp, transactions, previous\_hash, parent\_master\_hash, merkle\_root, nonce}}}
+\lr{index, side\_chain\_id, timestamp, transactions, previous\_hash, parent\_master\_hash, merkle\_root, nonce}}
 \end{minipage}
-\vspace{3mm}
+\vspace{1.8mm}
 \begin{center}
 \includegraphics[width=0.78\textwidth,height=0.42\textheight,keepaspectratio]{chain_chart_all_sxy_to_my.png}
 \end{center}
@@ -373,6 +438,46 @@ A(utxo)=H(utxo)\bmod N
 \vspace{2mm}
 \warnbox{\textbf{نکته مهندسی:} تغییر \(N\) مقدار \(\bmod N\) را جابه‌جا می‌کند. افزودن/حذف زنجیره نیازمند سیاست \lr{Epoch}/مهاجرت یا درهم‌سازی سازگار است. در نسخه اولیه، \(N\) در هر دوره ثابت فرض می‌شود.}
 
+%================ WORKED EXAMPLE ================
+\newslide
+\slidetitle{مثال عددی: یک تراکنش چگونه پردازش می‌شود؟}
+فرض: \(N=۴\) زنجیره جانبی؛ کاربر می‌خواهد یک \lr{UTXO} را خرج کند.
+\vspace{1.5mm}
+\begin{enumerate}
+  \item شناسه خروجی هش می‌شود: مثلاً \(H(utxo)=\texttt{0xA3F1}\ldots\)
+  \item تخصیص: \(A=H(utxo)\bmod 4 = 2\) → فقط زنجیره جانبی شماره \(۲\)
+  \item تراکنش فقط وارد استخر \(C_2\) می‌شود (نه همه زنجیره‌ها)
+  \item نودهای \(C_2\) امضا و دوبارخرج را فقط در قلمرو خود چک می‌کنند
+  \item پس از \(\approx ۱\) دقیقه: بلوک جانبی ساخته می‌شود → \textbf{تأیید اولیه}
+  \item هدر/ریشه مرکل آن بلوک در زنجیره اصلی ثبت می‌شود
+  \item پس از \(k\) بلوک اصلی (\(\approx k\times ۱۰\) دقیقه): \textbf{قطعیت نهایی}
+\end{enumerate}
+\vspace{1.5mm}
+\keybox{\textbf{ارزش فنی مثال:} نود لازم نیست همه تراکنش‌های همه زنجیره‌ها را پردازش کند؛ کافی است قلمرو مربوط را دنبال کند. این همان شرط \(Cost_{node}=O(TPS/N)\) است.}
+
+%================ DOUBLE SPEND ================
+\newslide
+\slidetitle{چرا دوبارخرج کنترل می‌شود؟ (استدلال فنی)}
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+\setRTL
+\cardbox{0.92\linewidth}{%
+\textbf{\textcolor{UTteal}{در تک‌زنجیره بیتکوین}}\\[1mm]
+همه نودها یک تاریخچه مشترک دارند.\\[0.8mm]
+اگر یک \lr{UTXO} دو بار خرج شود، تعارض فوراً دیده می‌شود.\\[0.8mm]
+امنیت نهایی از کار انباشته PoW می‌آید.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\setRTL
+\cardbox{0.92\linewidth}{%
+\textbf{\textcolor{UTteal}{در معماری پیشنهادی}}\\[1mm]
+هر \lr{UTXO} فقط به یک \(C_i\) نگاشت می‌شود.\\[0.8mm]
+پس حمله دوبارخرج روی همان خروجی باید در همان قلمرو رخ دهد.\\[0.8mm]
+نمی‌توان با فرستادن دو نسخه به دو زنجیره مختلف، بدون نقض تابع تخصیص عمومی، آن را پنهان کرد.}
+\end{minipage}
+\vspace{1.5mm}
+\warnbox{\textbf{شرط کلیدی:} تخصیص باید قطعی، عمومی و قابل بازمحاسبه توسط همه نودها باشد. اگر تخصیص وابسته به سرور مرکزی باشد، هم تمرکز ایجاد می‌شود هم سطح حمله جدید باز می‌شود.}
+
 %================ ALGORITHM ================
 \newslide
 \slidetitle{الگوریتم پردازش تراکنش}
@@ -387,7 +492,7 @@ A(utxo)=H(utxo)\bmod N
 \end{enumerate}
 \vspace{2mm}
 \keybox{\textbf{شبه‌کد تخصیص}\\[1mm]
-\begin{latin}\ttfamily\small
+\begin{latin}\ttfamily\normalsize
 AssignTransaction(tx, N):\\
 \quad u = SelectPrimaryInput(tx.inputs)\\
 \quad h = SHA256(u.txid || u.index)\\
@@ -399,6 +504,7 @@ AssignTransaction(tx, N):\\
 \slidetitle{تراکنش بین‌زنجیره‌ای و مدل نهایی‌سازی}
 \noindent
 \begin{minipage}[t]{0.52\textwidth}
+\setRTL
 \cardbox{0.92\linewidth}{%
 \textbf{\color{UTteal}پروتکل پیشنهادی (اتمیک)}\\[1mm]
 \begin{enumerate}
@@ -413,15 +519,15 @@ AssignTransaction(tx, N):\\
 در نسخه ساده می‌توان چندورودی بین‌زنجیره‌ای را محدود یا به چند تراکنش تک‌زنجیره‌ای تبدیل کرد.}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.44\textwidth}
+\setRTL
 \cardbox{0.92\linewidth}{%
 \textbf{\color{UTteal}دو سطح نهایی‌سازی}\\[2mm]
 \textbf{تأیید اولیه:}\\
-قرار گرفتن در بلوک جانبی\\
-تأخیر \(\approx T_s\)\\[3mm]
+در بلوک جانبی \(\approx ۱\) دقیقه\\[1.2mm]
 \textbf{قطعیت نهایی:}\\
-ارجاع در \(C_0\) + \(k\) تأیید\\
-تأخیر \(\approx k\,T_m\)\\[3mm]
-مناسب کاربردهایی که تأیید اولیه سریع می‌خواهند ولی می‌توانند برای قطعیت نهایی منتظر بمانند.}
+ارجاع در \(C_0\) + مثلاً \(k=۶\)\\
+\(\approx ۶۰\) دقیقه (شبیه انتظار امن بیتکوین)\\[1.2mm]
+کاربرد: پرداخت خرد می‌تواند روی تأیید اولیه حرکت کند؛ انتقال‌های پرارزش منتظر قطعیت نهایی می‌مانند.}
 \end{minipage}
 
 %================ TPS MODEL ================
@@ -444,11 +550,36 @@ TPS_{total}\approx 6.99 + 69.90\,N
 \vspace{1mm}
 \warnbox{\textbf{کران تک‌زنجیره:} با \(N=1\) داریم \(TPS\le 76.89\) \(\approx 11\times\) بیتکوین. بدون موازی‌سازی واقعی، بهبود محدود است؛ رشد اصلی از افزایش \(N\) می‌آید.}
 
+%================ WHY LINEAR MATTERS ================
+\newslide
+\slidetitle{معنی مهندسی رشد خطی}
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+\setRTL
+\cardbox{0.92\linewidth}{%
+\textbf{\textcolor{UTteal}{چه چیزی ثابت است؟}}\\[1mm]
+هر زنجیره جانبی ظرفیت حدود \(S/T_s\) دارد.\\[0.8mm]
+با فرض بلوک ۱MB و \(T_s=60\)s:\\[0.5mm]
+حدود \(۶۹٫۹\) TPS به ازای هر زنجیره.\\[1mm]
+پس هر زنجیره جدید تقریباً همین مقدار را اضافه می‌کند.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\setRTL
+\cardbox{0.92\linewidth}{%
+\textbf{\textcolor{UTteal}{چه چیزی مقیاس می‌شود؟}}\\[1mm]
+\(N=۱۰\) → حدود \(۷۰۶\) TPS (\(\approx ۱۰۰\times\))\\[0.6mm]
+\(N=۵۰\) → حدود \(۳۵۰۲\) TPS (\(\approx ۵۰۰\times\))\\[0.6mm]
+\(N=۱۰۰\) → حدود \(۷۰۰۰\) TPS (\(\approx ۱۰۰۰\times\))\\[1mm]
+این بهبود از موازی‌سازی می‌آید، نه فقط سریع‌تر کردن یک زنجیره.}
+\end{minipage}
+\vspace{1.8mm}
+\keybox{\textbf{پیام برای مخاطب غیرمتخصص:} مثل افزودن چند باجه موازی به یک صف طولانی است؛ امنیت نهایی همچنان با «حسابرس مرکزی امن» (زنجیره اصلی) ثبت می‌شود.}
+
 %================ TABLE ================
 \newslide
 \slidetitle{جدول ظرفیت نظری شبکه}
 \begin{center}
-\renewcommand{\arraystretch}{1.2}
+\renewcommand{\arraystretch}{1.35}
 \begin{tabular}{ccccc}
 \toprule
 \(N\) & TPS اصلی & TPS جانبی & TPS کل & بهبود نسبت به \(\approx ۷\) \\
@@ -463,7 +594,7 @@ TPS_{total}\approx 6.99 + 69.90\,N
 \bottomrule
 \end{tabular}
 \end{center}
-\vspace{3mm}
+\vspace{1.8mm}
 \begin{itemize}
   \item فرض: بلوک ۱MB، تراکنش \(\approx ۲۵۰\)B؛ محدودیت‌های فیزیکی کامل شبکه هنوز اعمال نشده
   \item هر زنجیره جدید حدود \(۶۹٫۹\) TPS به ظرفیت نظری اضافه می‌کند
@@ -482,6 +613,7 @@ TPS_{total}\approx 6.99 + 69.90\,N
 \slidetitle{محیط آزمایش و روش ارزیابی}
 \noindent
 \begin{minipage}[t]{0.48\textwidth}
+\setRTL
 \cardbox{0.92\linewidth}{%
 \textbf{\color{UTteal}پارامترهای آزمایش}\\[1mm]
 \begin{itemize}
@@ -493,6 +625,7 @@ TPS_{total}\approx 6.99 + 69.90\,N
 \end{itemize}}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.48\textwidth}
+\setRTL
 \cardbox{0.92\linewidth}{%
 \textbf{\color{UTgold}آنچه کامل مدل نشده}\\[1mm]
 \begin{itemize}
@@ -504,14 +637,14 @@ TPS_{total}\approx 6.99 + 69.90\,N
 نتایج = ارزیابی نمونه اولیه، نه بنچمارک تولیدی.}
 \end{minipage}
 
-\vspace{4mm}
+\vspace{2mm}
 \keybox{دو دیدگاه ارزیابی جدا نگه داشته شده‌اند: (۱) مدل نظری ظرفیت شبکه بر اساس اندازه/فاصله بلوک؛ (۲) بنچمارک محاسباتی پیاده‌سازی.}
 
 %================ BENCHMARK ================
 \newslide
 \slidetitle{نتایج بنچمارک محاسباتی (\lr{Rust})}
 \begin{center}
-\renewcommand{\arraystretch}{1.2}
+\renewcommand{\arraystretch}{1.35}
 \begin{tabular}{cccc}
 \toprule
 \(N\) & تعداد تراکنش آزمون & میانگین TPS & نسبت به \(\approx ۷\) \\
@@ -524,7 +657,7 @@ TPS_{total}\approx 6.99 + 69.90\,N
 \bottomrule
 \end{tabular}
 \end{center}
-\vspace{3mm}
+\vspace{1.8mm}
 \warnbox{\textbf{هشدار روش‌شناختی (مهم برای داوران)}\\[1mm]
 این اعداد \textbf{ظرفیت محاسباتی محیط آزمایش} هستند، نه توان عملیاتی شبکه عمومی.\\
 دشواری پایین و نبود محدودیت انتشار واقعی، عدد را مصنوعی بزرگ می‌کند.\\
@@ -544,6 +677,7 @@ TPS_{total}\approx 6.99 + 69.90\,N
 \slidetitle{سقف واقع‌بینانه‌تر و تفاوت دو نوع عدد}
 \noindent
 \begin{minipage}[t]{0.50\textwidth}
+\setRTL
 \cardbox{0.92\linewidth}{%
 \textbf{\color{UTteal}سقف با محدودیت فیزیکی}\\[1mm]
 با بلوک ۱MB، تراکنش \(\approx 0.5\)KB و \(T_s=60\):\\
@@ -555,6 +689,7 @@ TPS_{max}\approx 3.41+3413\approx 3417
 معادل حدود \(\mathbf{488\times}\) بیتکوین.}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.46\textwidth}
+\setRTL
 \cardbox{0.92\linewidth}{%
 \textbf{\color{UTteal}تفکیک دو کمیت}\\[1mm]
 \begin{itemize}
@@ -564,7 +699,7 @@ TPS_{max}\approx 3.41+3413\approx 3417
 \vspace{1mm}
 اشتباه گرفتن این دو با یکدیگر، رایج‌ترین خطای گزارش‌دهی در کارهای مشابه است.}
 \end{minipage}
-\vspace{3mm}
+\vspace{1.8mm}
 \begin{center}
 \includegraphics[width=0.70\textwidth,height=0.38\textheight,keepaspectratio]{tps_theoretical_vs_max.png}
 \end{center}
@@ -578,7 +713,7 @@ TPS_{max}\approx 3.41+3413\approx 3417
   \item \textbf{اعتبار سازه‌ای:} فقط \lr{TPS} کافی نیست؛ تأخیر، قطعیت نهایی، نرخ فورک و هزینه نود نیز باید بررسی شوند.
   \item \textbf{اعتبار بازتولید:} نسخه کد، سخت‌افزار، سیستم‌عامل، پارامترها و روش اجرا باید ثبت شوند.
 \end{itemize}
-\vspace{3mm}
+\vspace{1.8mm}
 \keybox{\textbf{سهم روش‌شناختی:} شفافیت گزارش‌دهی بخشی از سهم پژوهش است. عددهای بزرگ بدون زمینه قابل دفاع نیستند؛ تفکیک بنچمارک از ظرفیت شبکه، ادعا را قابل بازتولید نگه می‌دارد.}
 
 %================ SECURITY ================
@@ -586,6 +721,7 @@ TPS_{max}\approx 3.41+3413\approx 3417
 \slidetitle{تحلیل امنیت (خلاصه)}
 \noindent
 \begin{minipage}[t]{0.48\textwidth}
+\setRTL
 \cardbox{0.92\linewidth}{%
 \textbf{\color{UTteal}زنجیره اصلی}\\[1mm]
 PoW با دشواری بالاتر؛ کار انباشته؛ مرجع نهایی فورک و بازسازماندهی؛ مرجع قطعیت اقتصادی.}
@@ -595,6 +731,7 @@ PoW با دشواری بالاتر؛ کار انباشته؛ مرجع نهایی
 قطعی، عمومی، بدون هماهنگ‌کننده؛ هر خروجی یک قلمرو → محدودسازی سطح حمله دوبارخرج.}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.48\textwidth}
+\setRTL
 \cardbox{0.92\linewidth}{%
 \textbf{\color{UTteal}زنجیره جانبی}\\[1mm]
 قلمرو محدود \lr{UTXO}؛ ارجاع دوره‌ای به اصلی؛ تأیید اولیه \(\neq\) قطعیت نهایی.}
@@ -616,11 +753,26 @@ PoW با دشواری بالاتر؛ کار انباشته؛ مرجع نهایی
   \item \textbf{ریسک‌ها:} امنیت جانبی، بین‌زنجیره‌ای، داده‌دسترسی، هماهنگی، عدم تعادل بار.
 \end{enumerate}
 
+%================ VALUE SUMMARY ================
+\newslide
+\slidetitle{ارزش کار من برای مخاطب چیست؟}
+\begin{enumerate}
+  \item \textbf{طراحی سیستمی:} نه فقط یک عدد TPS، بلکه معماری کامل Master/Side + تخصیص + نهایی‌سازی
+  \item \textbf{سازگاری با UTXO:} تقسیم بار روی خروجی‌ها، مناسب بلاکچین‌های بیتکوین‌مانند
+  \item \textbf{مدل قابل محاسبه:} \(TPS\approx 6.99+69.90N\)؛ رشد خطی را صریح نشان می‌دهد
+  \item \textbf{پیاده‌سازی واقعی:} نمونه اولیه در \lr{Rust} برای سنجش ظرفیت محاسباتی
+  \item \textbf{صداقت روش‌شناختی:} جدا کردن بنچمارک آزمایشگاه از ظرفیت شبکه واقعی
+  \item \textbf{مسیر توسعه روشن:} بین‌زنجیره‌ای، merged mining، epoch، داده‌دسترسی
+\end{enumerate}
+\vspace{2mm}
+\keybox{\textbf{در یک جمله:} این پژوهش یک چارچوب قابل تحلیل و قابل پیاده‌سازی برای مقیاس‌پذیری افقی بلاکچین PoW ارائه می‌دهد که امنیت نهایی را فدا نمی‌کند.}
+
 %================ CONTRIBUTIONS ================
 \newslide
 \slidetitle{دستاوردها و محدودیت‌ها}
 \noindent
 \begin{minipage}[t]{0.48\textwidth}
+\setRTL
 \cardbox{0.92\linewidth}{%
 \textbf{\color{UTteal}دستاوردهای اصلی}\\[1mm]
 \begin{itemize}
@@ -634,6 +786,7 @@ PoW با دشواری بالاتر؛ کار انباشته؛ مرجع نهایی
 \end{itemize}}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.48\textwidth}
+\setRTL
 \cardbox{0.92\linewidth}{%
 \textbf{\color{UTgold}محدودیت‌ها}\\[1mm]
 \begin{itemize}
@@ -665,7 +818,7 @@ PoW با دشواری بالاتر؛ کار انباشته؛ مرجع نهایی
 \slidetitle{نتیجه‌گیری}
 \keybox{\textbf{پیام اصلی}\\[1mm]
 با جداسازی نقش \textbf{امنیت} و \textbf{پردازش} می‌توان ظرفیت بالاتر از معماری تک‌زنجیره‌ای داشت و همچنان از زنجیره اصلی اثبات کار برای قطعیت نهایی استفاده کرد.}
-\vspace{3mm}
+\vspace{1.8mm}
 \begin{itemize}
   \item مقیاس‌پذیری افقی: افزودن زنجیره جانبی ≈ افزودن سهم ثابت به \(TPS\)
   \item امنیت نهایی به \(C_0\) گره می‌خورد؛ تأیید اولیه سریع‌تر روی زنجیره‌های جانبی است
@@ -682,14 +835,14 @@ PoW با دشواری بالاتر؛ کار انباشته؛ مرجع نهایی
   \fill[UTnavy] (current page.south west) rectangle (current page.north east);
   \fill[UTgold] ([yshift=-62mm]current page.north west) rectangle ([yshift=-63.2mm]current page.north east);
 \end{tikzpicture}
-\vspace*{28mm}
+\vspace*{18mm}
 \begin{center}
 {\Huge\textbf{\textcolor{white}{با سپاس از توجه شما}}}\\[8mm]
 {\LARGE\textcolor{UTgold}{آماده پاسخگویی به پرسش‌های اساتید محترم}}\\[14mm]
 {\large\textcolor{UTsoft}{سجاد خشدونی فراهانی}}\\[2mm]
 {\normalsize\textcolor{UTsoft}{استاد راهنما: دکتر علی کمندی}}\\[1mm]
 {\normalsize\textcolor{UTsoft}{دانشگاه تهران — دانشکده علوم مهندسی}}\\[8mm]
-{\small\textcolor{UTsoft}{کلیدواژه‌ها: بلاکچین، مقیاس‌پذیری، زنجیره اصلی، زنجیره جانبی، اثبات کار، \lr{TPS}}}
+\textcolor{UTsoft}{کلیدواژه‌ها: بلاکچین، مقیاس‌پذیری، زنجیره اصلی، زنجیره جانبی، اثبات کار، \lr{TPS}}
 \end{center}
 
 \end{document}

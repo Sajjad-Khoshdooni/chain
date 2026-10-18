@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage[paperwidth=297mm,paperheight=100mm,margin=8mm]{geometry}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{xepersian}
+\settextfont[Path={../font/}]{IRLotusICEE.ttf}
+\setlength{\fboxsep}{8pt}
+\newcommand{\cardinnerwidth}[1]{\dimexpr #1 - 2\fboxsep - 2\fboxrule\relax}
+\newcommand{\cardbox}[2]{%
+  \noindent
+  \fcolorbox{blue}{white}{%
+    \parbox{\cardinnerwidth{#1}}{%
+      \setRTL\large #2
+    }%
+  }%
+}
+\begin{document}
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+\setRTL
+\cardbox{\linewidth}{\textbf{ستون راست}\\[1mm]متن فارسی باید به راست بچسبد.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\setRTL
+\cardbox{\linewidth}{\textbf{ستون چپ}\\[1mm]این هم باید راست‌چین باشد.}
+\end{minipage}
+
+\vspace{8mm}
+\cardbox{\textwidth}{\textbf{جعبه تمام‌عرض}\\[1mm]این متن تمام‌عرض است و باید به راست بچسبد.}
+\end{document}
