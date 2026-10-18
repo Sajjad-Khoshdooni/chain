@@ -71,37 +71,74 @@
   BoldItalicFont={LiberationSerif-BoldItalic.ttf},
   Scale=1.05]{LiberationSerif-Regular.ttf}
 
-% جعبه‌ها با parbox+\setRTL (minipage بیرونی اگر RTL نباشد، تراز را خراب می‌کند)
-\setlength{\fboxsep}{8pt}
+% لیست‌ها: برچسب توکار بدون \llap (در RTL، bidi جهت llap را برعکس می‌کند و از جعبه بیرون می‌زند)
+\AtBeginDocument{%
+  \def\itemize{%
+    \par\smallskip
+    \setlength{\parskip}{0.4em}%
+    \setlength{\parindent}{0pt}%
+    \def\item{%
+      \par\nobreak\noindent
+      \textbullet~~\ignorespaces
+    }%
+  }%
+  \def\enditemize{\par\smallskip}%
+  \def\enumerate{%
+    \par\smallskip
+    \setcounter{enumi}{0}%
+    \setlength{\parskip}{0.4em}%
+    \setlength{\parindent}{0pt}%
+    \def\item{%
+      \par\nobreak\noindent
+      \refstepcounter{enumi}%
+      \arabic{enumi}.~~\ignorespaces
+    }%
+  }%
+  \def\endenumerate{\par\smallskip}%
+}
+
+% جعبه‌ها: حاشیه داخلی واقعی تا شماره/نقطه RTL از لبه بیرون نزند
+\setlength{\fboxsep}{10pt}
+\newlength{\boxpad}
+\setlength{\boxpad}{1.25em}
 \newcommand{\cardinnerwidth}[1]{\dimexpr #1 - 2\fboxsep - 2\fboxrule\relax}
+\newcommand{\boxbodysetup}{%
+  \setRTL\large
+  \setlength{\baselineskip}{1.3em}%
+  \setlength{\parindent}{0pt}%
+}
+\newcommand{\boxcontent}[1]{%
+  \noindent
+  \begin{minipage}{\dimexpr\linewidth-2\boxpad\relax}
+    \boxbodysetup
+    #1
+  \end{minipage}%
+}
 \newcommand{\cardbox}[2]{%
   \noindent
   \fcolorbox{UTsoft}{UTcard}{%
-    \parbox{\cardinnerwidth{#1}}{%
-      \setRTL\large
-      \setlength{\baselineskip}{1.3em}%
-      #2
-    }%
+    \begin{minipage}{\cardinnerwidth{#1}}
+      \centering
+      \boxcontent{#2}
+    \end{minipage}%
   }\par
 }
 \newcommand{\keybox}[1]{%
   \noindent
   \fcolorbox{UTteal}{UTsoft}{%
-    \parbox{\cardinnerwidth{\textwidth}}{%
-      \setRTL\large
-      \setlength{\baselineskip}{1.3em}%
-      #1
-    }%
+    \begin{minipage}{\cardinnerwidth{\textwidth}}
+      \centering
+      \boxcontent{#1}
+    \end{minipage}%
   }\par
 }
 \newcommand{\warnbox}[1]{%
   \noindent
   \fcolorbox{UTgold}{UTsoft}{%
-    \parbox{\cardinnerwidth{\textwidth}}{%
-      \setRTL\large
-      \setlength{\baselineskip}{1.3em}%
-      #1
-    }%
+    \begin{minipage}{\cardinnerwidth{\textwidth}}
+      \centering
+      \boxcontent{#1}
+    \end{minipage}%
   }\par
 }
 
